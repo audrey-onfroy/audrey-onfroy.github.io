@@ -6,17 +6,15 @@
     <description>Recent content on AO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 May 2022 20:22:42 +0200</lastBuildDate><atom:link href="https://audrey-onfroy.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://audrey-onfroy.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First Post</title>
-      <link>https://audrey-onfroy.github.io/posts/post/</link>
-      <pubDate>Thu, 19 May 2022 20:22:42 +0200</pubDate>
+      <title>Welcome to my Github pages !</title>
+      <link>https://audrey-onfroy.github.io/posts/welcome/</link>
+      <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://audrey-onfroy.github.io/posts/post/</guid>
-      <description>giqrhfcnoirhfgovo,rjhcgsfjgsfbgqenrb
-Test d&amp;rsquo;un post
-Titre ? post
-Fin du post</description>
+      <guid>https://audrey-onfroy.github.io/posts/welcome/</guid>
+      <description>I am a PhD student in bioinformatics. I planned to build my Github pages since few times&amp;hellip; Now, I managed to do it !
+To do list  add a Github logo in the top right corner with a link to my Github account move the light/dark mode button in the top right corner build a nice first page on the top, add two menus : vignettes and/or posts and/or other topics  </description>
     </item>
     
   </channel>
