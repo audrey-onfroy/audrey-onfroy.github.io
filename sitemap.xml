@@ -1,28 +1,113 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <url>
-    <loc>https://audrey-onfroy.github.io/</loc>
-    <lastmod>2022-05-19T00:00:00+00:00</lastmod>
-  </url>
+      
+      
+	  <url>
+	    <loc>https://audrey-onfroy.github.io/</loc>
+	    <lastmod>2022-06-04</lastmod>
+        
+
+        
+	  </url>
+	  
   
-  <url>
-    <loc>https://audrey-onfroy.github.io/posts/</loc>
-    <lastmod>2022-05-19T00:00:00+00:00</lastmod>
-  </url>
+      
+      
+	  <url>
+	    <loc>https://audrey-onfroy.github.io/tags/tag1/</loc>
+	    <lastmod>2022-06-04</lastmod>
+        
+
+        
+	  </url>
+	  
   
-  <url>
-    <loc>https://audrey-onfroy.github.io/posts/welcome/</loc>
-    <lastmod>2022-05-19T00:00:00+00:00</lastmod>
-  </url>
+      
+      
+	  <url>
+	    <loc>https://audrey-onfroy.github.io/tags/tag2/</loc>
+	    <lastmod>2022-06-04</lastmod>
+        
+
+        
+	  </url>
+	  
   
-  <url>
-    <loc>https://audrey-onfroy.github.io/categories/</loc>
-  </url>
+      
+      
+	  <url>
+	    <loc>https://audrey-onfroy.github.io/tags/</loc>
+	    <lastmod>2022-06-04</lastmod>
+        
+
+        
+	  </url>
+	  
   
-  <url>
-    <loc>https://audrey-onfroy.github.io/tags/</loc>
-  </url>
+      
+      
+	  <url>
+	    <loc>https://audrey-onfroy.github.io/vignettes/a/a/</loc>
+	    <lastmod>2022-06-04</lastmod>
+        
+
+        
+	  </url>
+	  
+  
+      
+      
+	  <url>
+	    <loc>https://audrey-onfroy.github.io/vignettes/b/b/</loc>
+	    <lastmod>2022-06-04</lastmod>
+        
+
+        
+	  </url>
+	  
+  
+      
+      
+	  <url>
+	    <loc>https://audrey-onfroy.github.io/vignettes/c/c/</loc>
+	    <lastmod>2022-06-04</lastmod>
+        
+
+        
+	  </url>
+	  
+  
+      
+      
+	  <url>
+	    <loc>https://audrey-onfroy.github.io/vignettes/</loc>
+	    <lastmod>2022-06-04</lastmod>
+        
+
+        
+	  </url>
+	  
+  
+      
+      
+	  <url>
+	    <loc>https://audrey-onfroy.github.io/posts/</loc>
+	    <lastmod>2022-05-19</lastmod>
+        
+
+        
+	  </url>
+	  
+  
+      
+      
+	  <url>
+	    <loc>https://audrey-onfroy.github.io/posts/welcome/</loc>
+	    <lastmod>2022-05-19</lastmod>
+        
+
+        
+	  </url>
+	  
   
 </urlset>

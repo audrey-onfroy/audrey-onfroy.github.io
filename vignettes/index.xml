@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AO</title>
-    <link>https://audrey-onfroy.github.io/</link>
-    <description>Recent content on AO</description>
+    <title>Vignettes on AO</title>
+    <link>https://audrey-onfroy.github.io/vignettes/</link>
+    <description>Recent content in Vignettes on AO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Jun 2022 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://audrey-onfroy.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://audrey-onfroy.github.io/vignettes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -36,16 +36,6 @@
       
       <guid>https://audrey-onfroy.github.io/vignettes/c/c/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet augue vel ex varius consectetur. Nulla eu consequat sapien, a ornare arcu. Morbi fringilla sollicitudin lectus dictum dictum. Maecenas rutrum facilisis nisi quis bibendum. Duis ut neque vitae sem vestibulum consectetur. Sed tempus commodo risus sit amet bibendum. Phasellus in dolor tempus, laoreet nibh a, porta sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac diam mi. Nulla in vestibulum mauris, et elementum mi.</description>
-    </item>
-    
-    <item>
-      <title>Welcome to my Github pages !</title>
-      <link>https://audrey-onfroy.github.io/posts/welcome/</link>
-      <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://audrey-onfroy.github.io/posts/welcome/</guid>
-      <description>I am a PhD student in bioinformatics. I planned to build my Github pages since some time&amp;hellip; Now, I managed to do it !
-To do list  add a Github logo in the top right corner with a link to my Github account build a nice first page  </description>
     </item>
     
   </channel>
