@@ -17,9 +17,9 @@
       <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://audrey-onfroy.github.io/posts/welcome/</guid>
-      <description>I planned to build my Github pages since some time&amp;hellip; Now, I managed to do it !
+      <description>I planned to build my Github pages since some time&amp;hellip; I managed to do it ! 😀
 To do list My To do list contains things I would like to learn how to do :
-Title Title 2  --  add a search bar on the right of the Github logo, like on pkgdown site build a nice homepage : this happens in contents/_index.md file add a dark / light mode switch in the top right corner, like in Digital Garden theme make Posts only shows posts folder content, and not vignettes&amp;hellip; &amp;hellip;      I will update this !</description>
+Title Title 2  --  add HTML compiled from Rmd     </description>
     </item>
     
   </channel>

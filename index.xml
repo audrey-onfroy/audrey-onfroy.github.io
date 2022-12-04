@@ -12,11 +12,29 @@
     
     
     <item>
-      <title>Vignette A</title>
-      <link>https://audrey-onfroy.github.io/vignettes/a/a/</link>
+      <title>Include compiled Rmd file</title>
+      <link>https://audrey-onfroy.github.io/vignettes/d/d/</link>
       <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://audrey-onfroy.github.io/vignettes/a/a/</guid>
+      <guid>https://audrey-onfroy.github.io/vignettes/d/d/</guid>
+      <description>This vignette contains an already generated HTML file, from RStudio...       </description>
+    </item>
+    
+    <item>
+      <title>Vignette A1</title>
+      <link>https://audrey-onfroy.github.io/vignettes/a/vignette_a1/</link>
+      <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://audrey-onfroy.github.io/vignettes/a/vignette_a1/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet augue vel ex varius consectetur. Nulla eu consequat sapien, a ornare arcu. Morbi fringilla sollicitudin lectus dictum dictum. Maecenas rutrum facilisis nisi quis bibendum. Duis ut neque vitae sem vestibulum consectetur. Sed tempus commodo risus sit amet bibendum. Phasellus in dolor tempus, laoreet nibh a, porta sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac diam mi. Nulla in vestibulum mauris, et elementum mi.</description>
+    </item>
+    
+    <item>
+      <title>Vignette A2</title>
+      <link>https://audrey-onfroy.github.io/vignettes/a/vignette_a2/</link>
+      <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://audrey-onfroy.github.io/vignettes/a/vignette_a2/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet augue vel ex varius consectetur. Nulla eu consequat sapien, a ornare arcu. Morbi fringilla sollicitudin lectus dictum dictum. Maecenas rutrum facilisis nisi quis bibendum. Duis ut neque vitae sem vestibulum consectetur. Sed tempus commodo risus sit amet bibendum. Phasellus in dolor tempus, laoreet nibh a, porta sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac diam mi. Nulla in vestibulum mauris, et elementum mi.</description>
     </item>
     
@@ -44,7 +62,7 @@
       <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://audrey-onfroy.github.io/about/</guid>
-      <description>My name is Audrey. I am currently a PhD student at Institut Mondor de Recherche Biomédicale (IMRB), in Créteil, France. My project concerns mainly single-cell RNA sequencing data. You can read more about my project here.</description>
+      <description>I am PhD student at Institut Mondor de Recherche Biomédicale (IMRB), in Créteil, France. You can read more about my project here.</description>
     </item>
     
     <item>
@@ -53,9 +71,9 @@
       <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://audrey-onfroy.github.io/posts/welcome/</guid>
-      <description>I planned to build my Github pages since some time&amp;hellip; Now, I managed to do it !
+      <description>I planned to build my Github pages since some time&amp;hellip; I managed to do it ! 😀
 To do list My To do list contains things I would like to learn how to do :
-Title Title 2  --  add a search bar on the right of the Github logo, like on pkgdown site build a nice homepage : this happens in contents/_index.md file add a dark / light mode switch in the top right corner, like in Digital Garden theme make Posts only shows posts folder content, and not vignettes&amp;hellip; &amp;hellip;      I will update this !</description>
+Title Title 2  --  add HTML compiled from Rmd     </description>
     </item>
     
   </channel>
