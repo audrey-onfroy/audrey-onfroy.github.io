@@ -5,22 +5,7 @@
     <link>https://audrey-onfroy.github.io/tags/index.html</link>
     <description></description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <language>en</language>
     <atom:link href="https://audrey-onfroy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Tag :: Tag1</title>
-      <link>https://audrey-onfroy.github.io/tags/tag1/index.html</link>
-      <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/tags/tag1/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tag :: Tag2</title>
-      <link>https://audrey-onfroy.github.io/tags/tag2/index.html</link>
-      <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/tags/tag2/index.html</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

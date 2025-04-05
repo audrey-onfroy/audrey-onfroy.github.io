@@ -1,33 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome ! :: Audrey Onfroy</title>
+    <title>Welcome :: Audrey Onfroy</title>
     <link>https://audrey-onfroy.github.io/index.html</link>
-    <description>Welcome</description>
+    <description>This is the vignette D</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <language>en</language>
     <atom:link href="https://audrey-onfroy.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Bonjour !</title>
-      <link>https://audrey-onfroy.github.io/about/index.html</link>
-      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/about/index.html</guid>
-      <description>bonjour</description>
-    </item>
-    <item>
-      <title>Chapitre</title>
-      <link>https://audrey-onfroy.github.io/vignettes/index.html</link>
-      <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/vignettes/index.html</guid>
-      <description>This is a new chapter.</description>
-    </item>
-    <item>
-      <title>Posts</title>
-      <link>https://audrey-onfroy.github.io/posts/index.html</link>
-      <pubDate>Thu, 19 May 2022 20:30:23 +0200</pubDate>
-      <guid>https://audrey-onfroy.github.io/posts/index.html</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
