@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on AO</title>
-    <link>https://audrey-onfroy.github.io/posts/</link>
-    <description>Recent content in Posts on AO</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Posts :: Audrey Onfroy</title>
+    <link>https://audrey-onfroy.github.io/posts/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 19 May 2022 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://audrey-onfroy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://audrey-onfroy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to my GitHub pages !</title>
-      <link>https://audrey-onfroy.github.io/posts/welcome/</link>
+      <link>https://audrey-onfroy.github.io/posts/welcome/index.html</link>
       <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://audrey-onfroy.github.io/posts/welcome/</guid>
-      <description>I planned to build my Github pages since some time&amp;hellip; I managed to do it ! 😀
-To do list My To do list contains things I would like to learn how to do :
-Title Title 2  --  add HTML compiled from Rmd     </description>
+      <guid>https://audrey-onfroy.github.io/posts/welcome/index.html</guid>
+      <description>Welcome</description>
     </item>
-    
   </channel>
 </rss>

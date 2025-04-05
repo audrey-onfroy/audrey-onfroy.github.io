@@ -1,60 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vignettes on AO</title>
-    <link>https://audrey-onfroy.github.io/vignettes/</link>
-    <description>Recent content in Vignettes on AO</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Chapitre :: Audrey Onfroy</title>
+    <link>https://audrey-onfroy.github.io/vignettes/index.html</link>
+    <description>This is a new chapter.</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Jun 2022 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://audrey-onfroy.github.io/vignettes/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://audrey-onfroy.github.io/vignettes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Include compiled Rmd file</title>
-      <link>https://audrey-onfroy.github.io/vignettes/d/d/</link>
+      <link>https://audrey-onfroy.github.io/vignettes/d/d/index.html</link>
       <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://audrey-onfroy.github.io/vignettes/d/d/</guid>
-      <description>This vignette contains an already generated HTML file, from RStudio...       </description>
+      <guid>https://audrey-onfroy.github.io/vignettes/d/d/index.html</guid>
+      <description>This vignette contains an already generated HTML file, from RStudio...</description>
     </item>
-    
     <item>
       <title>Vignette A1</title>
-      <link>https://audrey-onfroy.github.io/vignettes/a/vignette_a1/</link>
+      <link>https://audrey-onfroy.github.io/vignettes/a/vignette_a1/index.html</link>
       <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://audrey-onfroy.github.io/vignettes/a/vignette_a1/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet augue vel ex varius consectetur. Nulla eu consequat sapien, a ornare arcu. Morbi fringilla sollicitudin lectus dictum dictum. Maecenas rutrum facilisis nisi quis bibendum. Duis ut neque vitae sem vestibulum consectetur. Sed tempus commodo risus sit amet bibendum. Phasellus in dolor tempus, laoreet nibh a, porta sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac diam mi. Nulla in vestibulum mauris, et elementum mi.</description>
+      <guid>https://audrey-onfroy.github.io/vignettes/a/vignette_a1/index.html</guid>
+      <description>This is the vignette A1</description>
     </item>
-    
     <item>
       <title>Vignette A2</title>
-      <link>https://audrey-onfroy.github.io/vignettes/a/vignette_a2/</link>
+      <link>https://audrey-onfroy.github.io/vignettes/a/vignette_a2/index.html</link>
       <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://audrey-onfroy.github.io/vignettes/a/vignette_a2/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet augue vel ex varius consectetur. Nulla eu consequat sapien, a ornare arcu. Morbi fringilla sollicitudin lectus dictum dictum. Maecenas rutrum facilisis nisi quis bibendum. Duis ut neque vitae sem vestibulum consectetur. Sed tempus commodo risus sit amet bibendum. Phasellus in dolor tempus, laoreet nibh a, porta sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac diam mi. Nulla in vestibulum mauris, et elementum mi.</description>
+      <guid>https://audrey-onfroy.github.io/vignettes/a/vignette_a2/index.html</guid>
+      <description>This is the vignette A2</description>
     </item>
-    
     <item>
       <title>Vignette B</title>
-      <link>https://audrey-onfroy.github.io/vignettes/b/b/</link>
+      <link>https://audrey-onfroy.github.io/vignettes/b/b/index.html</link>
       <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://audrey-onfroy.github.io/vignettes/b/b/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet augue vel ex varius consectetur. Nulla eu consequat sapien, a ornare arcu. Morbi fringilla sollicitudin lectus dictum dictum. Maecenas rutrum facilisis nisi quis bibendum. Duis ut neque vitae sem vestibulum consectetur. Sed tempus commodo risus sit amet bibendum. Phasellus in dolor tempus, laoreet nibh a, porta sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac diam mi. Nulla in vestibulum mauris, et elementum mi.</description>
+      <guid>https://audrey-onfroy.github.io/vignettes/b/b/index.html</guid>
+      <description>This is the vignette B</description>
     </item>
-    
     <item>
       <title>Vignette C</title>
-      <link>https://audrey-onfroy.github.io/vignettes/c/c/</link>
+      <link>https://audrey-onfroy.github.io/vignettes/c/c/index.html</link>
       <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://audrey-onfroy.github.io/vignettes/c/c/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet augue vel ex varius consectetur. Nulla eu consequat sapien, a ornare arcu. Morbi fringilla sollicitudin lectus dictum dictum. Maecenas rutrum facilisis nisi quis bibendum. Duis ut neque vitae sem vestibulum consectetur. Sed tempus commodo risus sit amet bibendum. Phasellus in dolor tempus, laoreet nibh a, porta sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac diam mi. Nulla in vestibulum mauris, et elementum mi.</description>
+      <guid>https://audrey-onfroy.github.io/vignettes/c/c/index.html</guid>
+      <description>This is the vignette C</description>
     </item>
-    
   </channel>
 </rss>
