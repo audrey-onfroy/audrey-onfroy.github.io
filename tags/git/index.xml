@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git :: Tag :: Audrey Onfroy</title>
+    <link>http://localhost:1313/tags/git/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Split a GitHub repository into a main repos and a submodule</title>
+      <link>http://localhost:1313/tutorials/split_repo_submodule_with_history/index.html</link>
+      <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/split_repo_submodule_with_history/index.html</guid>
+      <description>Context We have a local folder MAIN associated with a GitHub repository, also called MAIN. The structure is as follows:&#xA;MAIN ├── 1_dir_A │ ├── content_AA │ │ ├── file_AAA.ext │ │ └── file_AAB.ext │ └── content_AB │ ├── file_ABA.ext │ ├── file_ABB.ext │ └── file_ABC.ext ├── 2_dir_B │ ├── content_BA │ │ ├── file_BAA.ext │ │ └── file_BAB.ext │ └── content_BB │ ├── file_BBA.ext │ └── file_BBB.ext ├── README.md ├── .git └── .gitignore Goal We want to:</description>
+    </item>
+  </channel>
+</rss>

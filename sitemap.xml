@@ -1,21 +1,86 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://audrey-onfroy.github.io/codes/b/index.html</loc>
+    <loc>http://localhost:1313/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://audrey-onfroy.github.io/codes/c/index.html</loc>
+    <loc>http://localhost:1313/posts/welcome/index.html</loc>
+    <lastmod>2022-06-04T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://audrey-onfroy.github.io/codes/d/index.html</loc>
+    <loc>http://localhost:1313/codes/codes_bash/allow_access/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://audrey-onfroy.github.io/posts/welcome/index.html</loc>
+    <loc>http://localhost:1313/tags/bash/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://audrey-onfroy.github.io/index.html</loc>
+    <loc>http://localhost:1313/codes/codes_r/clean_r_env/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://audrey-onfroy.github.io/tags/index.html</loc>
+    <loc>http://localhost:1313/codes/codes_bash/find_with_colors/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/codes/codes_bash/define_symlinks/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/codes/codes_bash/find_pattern_files/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/codes/codes_r/ggplot_guides/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/git/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/html/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/codes/codes_r/select_ith_element_in_list/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/md/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/r/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/codes/codes_bash/replace_symlinks/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tutorials/split_repo_submodule_with_history/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/codes/codes_markdown/make_table/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tags/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/codes/codes_bash/find_update_symlinks/index.html</loc>
+    <lastmod>2025-04-07T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/codes/codes_markdown/include_html/index.html</loc>
+    <lastmod>2022-12-04T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tutorials/two_versions_of_r/index.html</loc>
   </url>
 </urlset>

@@ -5,17 +5,40 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.145.0">
     <meta name="generator" content="Relearn 7.6.1">
-    <meta name="description" content="">
+    <meta name="description" content="We want to increase the size of the legend keys and split the legend over 3 columns, of a ggplot object called p.
+Code By expliciting the package name:
+#!/usr/bin/R p &#43; ggplot2::guides(color = ggplot2::guide_legend(override.aes = list(size = 5), ncol = 3)) Without the package name:
+#!/usr/bin/R library(ggplot2) p &#43; guides(color = guide_legend(override.aes = list(size = 5), ncol = 3))">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Search :: Audrey Onfroy">
-    <meta property="og:url" content="http://localhost:1313/search/index.html">
+    <meta name="twitter:title" content="Increase the size of the legend keys :: Audrey Onfroy">
+    <meta name="twitter:description" content="We want to increase the size of the legend keys and split the legend over 3 columns, of a ggplot object called p.
+Code By expliciting the package name:
+#!/usr/bin/R p &#43; ggplot2::guides(color = ggplot2::guide_legend(override.aes = list(size = 5), ncol = 3)) Without the package name:
+#!/usr/bin/R library(ggplot2) p &#43; guides(color = guide_legend(override.aes = list(size = 5), ncol = 3))">
+    <meta property="og:url" content="http://localhost:1313/codes/codes_r/ggplot_guides/index.html">
     <meta property="og:site_name" content="Audrey Onfroy">
-    <meta property="og:title" content="Search :: Audrey Onfroy">
+    <meta property="og:title" content="Increase the size of the legend keys :: Audrey Onfroy">
+    <meta property="og:description" content="We want to increase the size of the legend keys and split the legend over 3 columns, of a ggplot object called p.
+Code By expliciting the package name:
+#!/usr/bin/R p &#43; ggplot2::guides(color = ggplot2::guide_legend(override.aes = list(size = 5), ncol = 3)) Without the package name:
+#!/usr/bin/R library(ggplot2) p &#43; guides(color = guide_legend(override.aes = list(size = 5), ncol = 3))">
     <meta property="og:locale" content="en">
-    <meta property="og:type" content="website">
-    <meta itemprop="name" content="Search :: Audrey Onfroy">
-    <title>Search :: Audrey Onfroy</title>
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Codes">
+    <meta property="article:published_time" content="2025-04-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-07T00:00:00+00:00">
+    <meta property="article:tag" content="R">
+    <meta itemprop="name" content="Increase the size of the legend keys :: Audrey Onfroy">
+    <meta itemprop="description" content="We want to increase the size of the legend keys and split the legend over 3 columns, of a ggplot object called p.
+Code By expliciting the package name:
+#!/usr/bin/R p &#43; ggplot2::guides(color = ggplot2::guide_legend(override.aes = list(size = 5), ncol = 3)) Without the package name:
+#!/usr/bin/R library(ggplot2) p &#43; guides(color = guide_legend(override.aes = list(size = 5), ncol = 3))">
+    <meta itemprop="datePublished" content="2025-04-07T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2025-04-07T00:00:00+00:00">
+    <meta itemprop="wordCount" content="60">
+    <meta itemprop="keywords" content="R">
+    <title>Increase the size of the legend keys :: Audrey Onfroy</title>
     <link href="/images/favicon.ico?1744042519" rel="icon" type="image/x-icon" sizes="any">
     <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1744042519" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1744042519" rel="stylesheet"></noscript>
     <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1744042519" rel="stylesheet">
@@ -32,9 +55,9 @@
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = ``;
-      window.relearn.path='\/search\/index.html';
-      window.relearn.relBasePath='..';
-      window.relearn.relBaseUri='..';
+      window.relearn.path='\/codes\/codes_r\/ggplot_guides\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.contentLangs=['en'];
       window.relearn.index_js_url="/searchindex.en.js?1744042519";
@@ -84,7 +107,7 @@
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/search/index.html">
+  <body class="mobile-support html" data-url="/codes/codes_r/ggplot_guides/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -95,17 +118,26 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#code">Code</a></li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Welcome</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Codes</span><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">R</span><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">ggplot guides</span><meta itemprop="position" content="4"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/index.html" title="Welcome (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_r/clean_r_env/index.html" title="Clean R environment but... (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_r/select_ith_element_in_list/index.html" title="Subset the i-th elements of a nested list (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -119,28 +151,38 @@
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable _relearn_searchform" tabindex="-1">
+      <main id="R-body-inner" class="highlightable codes" tabindex="-1">
         <div class="flex-block-wrapper">
 <article class="default">
   <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/r/index.html">R</a></li>
+  </ul>
+</div>
   </header>
 
-<h1 id="search">Search</h1>
+<h1 id="increase-the-size-of-the-legend-keys">Increase the size of the legend keys</h1>
 
-<search>
-  <form action="javascript:triggerSearch()">
-    <div class="searchform">
-      <label class="a11y-only" for="R-search-by-detail">Search</label>
-      <input data-search-input id="R-search-by-detail" class="search-by" name="search-by" type="search" placeholder="Search..."><span class="btn interactive  cstyle secondary"><button onclick="" type="submit"><i class="fa-fw fas fa-search"></i> <span class="title">Search</span></button></span>
-    </div>
-  </form>
-</search>
-<div class="searchhint">
-</div>
-<hr>
-<div id="R-searchresults">
-</div>
+<p>We want to increase the size of the legend keys and split the legend over 3 columns, of a ggplot object called <code>p</code>.</p>
+<h2 id="code">Code</h2>
+<p>By expliciting the package name:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/R</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>p <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>    ggplot2<span style="color:#f92672">::</span><span style="color:#a6e22e">guides</span>(color <span style="color:#f92672">=</span> ggplot2<span style="color:#f92672">::</span><span style="color:#a6e22e">guide_legend</span>(override.aes <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>),
+</span></span><span style="display:flex;"><span>                                                  ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>))</span></span></code></pre></div>
+<p>Without the package name:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/R</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ggplot2)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>p <span style="color:#f92672">+</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">guides</span>(color <span style="color:#f92672">=</span> <span style="color:#a6e22e">guide_legend</span>(override.aes <span style="color:#f92672">=</span> <span style="color:#a6e22e">list</span>(size <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>),
+</span></span><span style="display:flex;"><span>                                ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>))</span></span></code></pre></div>
+
   <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Apr 7, 2025
   </footer>
 </article>
         </div>
@@ -191,7 +233,7 @@
             <li class="headless " data-nav-id=""><input type="checkbox" id="R-section-e1e8c1e70c5500b49e8dda2dc550651a" aria-controls="R-subsections-e1e8c1e70c5500b49e8dda2dc550651a"><label for="R-section-e1e8c1e70c5500b49e8dda2dc550651a"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Tutorials</span></label><span class="padding"><i class="fa-regular fa-file-code"></i> Tutorials</span><ul id="R-subsections-e1e8c1e70c5500b49e8dda2dc550651a" class="collapsible-menu">
             <li class="" data-nav-id="/tutorials/split_repo_submodule_with_history/index.html"><a class="padding" href="/tutorials/split_repo_submodule_with_history/index.html">split &#43; submodule &#43; history</a></li>
             <li class="" data-nav-id="/tutorials/two_versions_of_r/index.html"><a class="padding" href="/tutorials/two_versions_of_r/index.html">(coming soon) two versions of R</a></li></ul></li>
-            <li class="headless " data-nav-id=""><input type="checkbox" id="R-section-8c71a3e142467619dfd1d6f065895b8a" aria-controls="R-subsections-8c71a3e142467619dfd1d6f065895b8a"><label for="R-section-8c71a3e142467619dfd1d6f065895b8a"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Codes</span></label><span class="padding"><i class="fa-solid fa-code"></i> Codes</span><ul id="R-subsections-8c71a3e142467619dfd1d6f065895b8a" class="collapsible-menu">
+            <li class="parent headless " data-nav-id=""><input type="checkbox" id="R-section-8c71a3e142467619dfd1d6f065895b8a" aria-controls="R-subsections-8c71a3e142467619dfd1d6f065895b8a" checked><label for="R-section-8c71a3e142467619dfd1d6f065895b8a"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Codes</span></label><span class="padding"><i class="fa-solid fa-code"></i> Codes</span><ul id="R-subsections-8c71a3e142467619dfd1d6f065895b8a" class="collapsible-menu">
             <li class="headless " data-nav-id=""><input type="checkbox" id="R-section-fde67a55e18af009c54a9c1a8db4e80b" aria-controls="R-subsections-fde67a55e18af009c54a9c1a8db4e80b"><label for="R-section-fde67a55e18af009c54a9c1a8db4e80b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu bash</span></label><span class="padding">bash</span><ul id="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_bash/allow_access/index.html"><a class="padding" href="/codes/codes_bash/allow_access/index.html">allow files access on cluster</a></li>
             <li class="" data-nav-id="/codes/codes_bash/find_with_colors/index.html"><a class="padding" href="/codes/codes_bash/find_with_colors/index.html">color find output</a></li>
@@ -202,9 +244,9 @@
             <li class="headless " data-nav-id=""><input type="checkbox" id="R-section-2d6fa88cdaf145d16693178d437bff23" aria-controls="R-subsections-2d6fa88cdaf145d16693178d437bff23"><label for="R-section-2d6fa88cdaf145d16693178d437bff23"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu html/markdown</span></label><span class="padding">html/markdown</span><ul id="R-subsections-2d6fa88cdaf145d16693178d437bff23" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_markdown/make_table/index.html"><a class="padding" href="/codes/codes_markdown/make_table/index.html">table</a></li>
             <li class="" data-nav-id="/codes/codes_markdown/include_html/index.html"><a class="padding" href="/codes/codes_markdown/include_html/index.html">html in md</a></li></ul></li>
-            <li class="headless " data-nav-id=""><input type="checkbox" id="R-section-f2ceb008d41370dd13ebd441f6789f8e" aria-controls="R-subsections-f2ceb008d41370dd13ebd441f6789f8e"><label for="R-section-f2ceb008d41370dd13ebd441f6789f8e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu R</span></label><span class="padding">R</span><ul id="R-subsections-f2ceb008d41370dd13ebd441f6789f8e" class="collapsible-menu">
+            <li class="parent headless " data-nav-id=""><input type="checkbox" id="R-section-f2ceb008d41370dd13ebd441f6789f8e" aria-controls="R-subsections-f2ceb008d41370dd13ebd441f6789f8e" checked><label for="R-section-f2ceb008d41370dd13ebd441f6789f8e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu R</span></label><span class="padding">R</span><ul id="R-subsections-f2ceb008d41370dd13ebd441f6789f8e" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_r/clean_r_env/index.html"><a class="padding" href="/codes/codes_r/clean_r_env/index.html">clean R env</a></li>
-            <li class="" data-nav-id="/codes/codes_r/ggplot_guides/index.html"><a class="padding" href="/codes/codes_r/ggplot_guides/index.html">ggplot guides</a></li>
+            <li class="active " data-nav-id="/codes/codes_r/ggplot_guides/index.html"><a class="padding" href="/codes/codes_r/ggplot_guides/index.html">ggplot guides</a></li>
             <li class="" data-nav-id="/codes/codes_r/select_ith_element_in_list/index.html"><a class="padding" href="/codes/codes_r/select_ith_element_in_list/index.html">i-th elements of a R list</a></li></ul></li></ul></li>
           </ul>
         </div>

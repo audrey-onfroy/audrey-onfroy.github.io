@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R :: Tag :: Audrey Onfroy</title>
+    <link>http://localhost:1313/tags/r/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 07 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clean R environment but...</title>
+      <link>http://localhost:1313/codes/codes_r/clean_r_env/index.html</link>
+      <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/codes/codes_r/clean_r_env/index.html</guid>
+      <description>Example to remove everything from the environment, except an object called sobj:&#xA;#!/usr/bin/R rm(list = setdiff(ls(), &#34;sobj&#34;))</description>
+    </item>
+    <item>
+      <title>Increase the size of the legend keys</title>
+      <link>http://localhost:1313/codes/codes_r/ggplot_guides/index.html</link>
+      <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/codes/codes_r/ggplot_guides/index.html</guid>
+      <description>We want to increase the size of the legend keys and split the legend over 3 columns, of a ggplot object called p.&#xA;Code By expliciting the package name:&#xA;#!/usr/bin/R p + ggplot2::guides(color = ggplot2::guide_legend(override.aes = list(size = 5), ncol = 3)) Without the package name:&#xA;#!/usr/bin/R library(ggplot2) p + guides(color = guide_legend(override.aes = list(size = 5), ncol = 3))</description>
+    </item>
+    <item>
+      <title>Subset the i-th elements of a nested list</title>
+      <link>http://localhost:1313/codes/codes_r/select_ith_element_in_list/index.html</link>
+      <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/codes/codes_r/select_ith_element_in_list/index.html</guid>
+      <description>Code Select all i-th elements of a nested list x, in R language:&#xA;#!/usr/bin/R lapply(x, `[[`, i) This is useful after having used the stringr::str_split function…&#xA;Input Structure of the input list x:&#xA;x ├── A │ ├── A_1 │ ├── A_2 │ ├── A_3 │ └── A_4 ├── B │ ├── B_1 │ ├── B_2 │ ├── B_3 │ └── B_4 └── C ├── C_1 ├── C_2 ├── C_3 └── C_4 Output Structure, after execution of the command (i = 2):</description>
+    </item>
+    <item>
+      <title>Access two versions (or more !) of R within R Studio</title>
+      <link>http://localhost:1313/tutorials/two_versions_of_r/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials/two_versions_of_r/index.html</guid>
+      <description>The content of this page is coming soon 😁&#xA;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur augue nec sem tempus euismod. Maecenas et nunc quis lectus pretium semper. Mauris sed elementum arcu. Aenean sit amet urna viverra, volutpat tellus ut, semper nibh. Sed mi magna, imperdiet sed congue in, tempus at turpis. Duis non maximus tortor. Duis at auctor tellus. Mauris commodo ligula at ultrices tristique. Etiam vehicula neque urna, a elementum lorem placerat eu. Quisque quis mauris justo. Fusce dictum elit urna, ut molestie arcu lobortis malesuada. Donec mauris felis, hendrerit id dapibus faucibus, volutpat ac justo. Aliquam eget tincidunt augue, eget dictum nibh. Curabitur laoreet lobortis felis vitae pharetra. Nunc ex turpis, lobortis in lobortis vel, tempor ut leo.</description>
+    </item>
+  </channel>
+</rss>

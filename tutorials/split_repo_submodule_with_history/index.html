@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 7.6.1">
+    <meta name="description" content="Context We have a local folder MAIN associated with a GitHub repository, also called MAIN. The structure is as follows:
+MAIN ├── 1_dir_A │ ├── content_AA │ │ ├── file_AAA.ext │ │ └── file_AAB.ext │ └── content_AB │ ├── file_ABA.ext │ ├── file_ABB.ext │ └── file_ABC.ext ├── 2_dir_B │ ├── content_BA │ │ ├── file_BAA.ext │ │ └── file_BAB.ext │ └── content_BB │ ├── file_BBA.ext │ └── file_BBB.ext ├── README.md ├── .git └── .gitignore Goal We want to:">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Split a GitHub repository into a main repos and a submodule :: Audrey Onfroy">
+    <meta name="twitter:description" content="Context We have a local folder MAIN associated with a GitHub repository, also called MAIN. The structure is as follows:
+MAIN ├── 1_dir_A │ ├── content_AA │ │ ├── file_AAA.ext │ │ └── file_AAB.ext │ └── content_AB │ ├── file_ABA.ext │ ├── file_ABB.ext │ └── file_ABC.ext ├── 2_dir_B │ ├── content_BA │ │ ├── file_BAA.ext │ │ └── file_BAB.ext │ └── content_BB │ ├── file_BBA.ext │ └── file_BBB.ext ├── README.md ├── .git └── .gitignore Goal We want to:">
+    <meta property="og:url" content="http://localhost:1313/tutorials/split_repo_submodule_with_history/index.html">
+    <meta property="og:site_name" content="Audrey Onfroy">
+    <meta property="og:title" content="Split a GitHub repository into a main repos and a submodule :: Audrey Onfroy">
+    <meta property="og:description" content="Context We have a local folder MAIN associated with a GitHub repository, also called MAIN. The structure is as follows:
+MAIN ├── 1_dir_A │ ├── content_AA │ │ ├── file_AAA.ext │ │ └── file_AAB.ext │ └── content_AB │ ├── file_ABA.ext │ ├── file_ABB.ext │ └── file_ABC.ext ├── 2_dir_B │ ├── content_BA │ │ ├── file_BAA.ext │ │ └── file_BAB.ext │ └── content_BB │ ├── file_BBA.ext │ └── file_BBB.ext ├── README.md ├── .git └── .gitignore Goal We want to:">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Tutorials">
+    <meta property="article:published_time" content="2025-04-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-07T00:00:00+00:00">
+    <meta property="article:tag" content="Git">
+    <meta itemprop="name" content="Split a GitHub repository into a main repos and a submodule :: Audrey Onfroy">
+    <meta itemprop="description" content="Context We have a local folder MAIN associated with a GitHub repository, also called MAIN. The structure is as follows:
+MAIN ├── 1_dir_A │ ├── content_AA │ │ ├── file_AAA.ext │ │ └── file_AAB.ext │ └── content_AB │ ├── file_ABA.ext │ ├── file_ABB.ext │ └── file_ABC.ext ├── 2_dir_B │ ├── content_BA │ │ ├── file_BAA.ext │ │ └── file_BAB.ext │ └── content_BB │ ├── file_BBA.ext │ └── file_BBB.ext ├── README.md ├── .git └── .gitignore Goal We want to:">
+    <meta itemprop="datePublished" content="2025-04-07T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2025-04-07T00:00:00+00:00">
+    <meta itemprop="wordCount" content="726">
+    <meta itemprop="keywords" content="Git">
+    <title>Split a GitHub repository into a main repos and a submodule :: Audrey Onfroy</title>
+    <link href="/images/favicon.ico?1744042519" rel="icon" type="image/x-icon" sizes="any">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1744042519" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1744042519" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1744042519" rel="stylesheet">
+    <link href="/css/theme.css?1744042519" rel="stylesheet">
+    <link href="/css/format-html.css?1744042519" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1744042519" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1744042519" defer></script>
+    <script src="/js/lunr/lunr.min.js?1744042519" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1744042519" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1744042519" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1744042519" defer></script>
+    <script src="/js/search.js?1744042519" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/tutorials\/split_repo_submodule_with_history\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.contentLangs=['en'];
+      window.relearn.index_js_url="/searchindex.en.js?1744042519";
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // variant stuff
+      window.relearn.themevariants = [ 'auto', 'light-mode', 'dark-mode' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/tutorials/split_repo_submodule_with_history/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#context">Context</a></li>
+    <li><a href="#goal">Goal</a></li>
+    <li><a href="#method">Method</a>
+      <ul>
+        <li><a href="#duplicate-the-main-repository">Duplicate the <code>MAIN</code> repository</a></li>
+        <li><a href="#get-all-branches">Get all branches</a></li>
+        <li><a href="#detach-from-origin">Detach from origin</a></li>
+        <li><a href="#subset-the-new-repository">Subset the new repository</a></li>
+        <li><a href="#define-the-new-repository">Define the new repository</a></li>
+        <li><a href="#define-a-submodule-in-main">Define a submodule in <code>MAIN</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#output">Output</a></li>
+    <li><a href="#resources">Resources</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Welcome</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Tutorials</span><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">split &#43; submodule &#43; history</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/posts/welcome/index.html" title="Welcome to my GitHub Pages ! (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/tutorials/two_versions_of_r/index.html" title="Access two versions (or more !) of R within R Studio (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable tutorials" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/git/index.html">Git</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="split-a-github-repository-into-a-main-repos-and-a-submodule">Split a GitHub repository into a main repos and a submodule</h1>
+
+<h2 id="context">Context</h2>
+<p>We have a local folder <code>MAIN</code> associated with a GitHub repository, also called <code>MAIN</code>. The structure is as follows:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>MAIN
+├── 1_dir_A
+│   ├── content_AA
+│   │   ├── file_AAA.ext
+│   │   └── file_AAB.ext
+│   └── content_AB
+│       ├── file_ABA.ext
+│       ├── file_ABB.ext
+│       └── file_ABC.ext
+├── 2_dir_B
+│   ├── content_BA
+│   │   ├── file_BAA.ext
+│   │   └── file_BAB.ext
+│   └── content_BB
+│       ├── file_BBA.ext
+│       └── file_BBB.ext
+├── README.md
+├── .git
+└── .gitignore</code></pre></div>
+<h2 id="goal">Goal</h2>
+<p>We want to:</p>
+<ul>
+<li>keep the structure of <code>MAIN</code></li>
+<li>make a new folder <code>TOTO</code> associated with the content of <code>2_dir_B</code></li>
+<li>keep the <strong>history</strong> of <code>2_dir_B</code> in the new repository</li>
+<li>(default) keep the history of <code>2_dir_B</code> in the main repository</li>
+<li>define <code>2_dir_B</code> as a <strong>submodule</strong> of <code>MAIN</code></li>
+</ul>
+<h2 id="method">Method</h2>
+<ol>
+<li>Make sure that the <code>MAIN</code> repository is up-to-date with your local folder, using <code>git pull</code> and/or <code>git push</code> commands.</li>
+</ol>
+<h3 id="duplicate-the-main-repository">Duplicate the <code>MAIN</code> repository</h3>
+<ol start="2">
+<li>Clone the <code>MAIN</code> repository to initate the new one:</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/user-name/MAIN.git TOTO</span></span></code></pre></div>
+<ol start="3">
+<li>Move to <code>TOTO</code>:</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd TOTO</span></span></code></pre></div>
+<h3 id="get-all-branches">Get all branches</h3>
+<ol start="4">
+<li>(optional) Get all the branches and tags from the <code>MAIN</code> repository, because they have not been imported using <code>git clone</code>:</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -a  <span style="color:#75715e"># check the current branches</span>
+</span></span><span style="display:flex;"><span>git fetch origin
+</span></span><span style="display:flex;"><span>git branch -a  <span style="color:#75715e"># check the current branches</span></span></span></code></pre></div>
+<ol start="5">
+<li>(optional) If there are SOME branches to copy, run:</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout -b SOME origin/SOME
+</span></span><span style="display:flex;"><span>git branch -a  <span style="color:#75715e"># check the current branches</span></span></span></code></pre></div>
+<h3 id="detach-from-origin">Detach from origin</h3>
+<ol start="6">
+<li>Detach the local repository <code>TOTO</code> from the <code>MAIN</code> repository.</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote -v  <span style="color:#75715e"># check the remote host: MAIN.git</span>
+</span></span><span style="display:flex;"><span>git remote rm origin
+</span></span><span style="display:flex;"><span>git remote -v  <span style="color:#75715e"># no more host</span></span></span></code></pre></div>
+<h3 id="subset-the-new-repository">Subset the new repository</h3>
+<ol start="7">
+<li>Filter the directory to keep only the <code>2_dir_B</code> folder.
+We should <code>--force</code> because there is no origin.</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git filter-repo --path 2_dir_B/ --force</span></span></code></pre></div>
+<ol start="8">
+<li>Move the <code>2_dir_B</code> folder content to the root:</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git mv 2_dir_B/* .
+</span></span><span style="display:flex;"><span>git mv 2_dir_B/.gitignore .gitignore <span style="color:#75715e"># for the hidden files</span>
+</span></span><span style="display:flex;"><span>rm -Rf 2_dir_B</span></span></code></pre></div>
+<ol start="9">
+<li>
+<p>Add the untracked files from <code>MAIN</code> to <code>TOTO</code>. This step can/should/must be done manually by using the graphical file explorer&hellip;</p>
+</li>
+<li>
+<p>Check that <code>TOTO</code> contains everything present in <code>MAIN/2_dir_B</code>:</p>
+</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>diff -r /path/to/TOTO /path/to/MAIN/2_dir_B</span></span></code></pre></div>
+<ol start="11">
+<li>Ensure to ignore the folders and files that should not be tracked by the <code>git</code> system:</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano .gitignore <span style="color:#75715e"># fill in manually</span></span></span></code></pre></div>
+<ol start="12">
+<li>Define the commit:</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status  <span style="color:#75715e"># everything should be added</span>
+</span></span><span style="display:flex;"><span>git add *   <span style="color:#75715e"># if necessary, for instance .gitignore</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Filter only 2_dir_B content&#34;</span></span></span></code></pre></div>
+<h3 id="define-the-new-repository">Define the new repository</h3>
+<ol start="13">
+<li>
+<p>On GitHub, create a new <strong>empty</strong> (no README, no LICENSE) repository, for instance called <code>TITI</code>.</p>
+</li>
+<li>
+<p>Define the new origin for the <code>TOTO</code> folder:</p>
+</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add origin https://github.com/username/TITI.git
+</span></span><span style="display:flex;"><span>git remote -v  <span style="color:#75715e"># check the remote host</span></span></span></code></pre></div>
+<ol start="15">
+<li>Push the changes. We use <code>--force</code> if no file has been changed but only the git history has been filtered. We use <code>--all</code> to include all the branches.</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push --force --all origin
+</span></span><span style="display:flex;"><span>git push --tags origin <span style="color:#75715e"># optionally, if there are tags</span></span></span></code></pre></div>
+<h3 id="define-a-submodule-in-main">Define a submodule in <code>MAIN</code></h3>
+<ol start="16">
+<li>Go to the <code>MAIN</code> directory:</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /path/to/MAIN</span></span></code></pre></div>
+<ol start="17">
+<li>Remove the <code>2_dir_B</code> folder, both from tracking and locally:</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git rm -r 2_dir_B
+</span></span><span style="display:flex;"><span>rm -Rf 2_dir_B/</span></span></code></pre></div>
+<ol start="18">
+<li>(optional) To eventually remove this folder from the history, use <code>git filter-repo</code>. Do not forget <code>--invert-paths</code>.  We use <code>--all</code> to apply the filtering on all branches.
+We use <code>git push --force</code> to force rewriting the history in the remote host.</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install git-filter-repo <span style="color:#75715e"># installation</span>
+</span></span><span style="display:flex;"><span>git filter-repo --path 2_dir_B/ --invert-paths --all
+</span></span><span style="display:flex;"><span>git push --force</span></span></code></pre></div>
+<ol start="19">
+<li>Define <code>2_dir_B</code> as a submodule of <code>MAIN</code>. It creates a <code>.gitmodules</code> file.</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add https://github.com/username/TITI.git 2_dir_B
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Define submodule 2_dir_B&#34;</span>
+</span></span><span style="display:flex;"><span>git push origin main <span style="color:#75715e"># push the .gitmodules file</span></span></span></code></pre></div>
+<p>That&rsquo;s all ! :smile:</p>
+<h2 id="output">Output</h2>
+<p>The <code>MAIN</code> directory has not changed:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>MAIN
+├── 1_dir_A
+│   ├── content_AA
+│   │   ├── file_AAA.ext
+│   │   └── file_AAB.ext
+│   └── content_AB
+│       ├── file_ABA.ext
+│       ├── file_ABB.ext
+│       └── file_ABC.ext
+├── 2_dir_B
+│   ├── content_BA
+│   │   ├── file_BAA.ext
+│   │   └── file_BAB.ext
+│   └── content_BB
+│       ├── file_BBA.ext
+│       └── file_BBB.ext
+├── README.md
+├── .git
+└── .gitignore</code></pre></div>
+<p>However, on the <code>MAIN</code> GitHub repository, <code>2_dir_B</code> points to the last commit synchronized. For instance <code>2_dir_B @3c8464b</code>.</p>
+<p>The <code>TOTO</code> folder contains:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>TOTO
+├── content_BA
+│   ├── file_BAA.ext
+│   └── file_BAB.ext
+├── content_BB
+│   ├── file_BBA.ext
+│   └── file_BBB.ext
+├── .git
+└── .gitignore</code></pre></div>
+<p>On the <code>TITI</code> GitHub repository, there is no trace of the <code>MAIN</code>, but the history of all the tracked files is conserved from their creation in the <code>MAIN</code> repository.</p>
+<h2 id="resources">Resources</h2>
+<p>Useful resources:</p>
+<ul>
+<li><a href="https://www.smashingmagazine.com/2014/05/moving-git-repository-new-server/" rel="external" target="_blank">https://www.smashingmagazine.com/2014/05/moving-git-repository-new-server/</a></li>
+<li><a href="https://graphite.dev/guides/git-filter-repo" rel="external" target="_blank">https://graphite.dev/guides/git-filter-repo</a></li>
+</ul>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Apr 7, 2025
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/index.html">
+            <div class="logo-title">Audrey Onfroy</div>
+          </a>
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-user"></i> About</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="headless " data-nav-id=""><input type="checkbox" id="R-section-b4e55eb7e39db1aee6d02808a2267090" aria-controls="R-subsections-b4e55eb7e39db1aee6d02808a2267090"><label for="R-section-b4e55eb7e39db1aee6d02808a2267090"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Posts</span></label><span class="padding"><i class="fa-regular fa-comment-dots"></i> Posts</span><ul id="R-subsections-b4e55eb7e39db1aee6d02808a2267090" class="collapsible-menu">
+            <li class="" data-nav-id="/posts/welcome/index.html"><a class="padding" href="/posts/welcome/index.html">Welcome</a></li></ul></li>
+            <li class="parent headless " data-nav-id=""><input type="checkbox" id="R-section-e1e8c1e70c5500b49e8dda2dc550651a" aria-controls="R-subsections-e1e8c1e70c5500b49e8dda2dc550651a" checked><label for="R-section-e1e8c1e70c5500b49e8dda2dc550651a"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Tutorials</span></label><span class="padding"><i class="fa-regular fa-file-code"></i> Tutorials</span><ul id="R-subsections-e1e8c1e70c5500b49e8dda2dc550651a" class="collapsible-menu">
+            <li class="active " data-nav-id="/tutorials/split_repo_submodule_with_history/index.html"><a class="padding" href="/tutorials/split_repo_submodule_with_history/index.html">split &#43; submodule &#43; history</a></li>
+            <li class="" data-nav-id="/tutorials/two_versions_of_r/index.html"><a class="padding" href="/tutorials/two_versions_of_r/index.html">(coming soon) two versions of R</a></li></ul></li>
+            <li class="headless " data-nav-id=""><input type="checkbox" id="R-section-8c71a3e142467619dfd1d6f065895b8a" aria-controls="R-subsections-8c71a3e142467619dfd1d6f065895b8a"><label for="R-section-8c71a3e142467619dfd1d6f065895b8a"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Codes</span></label><span class="padding"><i class="fa-solid fa-code"></i> Codes</span><ul id="R-subsections-8c71a3e142467619dfd1d6f065895b8a" class="collapsible-menu">
+            <li class="headless " data-nav-id=""><input type="checkbox" id="R-section-fde67a55e18af009c54a9c1a8db4e80b" aria-controls="R-subsections-fde67a55e18af009c54a9c1a8db4e80b"><label for="R-section-fde67a55e18af009c54a9c1a8db4e80b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu bash</span></label><span class="padding">bash</span><ul id="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" class="collapsible-menu">
+            <li class="" data-nav-id="/codes/codes_bash/allow_access/index.html"><a class="padding" href="/codes/codes_bash/allow_access/index.html">allow files access on cluster</a></li>
+            <li class="" data-nav-id="/codes/codes_bash/find_with_colors/index.html"><a class="padding" href="/codes/codes_bash/find_with_colors/index.html">color find output</a></li>
+            <li class="" data-nav-id="/codes/codes_bash/define_symlinks/index.html"><a class="padding" href="/codes/codes_bash/define_symlinks/index.html">define symlinks</a></li>
+            <li class="" data-nav-id="/codes/codes_bash/find_pattern_files/index.html"><a class="padding" href="/codes/codes_bash/find_pattern_files/index.html">find pattern in files</a></li>
+            <li class="" data-nav-id="/codes/codes_bash/replace_symlinks/index.html"><a class="padding" href="/codes/codes_bash/replace_symlinks/index.html">replace symlinks</a></li>
+            <li class="" data-nav-id="/codes/codes_bash/find_update_symlinks/index.html"><a class="padding" href="/codes/codes_bash/find_update_symlinks/index.html">update symlinks</a></li></ul></li>
+            <li class="headless " data-nav-id=""><input type="checkbox" id="R-section-2d6fa88cdaf145d16693178d437bff23" aria-controls="R-subsections-2d6fa88cdaf145d16693178d437bff23"><label for="R-section-2d6fa88cdaf145d16693178d437bff23"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu html/markdown</span></label><span class="padding">html/markdown</span><ul id="R-subsections-2d6fa88cdaf145d16693178d437bff23" class="collapsible-menu">
+            <li class="" data-nav-id="/codes/codes_markdown/make_table/index.html"><a class="padding" href="/codes/codes_markdown/make_table/index.html">table</a></li>
+            <li class="" data-nav-id="/codes/codes_markdown/include_html/index.html"><a class="padding" href="/codes/codes_markdown/include_html/index.html">html in md</a></li></ul></li>
+            <li class="headless " data-nav-id=""><input type="checkbox" id="R-section-f2ceb008d41370dd13ebd441f6789f8e" aria-controls="R-subsections-f2ceb008d41370dd13ebd441f6789f8e"><label for="R-section-f2ceb008d41370dd13ebd441f6789f8e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu R</span></label><span class="padding">R</span><ul id="R-subsections-f2ceb008d41370dd13ebd441f6789f8e" class="collapsible-menu">
+            <li class="" data-nav-id="/codes/codes_r/clean_r_env/index.html"><a class="padding" href="/codes/codes_r/clean_r_env/index.html">clean R env</a></li>
+            <li class="" data-nav-id="/codes/codes_r/ggplot_guides/index.html"><a class="padding" href="/codes/codes_r/ggplot_guides/index.html">ggplot guides</a></li>
+            <li class="" data-nav-id="/codes/codes_r/select_ith_element_in_list/index.html"><a class="padding" href="/codes/codes_r/select_ith_element_in_list/index.html">i-th elements of a R list</a></li></ul></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="https://github.com/audrey-onfroy"><a class="padding" href="https://github.com/audrey-onfroy" rel="external" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li class="" data-nav-id="https://www.linkedin.com/in/audrey-onfroy"><a class="padding" href="https://www.linkedin.com/in/audrey-onfroy" rel="external" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+            <li class="R-variantswitcher">
+              <div class="padding menu-control">
+                <i class="fa-fw fas fa-paint-brush"></i>
+                <span>&nbsp;</span>
+                <div class="control-style">
+                  <label class="a11y-only" for="R-select-variant">Theme</label>
+                  <select id="R-select-variant">
+                    <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    <option id="R-select-variant-light-mode" value="light-mode">Light Mode</option>
+                    <option id="R-select-variant-dark-mode" value="dark-mode">Dark Mode</option>
+                  </select>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <script>window.relearn.markVariant();</script>
+            </li>
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/clipboard/clipboard.min.js?1744042519" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1744042519" defer></script>
+    <script src="/js/theme.js?1744042519" defer></script>
+  </body>
+</html>
