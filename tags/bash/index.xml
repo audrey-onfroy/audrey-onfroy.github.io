@@ -6,8 +6,15 @@
     <description></description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remove sensitive files in git history</title>
+      <link>http://localhost:1313/codes/codes_bash/remove_files_git/index.html</link>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/codes/codes_bash/remove_files_git/index.html</guid>
+      <description>Source: https://stackoverflow.com/questions/6403601/purging-file-from-git-repo-failed-unable-to-create-new-backup&#xA;Filter the branch to remove the sensitive files/folders (eg. FILE1 and FOLDER1) from history: git filter-branch --index-filter &#39;git rm -rf --cached --ignore-unmatch FILE1 FOLDER1&#39; HEAD Note: I don’t know how to adapt if there are several branches.&#xA;Push the changes to the branch of interest (eg. main): git push --force --set-upstream origin main From StackOverflow:&#xA;After filter-branch, Git keeps refs to the old commits around, in case something goes wrong.</description>
+    </item>
     <item>
       <title>Define symbolic link</title>
       <link>http://localhost:1313/codes/codes_bash/allow_access/index.html</link>

@@ -16,6 +16,41 @@ var relearn_searchindex = [
     "uri": "/posts/welcome/index.html"
   },
   {
+    "breadcrumb": "Welcome \u003e  Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Bash",
+    "uri": "/tags/bash/index.html"
+  },
+  {
+    "breadcrumb": "Welcome \u003e  Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Git",
+    "uri": "/tags/git/index.html"
+  },
+  {
+    "breadcrumb": "Welcome \u003e  Codes bash",
+    "content": "Source: https://stackoverflow.com/questions/6403601/purging-file-from-git-repo-failed-unable-to-create-new-backup\nFilter the branch to remove the sensitive files/folders (eg. FILE1 and FOLDER1) from history: git filter-branch --index-filter 'git rm -rf --cached --ignore-unmatch FILE1 FOLDER1' HEAD Note: I don’t know how to adapt if there are several branches.\nPush the changes to the branch of interest (eg. main): git push --force --set-upstream origin main From StackOverflow:\nAfter filter-branch, Git keeps refs to the old commits around, in case something goes wrong.\nClean these references (eg, on the branch main): git update-ref -d refs/original/refs/heads/main",
+    "description": "Source: https://stackoverflow.com/questions/6403601/purging-file-from-git-repo-failed-unable-to-create-new-backup\nFilter the branch to remove the sensitive files/folders (eg. FILE1 and FOLDER1) from history: git filter-branch --index-filter 'git rm -rf --cached --ignore-unmatch FILE1 FOLDER1' HEAD Note: I don’t know how to adapt if there are several branches.\nPush the changes to the branch of interest (eg. main): git push --force --set-upstream origin main From StackOverflow:\nAfter filter-branch, Git keeps refs to the old commits around, in case something goes wrong.",
+    "tags": [
+      "Bash",
+      "Git"
+    ],
+    "title": "Remove sensitive files in git history",
+    "uri": "/codes/codes_bash/remove_files_git/index.html"
+  },
+  {
+    "breadcrumb": "Welcome",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tags",
+    "uri": "/tags/index.html"
+  },
+  {
     "breadcrumb": "Welcome \u003e  Codes bash",
     "content": "Here is a code to allow the access to all files within a folder foo, in a project BAR, on the cluster, to all members having access to the BAR project:\n#!/usr/bin/bash setfacl -R -m group:BAR:rwx foo",
     "description": "Here is a code to allow the access to all files within a folder foo, in a project BAR, on the cluster, to all members having access to the BAR project:\n#!/usr/bin/bash setfacl -R -m group:BAR:rwx foo",
@@ -24,14 +59,6 @@ var relearn_searchindex = [
     ],
     "title": "Define symbolic link",
     "uri": "/codes/codes_bash/allow_access/index.html"
-  },
-  {
-    "breadcrumb": "Welcome \u003e  Tags",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tag :: Bash",
-    "uri": "/tags/bash/index.html"
   },
   {
     "breadcrumb": "Welcome \u003e  Codes R",
@@ -82,14 +109,6 @@ var relearn_searchindex = [
     ],
     "title": "Increase the size of the legend keys",
     "uri": "/codes/codes_r/ggplot_guides/index.html"
-  },
-  {
-    "breadcrumb": "Welcome \u003e  Tags",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tag :: Git",
-    "uri": "/tags/git/index.html"
   },
   {
     "breadcrumb": "Welcome \u003e  Tags",
@@ -155,14 +174,6 @@ var relearn_searchindex = [
     ],
     "title": "Make a table",
     "uri": "/codes/codes_markdown/make_table/index.html"
-  },
-  {
-    "breadcrumb": "Welcome",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tags",
-    "uri": "/tags/index.html"
   },
   {
     "breadcrumb": "Welcome \u003e  Codes bash",
