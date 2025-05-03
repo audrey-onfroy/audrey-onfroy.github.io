@@ -5,40 +5,37 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.145.0">
     <meta name="generator" content="Relearn 7.6.1">
-    <meta name="description" content="Source: https://superuser.com/questions/303559/replace-symbolic-links-with-files
-Code:
-#!/usr/bin/bash set -e for link; do test -h &#34;$link&#34; || continue dir=$(dirname &#34;$link&#34;) reltarget=$(readlink &#34;$link&#34;) case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv &#34;$link&#34; cp -afv &#34;$abstarget&#34; &#34;$link&#34; || { # on failure, restore the symlink rm -rfv &#34;$link&#34; ln -sfv &#34;$reltarget&#34; &#34;$link&#34; } done Usage:
-find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
+    <meta name="description" content="This method is suited for computer running under the Linux Ubuntu OS.
+Goal For various reasons, we want to easily switch between two (or more!) version of the R language with RStudio.
+From my side, I have a specific setup of R packages installed within a Singularity environment. But, I fail to access the version of R within this environment, using RStudio. So, I installed everything locally and ask RStudio to open the specific version of R.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Replace symbolic links by the target files :: Audrey Onfroy">
-    <meta name="twitter:description" content="Source: https://superuser.com/questions/303559/replace-symbolic-links-with-files
-Code:
-#!/usr/bin/bash set -e for link; do test -h &#34;$link&#34; || continue dir=$(dirname &#34;$link&#34;) reltarget=$(readlink &#34;$link&#34;) case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv &#34;$link&#34; cp -afv &#34;$abstarget&#34; &#34;$link&#34; || { # on failure, restore the symlink rm -rfv &#34;$link&#34; ln -sfv &#34;$reltarget&#34; &#34;$link&#34; } done Usage:
-find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
-    <meta property="og:url" content="https://audrey-onfroy.github.io/codes/codes_bash/replace_symlinks/index.html">
+    <meta name="twitter:title" content="Access two versions (or more !) of R within RStudio :: Audrey Onfroy">
+    <meta name="twitter:description" content="This method is suited for computer running under the Linux Ubuntu OS.
+Goal For various reasons, we want to easily switch between two (or more!) version of the R language with RStudio.
+From my side, I have a specific setup of R packages installed within a Singularity environment. But, I fail to access the version of R within this environment, using RStudio. So, I installed everything locally and ask RStudio to open the specific version of R.">
+    <meta property="og:url" content="https://audrey-onfroy.github.io/codes/codes_r/two_versions_of_r/index.html">
     <meta property="og:site_name" content="Audrey Onfroy">
-    <meta property="og:title" content="Replace symbolic links by the target files :: Audrey Onfroy">
-    <meta property="og:description" content="Source: https://superuser.com/questions/303559/replace-symbolic-links-with-files
-Code:
-#!/usr/bin/bash set -e for link; do test -h &#34;$link&#34; || continue dir=$(dirname &#34;$link&#34;) reltarget=$(readlink &#34;$link&#34;) case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv &#34;$link&#34; cp -afv &#34;$abstarget&#34; &#34;$link&#34; || { # on failure, restore the symlink rm -rfv &#34;$link&#34; ln -sfv &#34;$reltarget&#34; &#34;$link&#34; } done Usage:
-find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
+    <meta property="og:title" content="Access two versions (or more !) of R within RStudio :: Audrey Onfroy">
+    <meta property="og:description" content="This method is suited for computer running under the Linux Ubuntu OS.
+Goal For various reasons, we want to easily switch between two (or more!) version of the R language with RStudio.
+From my side, I have a specific setup of R packages installed within a Singularity environment. But, I fail to access the version of R within this environment, using RStudio. So, I installed everything locally and ask RStudio to open the specific version of R.">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Codes">
-    <meta property="article:published_time" content="2025-04-07T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-04-07T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-04-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-25T00:00:00+00:00">
+    <meta property="article:tag" content="R">
     <meta property="article:tag" content="Bash">
-    <meta itemprop="name" content="Replace symbolic links by the target files :: Audrey Onfroy">
-    <meta itemprop="description" content="Source: https://superuser.com/questions/303559/replace-symbolic-links-with-files
-Code:
-#!/usr/bin/bash set -e for link; do test -h &#34;$link&#34; || continue dir=$(dirname &#34;$link&#34;) reltarget=$(readlink &#34;$link&#34;) case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv &#34;$link&#34; cp -afv &#34;$abstarget&#34; &#34;$link&#34; || { # on failure, restore the symlink rm -rfv &#34;$link&#34; ln -sfv &#34;$reltarget&#34; &#34;$link&#34; } done Usage:
-find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
-    <meta itemprop="datePublished" content="2025-04-07T00:00:00+00:00">
-    <meta itemprop="dateModified" content="2025-04-07T00:00:00+00:00">
-    <meta itemprop="wordCount" content="59">
-    <meta itemprop="keywords" content="Bash">
-    <title>Replace symbolic links by the target files :: Audrey Onfroy</title>
+    <meta itemprop="name" content="Access two versions (or more !) of R within RStudio :: Audrey Onfroy">
+    <meta itemprop="description" content="This method is suited for computer running under the Linux Ubuntu OS.
+Goal For various reasons, we want to easily switch between two (or more!) version of the R language with RStudio.
+From my side, I have a specific setup of R packages installed within a Singularity environment. But, I fail to access the version of R within this environment, using RStudio. So, I installed everything locally and ask RStudio to open the specific version of R.">
+    <meta itemprop="datePublished" content="2025-04-25T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2025-04-25T00:00:00+00:00">
+    <meta itemprop="wordCount" content="588">
+    <meta itemprop="keywords" content="R,Bash">
+    <title>Access two versions (or more !) of R within RStudio :: Audrey Onfroy</title>
     <link href="/images/favicon.ico?1746314620" rel="icon" type="image/x-icon" sizes="any">
     <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746314620" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746314620" rel="stylesheet"></noscript>
     <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1746314620" rel="stylesheet">
@@ -55,7 +52,7 @@ find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = `.min`;
-      window.relearn.path='\/codes\/codes_bash\/replace_symlinks\/index.html';
+      window.relearn.path='\/codes\/codes_r\/two_versions_of_r\/index.html';
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/audrey-onfroy.github.io';
@@ -107,7 +104,7 @@ find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/codes/codes_bash/replace_symlinks/index.html">
+  <body class="mobile-support html" data-url="/codes/codes_r/two_versions_of_r/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -118,7 +115,19 @@ find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#goal">Goal</a></li>
+    <li><a href="#method">Method</a>
+      <ul>
+        <li><a href="#locate-or-install-the-r-versions-of-interest">Locate or install the R versions of interest</a></li>
+        <li><a href="#define-aliases">Define aliases</a></li>
+        <li><a href="#define-shortcuts">Define shortcuts</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
@@ -126,13 +135,13 @@ find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Welcome</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/codes/index.html"><span itemprop="name">Codes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/codes/codes_bash/index.html"><span itemprop="name">bash</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">replace symlinks</span><meta itemprop="position" content="4"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/codes/codes_r/index.html"><span itemprop="name">R</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">two versions of R</span><meta itemprop="position" content="4"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_bash/find_pattern_files/index.html" title="Find a specific pattern in a bunsh of files (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_r/index.html" title="R (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_bash/find_update_symlinks/index.html" title="Update symbolic links (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_r/clean_r_env/index.html" title="Clean R environment but... (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -153,39 +162,131 @@ find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
 <div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
   <ul>
     <li><a class="term-link" href="/tags/bash/index.html">Bash</a></li>
+    <li><a class="term-link" href="/tags/r/index.html">R</a></li>
   </ul>
 </div>
   </header>
 
-<h1 id="replace-symbolic-links-by-the-target-files">Replace symbolic links by the target files</h1>
+<h1 id="access-two-versions-or-more--of-r-within-rstudio">Access two versions (or more !) of R within RStudio</h1>
 
-<p>Source: <a href="https://superuser.com/questions/303559/replace-symbolic-links-with-files" rel="external" target="_blank">https://superuser.com/questions/303559/replace-symbolic-links-with-files</a></p>
-<p>Code:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>set -e
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> link; <span style="color:#66d9ef">do</span>
-</span></span><span style="display:flex;"><span>    test -h <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">continue</span>
+<p>This method is suited for computer running under the Linux Ubuntu OS.</p>
+<h2 id="goal">Goal</h2>
+<p>For various reasons, we want to easily switch between two (or more!) version of the R language with RStudio.</p>
+<p>From my side, I have a specific setup of R packages installed within a Singularity environment. But, I fail to access the version of R within this environment, using RStudio. So, I installed everything locally and ask RStudio to open the specific version of R.</p>
+<h2 id="method">Method</h2>
+<p>The method consists in:</p>
+<ol>
+<li>locate the path to R versions of interest</li>
+<li>define alias to open RStudio using each of these versions</li>
+<li>define desktop shortcuts to open RStudio in one click</li>
+</ol>
+<h3 id="locate-or-install-the-r-versions-of-interest">Locate or install the R versions of interest</h3>
+<p>First, locate the folders where are installed the R versions of interest. For me, I have:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Version</th>
+          <th style="text-align: center">Folder</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">3.6.3</td>
+          <td style="text-align: center"><code>/usr/local/src/R-3.6.3</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">4.2.2</td>
+          <td style="text-align: center"><code>/usr/local/src/R-4.2.2</code></td>
+      </tr>
+  </tbody>
+</table>
+<img src="/images/1_local_scr.png" alt="local_src" width="90%">
+<br>
+<p>Exemple to install R version 3.6.3:</p>
+<ol>
+<li>Download the archive associated with the version of interest there: <code>https://cran.r-project.org/src/base/</code> (eg. <code>R-3.6.3.tar.gz</code>)</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>version<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;3.6.3&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    dir<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>dirname <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span>
-</span></span><span style="display:flex;"><span>    reltarget<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>readlink <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> $reltarget in
-</span></span><span style="display:flex;"><span>        /*<span style="color:#f92672">)</span> abstarget<span style="color:#f92672">=</span>$reltarget;;
-</span></span><span style="display:flex;"><span>        *<span style="color:#f92672">)</span>  abstarget<span style="color:#f92672">=</span>$dir/$reltarget;;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">esac</span>
+</span></span><span style="display:flex;"><span>wget -O R-<span style="color:#e6db74">${</span>version<span style="color:#e6db74">}</span>.tar.gz https://cran.r-project.org/src/base/R-<span style="color:#e6db74">${</span>version:0:1<span style="color:#e6db74">}</span>/R-<span style="color:#e6db74">${</span>version<span style="color:#e6db74">}</span>.tar.gz</span></span></code></pre></div>
+<ol start="2">
+<li>Decompress the archive in the final folder.</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Move the archive in the final folder</span>
+</span></span><span style="display:flex;"><span>sudo mv R-<span style="color:#e6db74">${</span>version<span style="color:#e6db74">}</span>.tar.gz /usr/local/src/
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    rm -fv <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>    cp -afv <span style="color:#e6db74">&#34;</span>$abstarget<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># on failure, restore the symlink</span>
-</span></span><span style="display:flex;"><span>        rm -rfv <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>        ln -sfv <span style="color:#e6db74">&#34;</span>$reltarget<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span></span></span></code></pre></div>
-<p>Usage:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type l -exec /path_to/replace_symlinks.sh <span style="color:#f92672">{}</span> +</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Decompress the archive</span>
+</span></span><span style="display:flex;"><span>cd /usr/local/src/
+</span></span><span style="display:flex;"><span>sudo tar -zxvf R-<span style="color:#e6db74">${</span>version<span style="color:#e6db74">}</span>.tar.gz
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Remove the archive</span>
+</span></span><span style="display:flex;"><span>sudo rm -f R-<span style="color:#e6db74">${</span>version<span style="color:#e6db74">}</span>.tar.gz
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Change directory to the uncompress archive</span>
+</span></span><span style="display:flex;"><span>cd R-<span style="color:#e6db74">${</span>version<span style="color:#e6db74">}</span></span></span></code></pre></div>
+<ol start="3">
+<li>Install R.</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo ./configure 
+</span></span><span style="display:flex;"><span>sudo make
+</span></span><span style="display:flex;"><span>sudo make install</span></span></code></pre></div>
+<ol start="4">
+<li>Check the installed version.</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>R --version</span></span></code></pre></div>
+<br>
+<p>The default R version used by RStudio is accessible by the <code>which R</code> command. It can be <code>/usr/bin/R</code>, which is a shortcut for the last version installed. If you installed first R 4.2.2 and then R 3.6.3, <code>/usr/bin/R --version</code> will show the 3.6.3 version.</p>
+<p><em>Note</em>: Within RStudio, another R version can be forced by setting the <code>RSTUDIO_WHICH_R</code> variable in the <code>~/.Renviron</code> (or <code>~/.profile</code> or <code>~/.bashrc</code>) file. For instance:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>RSTUDIO_WHICH_R<span style="color:#f92672">=</span>/usr/local/src/R-4.2.2/bin/R</span></span></code></pre></div>
+<h3 id="define-aliases">Define aliases</h3>
+<p>In the <code>~/.bashrc</code> file, create as many aliases as you have R versions of interest.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>alias r363<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;export RSTUDIO_WHICH_R=&#39;/usr/local/src/R-3.6.3/bin/R&#39; rstudio&#34;</span>
+</span></span><span style="display:flex;"><span>alias r422<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;export RSTUDIO_WHICH_R=&#39;/usr/local/src/R-4.2.2/bin/R&#39; rstudio&#34;</span></span></span></code></pre></div>
+<p><em>Note</em>: The above commands work for Ubuntu 24.04. However, to Ubuntu 20.04, a <code>;</code> should be added:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>alias r363<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;export RSTUDIO_WHICH_R=&#39;/usr/local/src/R-3.6.3/bin/R&#39; ; rstudio&#34;</span>
+</span></span><span style="display:flex;"><span>alias r422<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;export RSTUDIO_WHICH_R=&#39;/usr/local/src/R-4.2.2/bin/R&#39; ; rstudio&#34;</span></span></span></code></pre></div>
+<p>To consider the changes, source the <code>~/.bashrc</code> file:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source ~/.bashrc</span></span></code></pre></div>
+<p>You should now be able to open RStudio with R 3.6.3 (or R 4.2.2) by running the <code>r363</code> (or <code>r422</code>) alias command in the terminal.</p>
+<p><em>Note</em>: Using the <code>~/.profile</code> file to define an alias was not working on my computer, running under Ubuntu 20.04.</p>
+<h3 id="define-shortcuts">Define shortcuts</h3>
+<p>To avoid opening the terminal and typing 4 characters to open RStudio, we can define shortcuts ! The shortcut will be represented as a logo, pinned to the dashboard. For this, many tutorials exist. I followed the one from <a href="https://richhewlett.com/2021/03/27/creating-linux-desktop-shortcuts/" rel="external" target="_blank">Rich Hewlett</a>.</p>
+<p>Create a <code>.desktop</code> file, for instance called <code>rstudio_with_r363.desktop</code>, containing:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0"><code>[Desktop Entry]
+Type=Application
+Terminal=false
+Name=RStudio R3.6.3
+Icon=/path/to/a/beautiful/rstudio_pink.png
+Exec=bash -c &#39;exec bash -i &lt;&lt;&lt; &#34;r363&#34; &#39;
+Categories=Application;</code></pre></div>
+<p>Details:</p>
+<ul>
+<li><code>Terminal=false</code> to not open the terminal in background</li>
+<li><code>Name</code> is the hover text when you pass the cursor above the icon</li>
+<li><code>Icon</code> corresponds to the path to the icon</li>
+<li><code>Exec</code> is a command behind the shortcut. I found it on <a href="https://askubuntu.com/questions/710823/create-a-clickable-desktop-shortcut-for-an-alias" rel="external" target="_blank">Stackoverflow</a></li>
+<li>Do not forget the <code>;</code> in the end</li>
+</ul>
+<p>You may have as many <code>.desktop</code> files as you have R versions of interest.</p>
+<p>To add the shortcuts in the dashboard from Ubuntu, save the <code>.desktop</code> files in the <code>~/.local/share/applications</code> folder.</p>
+<img src="/images/2_desktop_app.png" alt="desktop_app" width="90%">
+<br>
+<p>Then, pin the shortcut to the dashboard:</p>
+<ul>
+<li>find the shortcut using its <code>Name</code>, in the Ubuntu Menu</li>
+<li>right click to &lsquo;Pin to Dash&rsquo;</li>
+</ul>
+<p>No need to restart the computer: everything should be well recognized !</p>
+<br>
+<br>
+<p>Resources:</p>
+<ul>
+<li><a href="https://richhewlett.com/2021/03/27/creating-linux-desktop-shortcuts/" rel="external" target="_blank">Rich Hewlett&rsquo;s blog</a></li>
+<li><a href="https://askubuntu.com/questions/710823/create-a-clickable-desktop-shortcut-for-an-alias" rel="external" target="_blank">Stackoverflow</a></li>
+</ul>
 
   <footer class="footline">
-              <i class='fa-fw fas fa-calendar'></i> Apr 7, 2025
+              <i class='fa-fw fas fa-calendar'></i> Apr 25, 2025
   </footer>
 </article>
         </div>
@@ -235,18 +336,18 @@ find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
             <li class="" data-nav-id="/posts/welcome/index.html"><a class="padding" href="/posts/welcome/index.html">Welcome</a></li></ul></li>
             <li class="" data-nav-id="/tools/index.html"><input type="checkbox" id="R-section-bf1399820dde3dd110e03ace4147ff86" aria-controls="R-subsections-bf1399820dde3dd110e03ace4147ff86"><label for="R-section-bf1399820dde3dd110e03ace4147ff86"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Tools</span></label><a class="padding" href="/tools/index.html"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</a><ul id="R-subsections-bf1399820dde3dd110e03ace4147ff86" class="collapsible-menu"></ul></li>
             <li class="parent " data-nav-id="/codes/index.html"><input type="checkbox" id="R-section-8c71a3e142467619dfd1d6f065895b8a" aria-controls="R-subsections-8c71a3e142467619dfd1d6f065895b8a" checked><label for="R-section-8c71a3e142467619dfd1d6f065895b8a"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Codes</span></label><a class="padding" href="/codes/index.html"><i class="fa-solid fa-code"></i> Codes</a><ul id="R-subsections-8c71a3e142467619dfd1d6f065895b8a" class="collapsible-menu">
-            <li class="parent " data-nav-id="/codes/codes_bash/index.html"><input type="checkbox" id="R-section-fde67a55e18af009c54a9c1a8db4e80b" aria-controls="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" checked><label for="R-section-fde67a55e18af009c54a9c1a8db4e80b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu bash</span></label><a class="padding" href="/codes/codes_bash/index.html">bash</a><ul id="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" class="collapsible-menu">
+            <li class="" data-nav-id="/codes/codes_bash/index.html"><input type="checkbox" id="R-section-fde67a55e18af009c54a9c1a8db4e80b" aria-controls="R-subsections-fde67a55e18af009c54a9c1a8db4e80b"><label for="R-section-fde67a55e18af009c54a9c1a8db4e80b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu bash</span></label><a class="padding" href="/codes/codes_bash/index.html">bash</a><ul id="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_bash/allow_access/index.html"><a class="padding" href="/codes/codes_bash/allow_access/index.html">allow files access on cluster</a></li>
             <li class="" data-nav-id="/codes/codes_bash/find_with_colors/index.html"><a class="padding" href="/codes/codes_bash/find_with_colors/index.html">color find output</a></li>
             <li class="" data-nav-id="/codes/codes_bash/define_symlinks/index.html"><a class="padding" href="/codes/codes_bash/define_symlinks/index.html">define symlinks</a></li>
             <li class="" data-nav-id="/codes/codes_bash/find_pattern_files/index.html"><a class="padding" href="/codes/codes_bash/find_pattern_files/index.html">find pattern in files</a></li>
-            <li class="active " data-nav-id="/codes/codes_bash/replace_symlinks/index.html"><a class="padding" href="/codes/codes_bash/replace_symlinks/index.html">replace symlinks</a></li>
+            <li class="" data-nav-id="/codes/codes_bash/replace_symlinks/index.html"><a class="padding" href="/codes/codes_bash/replace_symlinks/index.html">replace symlinks</a></li>
             <li class="" data-nav-id="/codes/codes_bash/find_update_symlinks/index.html"><a class="padding" href="/codes/codes_bash/find_update_symlinks/index.html">update symlinks</a></li></ul></li>
             <li class="" data-nav-id="/codes/codes_git/index.html"><input type="checkbox" id="R-section-96f573561301a0c9c107153d94871871" aria-controls="R-subsections-96f573561301a0c9c107153d94871871"><label for="R-section-96f573561301a0c9c107153d94871871"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Git</span></label><a class="padding" href="/codes/codes_git/index.html">Git</a><ul id="R-subsections-96f573561301a0c9c107153d94871871" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_git/remove_files_git/index.html"><a class="padding" href="/codes/codes_git/remove_files_git/index.html">remove files git</a></li>
             <li class="" data-nav-id="/codes/codes_git/split_repo_submodule_with_history/index.html"><a class="padding" href="/codes/codes_git/split_repo_submodule_with_history/index.html">split &#43; submodule &#43; history</a></li></ul></li>
-            <li class="" data-nav-id="/codes/codes_r/index.html"><input type="checkbox" id="R-section-f2ceb008d41370dd13ebd441f6789f8e" aria-controls="R-subsections-f2ceb008d41370dd13ebd441f6789f8e"><label for="R-section-f2ceb008d41370dd13ebd441f6789f8e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu R</span></label><a class="padding" href="/codes/codes_r/index.html">R</a><ul id="R-subsections-f2ceb008d41370dd13ebd441f6789f8e" class="collapsible-menu">
-            <li class="" data-nav-id="/codes/codes_r/two_versions_of_r/index.html"><a class="padding" href="/codes/codes_r/two_versions_of_r/index.html">two versions of R</a></li>
+            <li class="parent " data-nav-id="/codes/codes_r/index.html"><input type="checkbox" id="R-section-f2ceb008d41370dd13ebd441f6789f8e" aria-controls="R-subsections-f2ceb008d41370dd13ebd441f6789f8e" checked><label for="R-section-f2ceb008d41370dd13ebd441f6789f8e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu R</span></label><a class="padding" href="/codes/codes_r/index.html">R</a><ul id="R-subsections-f2ceb008d41370dd13ebd441f6789f8e" class="collapsible-menu">
+            <li class="active " data-nav-id="/codes/codes_r/two_versions_of_r/index.html"><a class="padding" href="/codes/codes_r/two_versions_of_r/index.html">two versions of R</a></li>
             <li class="" data-nav-id="/codes/codes_r/clean_r_env/index.html"><a class="padding" href="/codes/codes_r/clean_r_env/index.html">clean R env</a></li>
             <li class="" data-nav-id="/codes/codes_r/ggplot_guides/index.html"><a class="padding" href="/codes/codes_r/ggplot_guides/index.html">ggplot guides</a></li>
             <li class="" data-nav-id="/codes/codes_r/select_ith_element_in_list/index.html"><a class="padding" href="/codes/codes_r/select_ith_element_in_list/index.html">i-th elements of a R list</a></li></ul></li>

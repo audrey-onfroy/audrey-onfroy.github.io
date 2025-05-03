@@ -5,15 +5,15 @@
     <link>https://audrey-onfroy.github.io/posts/index.html</link>
     <description></description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 19 May 2022 00:00:00 +0000</lastBuildDate>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Jun 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://audrey-onfroy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Welcome to my GitHub pages !</title>
+      <title>Welcome to my GitHub Pages !</title>
       <link>https://audrey-onfroy.github.io/posts/welcome/index.html</link>
-      <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://audrey-onfroy.github.io/posts/welcome/index.html</guid>
-      <description>Welcome</description>
+      <description>I’ve been planning to build my GitHub Pages for a while - and I finally did it !</description>
     </item>
   </channel>
 </rss>

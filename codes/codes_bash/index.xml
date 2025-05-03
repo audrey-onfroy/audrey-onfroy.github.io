@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bash :: Tag :: Audrey Onfroy</title>
-    <link>https://audrey-onfroy.github.io/tags/bash/index.html</link>
-    <description></description>
+    <title>bash :: Audrey Onfroy</title>
+    <link>https://audrey-onfroy.github.io/codes/codes_bash/index.html</link>
+    <description>Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://audrey-onfroy.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Access two versions (or more !) of R within RStudio</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_r/two_versions_of_r/index.html</link>
-      <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_r/two_versions_of_r/index.html</guid>
-      <description>This method is suited for computer running under the Linux Ubuntu OS.&#xA;Goal For various reasons, we want to easily switch between two (or more!) version of the R language with RStudio.&#xA;From my side, I have a specific setup of R packages installed within a Singularity environment. But, I fail to access the version of R within this environment, using RStudio. So, I installed everything locally and ask RStudio to open the specific version of R.</description>
-    </item>
-    <item>
-      <title>Remove sensitive files in git history</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_git/remove_files_git/index.html</link>
-      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_git/remove_files_git/index.html</guid>
-      <description>Source: https://stackoverflow.com/questions/6403601/purging-file-from-git-repo-failed-unable-to-create-new-backup&#xA;Filter the branch to remove the sensitive files/folders (eg. FILE1 and FOLDER1) from history: git filter-branch --index-filter &#39;git rm -rf --cached --ignore-unmatch FILE1 FOLDER1&#39; HEAD Note: I don’t know how to adapt if there are several branches.&#xA;Push the changes to the branch of interest (eg. main): git push --force --set-upstream origin main From StackOverflow:&#xA;After filter-branch, Git keeps refs to the old commits around, in case something goes wrong.</description>
-    </item>
+    <lastBuildDate>Mon, 07 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://audrey-onfroy.github.io/codes/codes_bash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Allow files access on cluster</title>
       <link>https://audrey-onfroy.github.io/codes/codes_bash/allow_access/index.html</link>

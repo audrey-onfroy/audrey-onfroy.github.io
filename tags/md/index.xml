@@ -20,7 +20,7 @@
       <link>https://audrey-onfroy.github.io/codes/codes_markdown/include_html/index.html</link>
       <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
       <guid>https://audrey-onfroy.github.io/codes/codes_markdown/include_html/index.html</guid>
-      <description>Open in a new tab The follow picture is clickable, to open the HTML file in a browser tab:&#xA;The code is:&#xA;&lt;a href=&#34;https://audrey-onfroy.github.io/html/just_a_page.html&#34;&gt; &lt;img src=&#34;https://audrey-onfroy.github.io/image/open_in_new_tab.jpg&#34; alt=&#34;.&#34; width=&#34;30vw&#34;&gt; &lt;/a&gt; Embed the HTML page The code is:&#xA;&lt;iframe width=&#34;100%&#34; height=&#34;2300&#34; src=&#34;https://audrey-onfroy.github.io/html/just_a_page.html&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt; &lt;/iframe&gt; The result is:</description>
+      <description>Open in a new tab The following picture is clickable, to open the HTML file in a browser tab:&#xA;The code behind this picture is:&#xA;&lt;a href=&#34;https://audrey-onfroy.github.io/pages/just_a_page.html&#34;&gt; &lt;img src=&#34;https://audrey-onfroy.github.io/images/open_in_new_tab.jpg&#34; alt=&#34;.&#34; width=&#34;30vw&#34;&gt; &lt;/a&gt; Embed the HTML page The code of the iframe below is:&#xA;&lt;iframe width=&#34;100%&#34; height=&#34;2300&#34; src=&#34;https://audrey-onfroy.github.io/pages/just_a_page.html&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt; &lt;/iframe&gt; The result is:</description>
     </item>
   </channel>
 </rss>

@@ -5,40 +5,24 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.145.0">
     <meta name="generator" content="Relearn 7.6.1">
-    <meta name="description" content="Source: https://superuser.com/questions/303559/replace-symbolic-links-with-files
-Code:
-#!/usr/bin/bash set -e for link; do test -h &#34;$link&#34; || continue dir=$(dirname &#34;$link&#34;) reltarget=$(readlink &#34;$link&#34;) case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv &#34;$link&#34; cp -afv &#34;$abstarget&#34; &#34;$link&#34; || { # on failure, restore the symlink rm -rfv &#34;$link&#34; ln -sfv &#34;$reltarget&#34; &#34;$link&#34; } done Usage:
-find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
+    <meta name="description" content="Make a table Include an HTML file issued from a R Markdown file">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Replace symbolic links by the target files :: Audrey Onfroy">
-    <meta name="twitter:description" content="Source: https://superuser.com/questions/303559/replace-symbolic-links-with-files
-Code:
-#!/usr/bin/bash set -e for link; do test -h &#34;$link&#34; || continue dir=$(dirname &#34;$link&#34;) reltarget=$(readlink &#34;$link&#34;) case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv &#34;$link&#34; cp -afv &#34;$abstarget&#34; &#34;$link&#34; || { # on failure, restore the symlink rm -rfv &#34;$link&#34; ln -sfv &#34;$reltarget&#34; &#34;$link&#34; } done Usage:
-find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
-    <meta property="og:url" content="https://audrey-onfroy.github.io/codes/codes_bash/replace_symlinks/index.html">
+    <meta name="twitter:title" content="html / markdown :: Audrey Onfroy">
+    <meta name="twitter:description" content="Make a table Include an HTML file issued from a R Markdown file">
+    <meta property="og:url" content="https://audrey-onfroy.github.io/codes/codes_markdown/index.html">
     <meta property="og:site_name" content="Audrey Onfroy">
-    <meta property="og:title" content="Replace symbolic links by the target files :: Audrey Onfroy">
-    <meta property="og:description" content="Source: https://superuser.com/questions/303559/replace-symbolic-links-with-files
-Code:
-#!/usr/bin/bash set -e for link; do test -h &#34;$link&#34; || continue dir=$(dirname &#34;$link&#34;) reltarget=$(readlink &#34;$link&#34;) case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv &#34;$link&#34; cp -afv &#34;$abstarget&#34; &#34;$link&#34; || { # on failure, restore the symlink rm -rfv &#34;$link&#34; ln -sfv &#34;$reltarget&#34; &#34;$link&#34; } done Usage:
-find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
+    <meta property="og:title" content="html / markdown :: Audrey Onfroy">
+    <meta property="og:description" content="Make a table Include an HTML file issued from a R Markdown file">
     <meta property="og:locale" content="en">
-    <meta property="og:type" content="article">
-    <meta property="article:section" content="Codes">
-    <meta property="article:published_time" content="2025-04-07T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-04-07T00:00:00+00:00">
-    <meta property="article:tag" content="Bash">
-    <meta itemprop="name" content="Replace symbolic links by the target files :: Audrey Onfroy">
-    <meta itemprop="description" content="Source: https://superuser.com/questions/303559/replace-symbolic-links-with-files
-Code:
-#!/usr/bin/bash set -e for link; do test -h &#34;$link&#34; || continue dir=$(dirname &#34;$link&#34;) reltarget=$(readlink &#34;$link&#34;) case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv &#34;$link&#34; cp -afv &#34;$abstarget&#34; &#34;$link&#34; || { # on failure, restore the symlink rm -rfv &#34;$link&#34; ln -sfv &#34;$reltarget&#34; &#34;$link&#34; } done Usage:
-find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="html / markdown :: Audrey Onfroy">
+    <meta itemprop="description" content="Make a table Include an HTML file issued from a R Markdown file">
     <meta itemprop="datePublished" content="2025-04-07T00:00:00+00:00">
     <meta itemprop="dateModified" content="2025-04-07T00:00:00+00:00">
-    <meta itemprop="wordCount" content="59">
-    <meta itemprop="keywords" content="Bash">
-    <title>Replace symbolic links by the target files :: Audrey Onfroy</title>
+    <meta itemprop="wordCount" content="13">
+    <title>html / markdown :: Audrey Onfroy</title>
+    <link href="/codes/codes_markdown/index.xml" rel="alternate" type="application/rss+xml" title="html / markdown :: Audrey Onfroy">
     <link href="/images/favicon.ico?1746314620" rel="icon" type="image/x-icon" sizes="any">
     <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746314620" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1746314620" rel="stylesheet"></noscript>
     <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1746314620" rel="stylesheet">
@@ -55,9 +39,9 @@ find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = `.min`;
-      window.relearn.path='\/codes\/codes_bash\/replace_symlinks\/index.html';
-      window.relearn.relBasePath='..\/..\/..';
-      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.path='\/codes\/codes_markdown\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='https:\/\/audrey-onfroy.github.io';
       window.relearn.contentLangs=['en'];
       window.relearn.index_js_url="/searchindex.en.js?1746314620";
@@ -107,7 +91,7 @@ find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/codes/codes_bash/replace_symlinks/index.html">
+  <body class="mobile-support html" data-url="/codes/codes_markdown/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -126,13 +110,12 @@ find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Welcome</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/codes/index.html"><span itemprop="name">Codes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/codes/codes_bash/index.html"><span itemprop="name">bash</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">replace symlinks</span><meta itemprop="position" content="4"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">html / markdown</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_bash/find_pattern_files/index.html" title="Find a specific pattern in a bunsh of files (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_r/select_ith_element_in_list/index.html" title="Subset the i-th elements of a nested list (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_bash/find_update_symlinks/index.html" title="Update symbolic links (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_markdown/make_table/index.html" title="Make a table (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -146,43 +129,18 @@ find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable codes" tabindex="-1">
+      <main id="R-body-inner" class="highlightable section" tabindex="-1">
         <div class="flex-block-wrapper">
 <article class="default">
   <header class="headline">
-<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
-  <ul>
-    <li><a class="term-link" href="/tags/bash/index.html">Bash</a></li>
-  </ul>
-</div>
   </header>
 
-<h1 id="replace-symbolic-links-by-the-target-files">Replace symbolic links by the target files</h1>
+<h1 id="html--markdown">html / markdown</h1>
 
-<p>Source: <a href="https://superuser.com/questions/303559/replace-symbolic-links-with-files" rel="external" target="_blank">https://superuser.com/questions/303559/replace-symbolic-links-with-files</a></p>
-<p>Code:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>set -e
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> link; <span style="color:#66d9ef">do</span>
-</span></span><span style="display:flex;"><span>    test -h <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">continue</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    dir<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>dirname <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span>
-</span></span><span style="display:flex;"><span>    reltarget<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>readlink <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">)</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> $reltarget in
-</span></span><span style="display:flex;"><span>        /*<span style="color:#f92672">)</span> abstarget<span style="color:#f92672">=</span>$reltarget;;
-</span></span><span style="display:flex;"><span>        *<span style="color:#f92672">)</span>  abstarget<span style="color:#f92672">=</span>$dir/$reltarget;;
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">esac</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    rm -fv <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>    cp -afv <span style="color:#e6db74">&#34;</span>$abstarget<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">||</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># on failure, restore the symlink</span>
-</span></span><span style="display:flex;"><span>        rm -rfv <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>        ln -sfv <span style="color:#e6db74">&#34;</span>$reltarget<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$link<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span></span></span></code></pre></div>
-<p>Usage:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type l -exec /path_to/replace_symlinks.sh <span style="color:#f92672">{}</span> +</span></span></code></pre></div>
+<ul>
+<li><a href="/codes/codes_markdown/make_table/index.html">Make a table</a></li>
+<li><a href="/codes/codes_markdown/include_html/index.html">Include an HTML file issued from a R Markdown file</a></li>
+</ul>
 
   <footer class="footline">
               <i class='fa-fw fas fa-calendar'></i> Apr 7, 2025
@@ -235,12 +193,12 @@ find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
             <li class="" data-nav-id="/posts/welcome/index.html"><a class="padding" href="/posts/welcome/index.html">Welcome</a></li></ul></li>
             <li class="" data-nav-id="/tools/index.html"><input type="checkbox" id="R-section-bf1399820dde3dd110e03ace4147ff86" aria-controls="R-subsections-bf1399820dde3dd110e03ace4147ff86"><label for="R-section-bf1399820dde3dd110e03ace4147ff86"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Tools</span></label><a class="padding" href="/tools/index.html"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</a><ul id="R-subsections-bf1399820dde3dd110e03ace4147ff86" class="collapsible-menu"></ul></li>
             <li class="parent " data-nav-id="/codes/index.html"><input type="checkbox" id="R-section-8c71a3e142467619dfd1d6f065895b8a" aria-controls="R-subsections-8c71a3e142467619dfd1d6f065895b8a" checked><label for="R-section-8c71a3e142467619dfd1d6f065895b8a"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Codes</span></label><a class="padding" href="/codes/index.html"><i class="fa-solid fa-code"></i> Codes</a><ul id="R-subsections-8c71a3e142467619dfd1d6f065895b8a" class="collapsible-menu">
-            <li class="parent " data-nav-id="/codes/codes_bash/index.html"><input type="checkbox" id="R-section-fde67a55e18af009c54a9c1a8db4e80b" aria-controls="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" checked><label for="R-section-fde67a55e18af009c54a9c1a8db4e80b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu bash</span></label><a class="padding" href="/codes/codes_bash/index.html">bash</a><ul id="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" class="collapsible-menu">
+            <li class="" data-nav-id="/codes/codes_bash/index.html"><input type="checkbox" id="R-section-fde67a55e18af009c54a9c1a8db4e80b" aria-controls="R-subsections-fde67a55e18af009c54a9c1a8db4e80b"><label for="R-section-fde67a55e18af009c54a9c1a8db4e80b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu bash</span></label><a class="padding" href="/codes/codes_bash/index.html">bash</a><ul id="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_bash/allow_access/index.html"><a class="padding" href="/codes/codes_bash/allow_access/index.html">allow files access on cluster</a></li>
             <li class="" data-nav-id="/codes/codes_bash/find_with_colors/index.html"><a class="padding" href="/codes/codes_bash/find_with_colors/index.html">color find output</a></li>
             <li class="" data-nav-id="/codes/codes_bash/define_symlinks/index.html"><a class="padding" href="/codes/codes_bash/define_symlinks/index.html">define symlinks</a></li>
             <li class="" data-nav-id="/codes/codes_bash/find_pattern_files/index.html"><a class="padding" href="/codes/codes_bash/find_pattern_files/index.html">find pattern in files</a></li>
-            <li class="active " data-nav-id="/codes/codes_bash/replace_symlinks/index.html"><a class="padding" href="/codes/codes_bash/replace_symlinks/index.html">replace symlinks</a></li>
+            <li class="" data-nav-id="/codes/codes_bash/replace_symlinks/index.html"><a class="padding" href="/codes/codes_bash/replace_symlinks/index.html">replace symlinks</a></li>
             <li class="" data-nav-id="/codes/codes_bash/find_update_symlinks/index.html"><a class="padding" href="/codes/codes_bash/find_update_symlinks/index.html">update symlinks</a></li></ul></li>
             <li class="" data-nav-id="/codes/codes_git/index.html"><input type="checkbox" id="R-section-96f573561301a0c9c107153d94871871" aria-controls="R-subsections-96f573561301a0c9c107153d94871871"><label for="R-section-96f573561301a0c9c107153d94871871"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Git</span></label><a class="padding" href="/codes/codes_git/index.html">Git</a><ul id="R-subsections-96f573561301a0c9c107153d94871871" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_git/remove_files_git/index.html"><a class="padding" href="/codes/codes_git/remove_files_git/index.html">remove files git</a></li>
@@ -250,7 +208,7 @@ find . -type l -exec /path_to/replace_symlinks.sh {} &#43;">
             <li class="" data-nav-id="/codes/codes_r/clean_r_env/index.html"><a class="padding" href="/codes/codes_r/clean_r_env/index.html">clean R env</a></li>
             <li class="" data-nav-id="/codes/codes_r/ggplot_guides/index.html"><a class="padding" href="/codes/codes_r/ggplot_guides/index.html">ggplot guides</a></li>
             <li class="" data-nav-id="/codes/codes_r/select_ith_element_in_list/index.html"><a class="padding" href="/codes/codes_r/select_ith_element_in_list/index.html">i-th elements of a R list</a></li></ul></li>
-            <li class="" data-nav-id="/codes/codes_markdown/index.html"><input type="checkbox" id="R-section-2d6fa88cdaf145d16693178d437bff23" aria-controls="R-subsections-2d6fa88cdaf145d16693178d437bff23"><label for="R-section-2d6fa88cdaf145d16693178d437bff23"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu html / markdown</span></label><a class="padding" href="/codes/codes_markdown/index.html">html / markdown</a><ul id="R-subsections-2d6fa88cdaf145d16693178d437bff23" class="collapsible-menu">
+            <li class="active parent " data-nav-id="/codes/codes_markdown/index.html"><input type="checkbox" id="R-section-2d6fa88cdaf145d16693178d437bff23" aria-controls="R-subsections-2d6fa88cdaf145d16693178d437bff23" checked><label for="R-section-2d6fa88cdaf145d16693178d437bff23"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu html / markdown</span></label><a class="padding" href="/codes/codes_markdown/index.html">html / markdown</a><ul id="R-subsections-2d6fa88cdaf145d16693178d437bff23" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_markdown/make_table/index.html"><a class="padding" href="/codes/codes_markdown/make_table/index.html">table</a></li>
             <li class="" data-nav-id="/codes/codes_markdown/include_html/index.html"><a class="padding" href="/codes/codes_markdown/include_html/index.html">html in md</a></li></ul></li></ul></li>
           </ul>
