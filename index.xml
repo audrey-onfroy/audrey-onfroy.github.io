@@ -16,18 +16,25 @@
       <description></description>
     </item>
     <item>
-      <title>Tools</title>
-      <link>https://audrey-onfroy.github.io/tools/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/tools/index.html</guid>
-      <description>aquarius, a R package to analyse scRNA-Seq data&#xA;audrey-onfroy.github.io/aquarius HTML organizer, a tool to arrange knitted Rmd files&#xA;github.com/audrey-onfroy/organize_html</description>
-    </item>
-    <item>
       <title>Codes</title>
       <link>https://audrey-onfroy.github.io/codes/index.html</link>
       <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://audrey-onfroy.github.io/codes/index.html</guid>
       <description>Related to bash:&#xA;Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links Related to Git:&#xA;Remove sensitive files in Git history [Tutorial] Split a GitHub repository into a main repos and a submodule Related to R:&#xA;[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list Related to md / html:</description>
+    </item>
+    <item>
+      <title>Analyses</title>
+      <link>https://audrey-onfroy.github.io/analysis/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://audrey-onfroy.github.io/analysis/index.html</guid>
+      <description>Reanalysis of a public dataset about hair follicle cells&#xA;scRNA-Seq atlas of hair follicle cells in the context of Hidradenitis suppurativa&#xA;Data | Code | Analysis Onfroy et al. (2025), DOI: In Press Data | Code | Analysis Onfroy et al. (2025), DOI: 10.1101/2025.05.28.656362 scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (mouse)&#xA;scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (patients)&#xA;Data | Code | Analysis Radomska et al. (2025), DOI: In Press Data | Code | Analysis Radomska et al. (2025), DOI: In Press</description>
+    </item>
+    <item>
+      <title>Tools</title>
+      <link>https://audrey-onfroy.github.io/tools/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://audrey-onfroy.github.io/tools/index.html</guid>
+      <description>aquarius, a R package to analyse scRNA-Seq data&#xA;audrey-onfroy.github.io/aquarius DOI: coming soon (awaiting for V1 release) HTML organizer, a tool to arrange knitted Rmd files&#xA;github.com/audrey-onfroy/organize_html DOI: 10.5281/zenodo.14505634</description>
     </item>
   </channel>
 </rss>

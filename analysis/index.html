@@ -5,24 +5,38 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.145.0">
     <meta name="generator" content="Relearn 7.6.1+d7685ad3986c906cb10e62854fca7c730df4bf58">
-    <meta name="description" content="[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list">
+    <meta name="description" content="Reanalysis of a public dataset about hair follicle cells
+scRNA-Seq atlas of hair follicle cells in the context of Hidradenitis suppurativa
+Data | Code | Analysis Onfroy et al. (2025), DOI: In Press Data | Code | Analysis Onfroy et al. (2025), DOI: 10.1101/2025.05.28.656362 scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (mouse)
+scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (patients)
+Data | Code | Analysis Radomska et al. (2025), DOI: In Press Data | Code | Analysis Radomska et al. (2025), DOI: In Press">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="R :: Audrey Onfroy">
-    <meta name="twitter:description" content="[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list">
-    <meta property="og:url" content="https://audrey-onfroy.github.io/codes/codes_r/index.html">
+    <meta name="twitter:title" content="Analyses :: Audrey Onfroy">
+    <meta name="twitter:description" content="Reanalysis of a public dataset about hair follicle cells
+scRNA-Seq atlas of hair follicle cells in the context of Hidradenitis suppurativa
+Data | Code | Analysis Onfroy et al. (2025), DOI: In Press Data | Code | Analysis Onfroy et al. (2025), DOI: 10.1101/2025.05.28.656362 scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (mouse)
+scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (patients)
+Data | Code | Analysis Radomska et al. (2025), DOI: In Press Data | Code | Analysis Radomska et al. (2025), DOI: In Press">
+    <meta property="og:url" content="https://audrey-onfroy.github.io/analysis/index.html">
     <meta property="og:site_name" content="Audrey Onfroy">
-    <meta property="og:title" content="R :: Audrey Onfroy">
-    <meta property="og:description" content="[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list">
+    <meta property="og:title" content="Analyses :: Audrey Onfroy">
+    <meta property="og:description" content="Reanalysis of a public dataset about hair follicle cells
+scRNA-Seq atlas of hair follicle cells in the context of Hidradenitis suppurativa
+Data | Code | Analysis Onfroy et al. (2025), DOI: In Press Data | Code | Analysis Onfroy et al. (2025), DOI: 10.1101/2025.05.28.656362 scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (mouse)
+scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (patients)
+Data | Code | Analysis Radomska et al. (2025), DOI: In Press Data | Code | Analysis Radomska et al. (2025), DOI: In Press">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="R :: Audrey Onfroy">
-    <meta itemprop="description" content="[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list">
-    <meta itemprop="datePublished" content="2025-04-25T00:00:00+00:00">
-    <meta itemprop="dateModified" content="2025-04-25T00:00:00+00:00">
-    <meta itemprop="wordCount" content="28">
-    <title>R :: Audrey Onfroy</title>
-    <link href="/codes/codes_r/index.xml" rel="alternate" type="application/rss+xml" title="R :: Audrey Onfroy">
+    <meta itemprop="name" content="Analyses :: Audrey Onfroy">
+    <meta itemprop="description" content="Reanalysis of a public dataset about hair follicle cells
+scRNA-Seq atlas of hair follicle cells in the context of Hidradenitis suppurativa
+Data | Code | Analysis Onfroy et al. (2025), DOI: In Press Data | Code | Analysis Onfroy et al. (2025), DOI: 10.1101/2025.05.28.656362 scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (mouse)
+scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (patients)
+Data | Code | Analysis Radomska et al. (2025), DOI: In Press Data | Code | Analysis Radomska et al. (2025), DOI: In Press">
+    <meta itemprop="wordCount" content="86">
+    <title>Analyses :: Audrey Onfroy</title>
+    <link href="/analysis/index.xml" rel="alternate" type="application/rss+xml" title="Analyses :: Audrey Onfroy">
     <link href="/images/favicon.ico?1749417516" rel="icon" type="image/x-icon" sizes="any">
     <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1749417516" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1749417516" rel="stylesheet"></noscript>
     <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1749417516" rel="stylesheet">
@@ -39,9 +53,9 @@
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = `.min`;
-      window.relearn.path='\/codes\/codes_r\/index.html';
-      window.relearn.relBasePath='..\/..';
-      window.relearn.relBaseUri='..\/..';
+      window.relearn.path='\/analysis\/index.html';
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='https:\/\/audrey-onfroy.github.io';
       window.relearn.contentLangs=['en'];
       window.relearn.index_js_url="/searchindex.en.js?1749417516";
@@ -91,7 +105,7 @@
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/codes/codes_r/index.html">
+  <body class="mobile-support html" data-url="/analysis/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -109,13 +123,12 @@
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Welcome</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/codes/index.html"><span itemprop="name">Codes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">R</span><meta itemprop="position" content="3"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Analyses</span><meta itemprop="position" content="2"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_git/split_repo_submodule_with_history/index.html" title="Split a GitHub repository into a main repos and a submodule (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_markdown/include_html/index.html" title="Include an HTML file issued from a R Markdown file (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_r/two_versions_of_r/index.html" title="Access two versions (or more !) of R within RStudio (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/tools/index.html" title="Tools (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -135,17 +148,61 @@
   <header class="headline">
   </header>
 
-<h1 id="r">R</h1>
+<h1 id="analyses">Analyses</h1>
 
-<ul>
-<li>[Tutorial] <a href="/codes/codes_r/two_versions_of_r/index.html">Access two versions of R within R Studio</a></li>
-<li><a href="/codes/codes_r/clean_r_env/index.html">Clean R environment but&hellip;</a></li>
-<li><a href="/codes/codes_r/ggplot_guides/index.html">Increase the size of the legend keys</a></li>
-<li><a href="/codes/codes_r/select_ith_element_in_list/index.html">Subset the i-th elements of a nested list</a></li>
-</ul>
-
+<br>
+<br>
+<table style="text-align: center;">
+    <tr>
+        <td style="width:50%">
+          <p style="font-size:17px">Reanalysis of a public dataset about <b>hair follicle cells</b></p>
+        </td>
+        <td style="width:50%">
+          <p style="font-size:17px">scRNA-Seq atlas of <b>hair follicle cells in the context of <i>Hidradenitis suppurativa</i></b></p>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%">
+          <a href="https://doi.org/10.5281/zenodo.15591924">
+            <img src="/images/oep.png" alt="mpnst" width="100vw"></a>
+            <a href="https://doi.org/10.5281/zenodo.15103193">Data</a> | <a href="https://doi.org/10.5281/zenodo.15591924">Code</a> | <a href="https://audrey-onfroy.github.io/Onfroy_12tips_ACM_REP_25/">Analysis</a>
+            <br>
+            Onfroy <i>et al.</i> (2025), DOI: <i>In Press</i>
+        </td>
+        <td style="width:50%">
+          <a href="https://doi.org/10.5281/zenodo.15586364">
+            <img src="/images/hs.png" alt="mpnst" width="100vw"></a>
+            <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273109">Data</a> | <a href="https://doi.org/10.5281/zenodo.15586364">Code</a> | <a href="https://audrey-onfroy.github.io/Onfroy_et_al_scRNASeq_HS_2025/">Analysis</a>
+            <br>
+            Onfroy <i>et al.</i> (2025), DOI: <a href="https://doi.org/10.1101/2025.05.28.656362">10.1101/2025.05.28.656362</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%">
+          <p style="font-size:17px">scRNA-Seq atlas of NF1-associated <b>Peripheral Nerve Sheath Tumors</b> (mouse)</p>
+        </td>
+        <td style="width:50%">
+          <p style="font-size:17px">scRNA-Seq atlas of NF1-associated <b>Peripheral Nerve Sheath Tumors</b> (patients)</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:50%">
+          <a href="https://doi.org/10.5281/zenodo.15592072">
+            <img src="/images/mpnst.png" alt="mpnst" width="100vw"></a>
+            <a href="https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-14222">Data</a> | <a href="https://doi.org/10.5281/zenodo.15592072">Code</a> | <a href="https://audrey-onfroy.github.io/Radomska_et_al_2025_Science_Advances/">Analysis</a>
+            <br>
+            Radomska <i>et al.</i> (2025), DOI: <i>In Press</i>
+        </td>
+        <td style="width:50%">
+          <a href="https://doi.org/10.5281/zenodo.15592072">
+            <img src="/images/nf1_patients.png" alt="mpnst" width="100vw"></a>
+            <a href="https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-14222">Data</a> | <a href="https://github.com/audrey-onfroy/NF1_patients_analysis">Code</a> | <a href="https://audrey-onfroy.github.io/Radomska_et_al_2025_Science_Advances/">Analysis</a>
+            <br>
+            Radomska <i>et al.</i> (2025), DOI: <i>In Press</i>
+        </td>
+    </tr>
+</table>
   <footer class="footline">
-              <i class='fa-fw fas fa-calendar'></i> Apr 25, 2025
   </footer>
 </article>
         </div>
@@ -193,7 +250,7 @@
           <ul class="enlarge morespace collapsible-menu">
             <li class="" data-nav-id="/posts/index.html"><input type="checkbox" id="R-section-b4e55eb7e39db1aee6d02808a2267090" aria-controls="R-subsections-b4e55eb7e39db1aee6d02808a2267090"><label for="R-section-b4e55eb7e39db1aee6d02808a2267090"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Posts</span></label><a class="padding" href="/posts/index.html"><i class="fa-regular fa-comment-dots"></i> Posts</a><ul id="R-subsections-b4e55eb7e39db1aee6d02808a2267090" class="collapsible-menu">
             <li class="" data-nav-id="/posts/welcome/index.html"><a class="padding" href="/posts/welcome/index.html">Welcome</a></li></ul></li>
-            <li class="parent " data-nav-id="/codes/index.html"><input type="checkbox" id="R-section-8c71a3e142467619dfd1d6f065895b8a" aria-controls="R-subsections-8c71a3e142467619dfd1d6f065895b8a" checked><label for="R-section-8c71a3e142467619dfd1d6f065895b8a"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Codes</span></label><a class="padding" href="/codes/index.html"><i class="fa-solid fa-code"></i> Codes</a><ul id="R-subsections-8c71a3e142467619dfd1d6f065895b8a" class="collapsible-menu">
+            <li class="" data-nav-id="/codes/index.html"><input type="checkbox" id="R-section-8c71a3e142467619dfd1d6f065895b8a" aria-controls="R-subsections-8c71a3e142467619dfd1d6f065895b8a"><label for="R-section-8c71a3e142467619dfd1d6f065895b8a"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Codes</span></label><a class="padding" href="/codes/index.html"><i class="fa-solid fa-code"></i> Codes</a><ul id="R-subsections-8c71a3e142467619dfd1d6f065895b8a" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_bash/index.html"><input type="checkbox" id="R-section-fde67a55e18af009c54a9c1a8db4e80b" aria-controls="R-subsections-fde67a55e18af009c54a9c1a8db4e80b"><label for="R-section-fde67a55e18af009c54a9c1a8db4e80b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu bash</span></label><a class="padding" href="/codes/codes_bash/index.html">bash</a><ul id="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_bash/allow_access/index.html"><a class="padding" href="/codes/codes_bash/allow_access/index.html">allow files access on cluster</a></li>
             <li class="" data-nav-id="/codes/codes_bash/find_with_colors/index.html"><a class="padding" href="/codes/codes_bash/find_with_colors/index.html">color find output</a></li>
@@ -204,7 +261,7 @@
             <li class="" data-nav-id="/codes/codes_git/index.html"><input type="checkbox" id="R-section-96f573561301a0c9c107153d94871871" aria-controls="R-subsections-96f573561301a0c9c107153d94871871"><label for="R-section-96f573561301a0c9c107153d94871871"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Git</span></label><a class="padding" href="/codes/codes_git/index.html">Git</a><ul id="R-subsections-96f573561301a0c9c107153d94871871" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_git/remove_files_git/index.html"><a class="padding" href="/codes/codes_git/remove_files_git/index.html">remove files git</a></li>
             <li class="" data-nav-id="/codes/codes_git/split_repo_submodule_with_history/index.html"><a class="padding" href="/codes/codes_git/split_repo_submodule_with_history/index.html">split &#43; submodule &#43; history</a></li></ul></li>
-            <li class="active parent " data-nav-id="/codes/codes_r/index.html"><input type="checkbox" id="R-section-f2ceb008d41370dd13ebd441f6789f8e" aria-controls="R-subsections-f2ceb008d41370dd13ebd441f6789f8e" checked><label for="R-section-f2ceb008d41370dd13ebd441f6789f8e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu R</span></label><a class="padding" href="/codes/codes_r/index.html">R</a><ul id="R-subsections-f2ceb008d41370dd13ebd441f6789f8e" class="collapsible-menu">
+            <li class="" data-nav-id="/codes/codes_r/index.html"><input type="checkbox" id="R-section-f2ceb008d41370dd13ebd441f6789f8e" aria-controls="R-subsections-f2ceb008d41370dd13ebd441f6789f8e"><label for="R-section-f2ceb008d41370dd13ebd441f6789f8e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu R</span></label><a class="padding" href="/codes/codes_r/index.html">R</a><ul id="R-subsections-f2ceb008d41370dd13ebd441f6789f8e" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_r/two_versions_of_r/index.html"><a class="padding" href="/codes/codes_r/two_versions_of_r/index.html">two versions of R</a></li>
             <li class="" data-nav-id="/codes/codes_r/clean_r_env/index.html"><a class="padding" href="/codes/codes_r/clean_r_env/index.html">clean R env</a></li>
             <li class="" data-nav-id="/codes/codes_r/ggplot_guides/index.html"><a class="padding" href="/codes/codes_r/ggplot_guides/index.html">ggplot guides</a></li>
@@ -212,7 +269,7 @@
             <li class="" data-nav-id="/codes/codes_markdown/index.html"><input type="checkbox" id="R-section-2d6fa88cdaf145d16693178d437bff23" aria-controls="R-subsections-2d6fa88cdaf145d16693178d437bff23"><label for="R-section-2d6fa88cdaf145d16693178d437bff23"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu html / markdown</span></label><a class="padding" href="/codes/codes_markdown/index.html">html / markdown</a><ul id="R-subsections-2d6fa88cdaf145d16693178d437bff23" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_markdown/make_table/index.html"><a class="padding" href="/codes/codes_markdown/make_table/index.html">table</a></li>
             <li class="" data-nav-id="/codes/codes_markdown/include_html/index.html"><a class="padding" href="/codes/codes_markdown/include_html/index.html">html in md</a></li></ul></li></ul></li>
-            <li class="" data-nav-id="/analysis/index.html"><a class="padding" href="/analysis/index.html"><i class="fa-solid fa-magnifying-glass-chart"></i> Analyses</a></li>
+            <li class="active " data-nav-id="/analysis/index.html"><a class="padding" href="/analysis/index.html"><i class="fa-solid fa-magnifying-glass-chart"></i> Analyses</a></li>
             <li class="" data-nav-id="/tools/index.html"><a class="padding" href="/tools/index.html"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</a></li>
           </ul>
         </div>

@@ -3,7 +3,7 @@
   <channel>
     <title>Tools :: Audrey Onfroy</title>
     <link>https://audrey-onfroy.github.io/tools/index.html</link>
-    <description>aquarius, a R package to analyse scRNA-Seq data&#xA;audrey-onfroy.github.io/aquarius HTML organizer, a tool to arrange knitted Rmd files&#xA;github.com/audrey-onfroy/organize_html</description>
+    <description>aquarius, a R package to analyse scRNA-Seq data&#xA;audrey-onfroy.github.io/aquarius DOI: coming soon (awaiting for V1 release) HTML organizer, a tool to arrange knitted Rmd files&#xA;github.com/audrey-onfroy/organize_html DOI: 10.5281/zenodo.14505634</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://audrey-onfroy.github.io/tools/index.xml" rel="self" type="application/rss+xml" />

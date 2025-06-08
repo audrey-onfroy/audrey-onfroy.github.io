@@ -16,6 +16,14 @@ var relearn_searchindex = [
     "uri": "/posts/index.html"
   },
   {
+    "breadcrumb": "Welcome",
+    "content": "Related to bash:\nAllow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links Related to Git:\nRemove sensitive files in Git history [Tutorial] Split a GitHub repository into a main repos and a submodule Related to R:\n[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list Related to md / html:\nMake a table Include an HTML file issued from a R Markdown file",
+    "description": "Related to bash:\nAllow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links Related to Git:\nRemove sensitive files in Git history [Tutorial] Split a GitHub repository into a main repos and a submodule Related to R:\n[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list Related to md / html:",
+    "tags": [],
+    "title": "Codes",
+    "uri": "/codes/index.html"
+  },
+  {
     "breadcrumb": "",
     "content": "Hello there !\nI am Audrey Onfroy, research engineer in computational biology. My work consists in making sequencing data express their deepest secrets ! I recently achieved my PhD thesis at Mondor Biomedical Research Institute, in Créteil, France. You can read more about my project here.\nThis website aims to be an overview of my activities. I used to write a lot of code snippets on sticky notes, stuck everywhere on my computer, the desk, and a bit of the wall… Now they are accessily from everywhere and by everyone ! 📒 You can also find tools that I develop to ease/fasten computional analysis, and analyses themselves.\nLast update : 2025-05-04",
     "description": "This is the vignette D",
@@ -40,22 +48,6 @@ var relearn_searchindex = [
     "uri": "/posts/welcome/index.html"
   },
   {
-    "breadcrumb": "Welcome",
-    "content": "aquarius, a R package to analyse scRNA-Seq data\naudrey-onfroy.github.io/aquarius HTML organizer, a tool to arrange knitted Rmd files\ngithub.com/audrey-onfroy/organize_html",
-    "description": "aquarius, a R package to analyse scRNA-Seq data\naudrey-onfroy.github.io/aquarius HTML organizer, a tool to arrange knitted Rmd files\ngithub.com/audrey-onfroy/organize_html",
-    "tags": [],
-    "title": "Tools",
-    "uri": "/tools/index.html"
-  },
-  {
-    "breadcrumb": "Welcome",
-    "content": "Related to bash:\nAllow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links Related to Git:\nRemove sensitive files in Git history [Tutorial] Split a GitHub repository into a main repos and a submodule Related to R:\n[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list Related to md / html:\nMake a table Include an HTML file issued from a R Markdown file",
-    "description": "Related to bash:\nAllow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links Related to Git:\nRemove sensitive files in Git history [Tutorial] Split a GitHub repository into a main repos and a submodule Related to R:\n[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list Related to md / html:",
-    "tags": [],
-    "title": "Codes",
-    "uri": "/codes/index.html"
-  },
-  {
     "breadcrumb": "Welcome \u003e  Codes",
     "content": "[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list",
     "description": "[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list",
@@ -64,12 +56,28 @@ var relearn_searchindex = [
     "uri": "/codes/codes_r/index.html"
   },
   {
+    "breadcrumb": "Welcome",
+    "content": "Reanalysis of a public dataset about hair follicle cells\nscRNA-Seq atlas of hair follicle cells in the context of Hidradenitis suppurativa\nData | Code | Analysis Onfroy et al. (2025), DOI: In Press Data | Code | Analysis Onfroy et al. (2025), DOI: 10.1101/2025.05.28.656362 scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (mouse)\nscRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (patients)\nData | Code | Analysis Radomska et al. (2025), DOI: In Press Data | Code | Analysis Radomska et al. (2025), DOI: In Press",
+    "description": "Reanalysis of a public dataset about hair follicle cells\nscRNA-Seq atlas of hair follicle cells in the context of Hidradenitis suppurativa\nData | Code | Analysis Onfroy et al. (2025), DOI: In Press Data | Code | Analysis Onfroy et al. (2025), DOI: 10.1101/2025.05.28.656362 scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (mouse)\nscRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (patients)\nData | Code | Analysis Radomska et al. (2025), DOI: In Press Data | Code | Analysis Radomska et al. (2025), DOI: In Press",
+    "tags": [],
+    "title": "Analyses",
+    "uri": "/analysis/index.html"
+  },
+  {
     "breadcrumb": "Welcome \u003e  Codes",
     "content": "Make a table Include an HTML file issued from a R Markdown file",
     "description": "Make a table Include an HTML file issued from a R Markdown file",
     "tags": [],
     "title": "html / markdown",
     "uri": "/codes/codes_markdown/index.html"
+  },
+  {
+    "breadcrumb": "Welcome",
+    "content": "aquarius, a R package to analyse scRNA-Seq data\naudrey-onfroy.github.io/aquarius DOI: coming soon (awaiting for V1 release) HTML organizer, a tool to arrange knitted Rmd files\ngithub.com/audrey-onfroy/organize_html DOI: 10.5281/zenodo.14505634",
+    "description": "aquarius, a R package to analyse scRNA-Seq data\naudrey-onfroy.github.io/aquarius DOI: coming soon (awaiting for V1 release) HTML organizer, a tool to arrange knitted Rmd files\ngithub.com/audrey-onfroy/organize_html DOI: 10.5281/zenodo.14505634",
+    "tags": [],
+    "title": "Tools",
+    "uri": "/tools/index.html"
   },
   {
     "breadcrumb": "Welcome \u003e  Tags",
