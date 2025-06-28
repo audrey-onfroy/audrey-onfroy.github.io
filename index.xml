@@ -3,7 +3,7 @@
   <channel>
     <title>Welcome :: Audrey Onfroy</title>
     <link>https://audrey-onfroy.github.io/index.html</link>
-    <description>This is the vignette D</description>
+    <description>Hello there !&#xA;I am Audrey Onfroy, research engineer in computational biology. My work consists in making sequencing data express their deepest secrets ! I recently achieved my PhD thesis at Mondor Biomedical Research Institute, in Créteil, France. You can read more about my project here.&#xA;This website aims to be an overview of my (professional) activities:&#xA;Codes: I used to write a lot of code snippets on sticky notes, stuck everywhere on my computer, the desk, and a bit of the wall… Now they are accessily from everywhere and by everyone ! 📒 Tools: Here, you can find tools I have developed to simplify and speed up my daily work. I hope they can be helpful to others as well. If you have any questions, feel free to open an issue in the associated Github repository. Analyses: The computational analyses that are public, through a preprint or in a peer-reviewed journal, are there. Posts: Everything that do not fall in the previous categories… Find more on LinkedIn, such as my resume, HAL, to read about my scientific contributions, and on GitHub, but everything meaningful should be in Tools or Analyses.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
@@ -11,9 +11,9 @@
     <item>
       <title>Posts</title>
       <link>https://audrey-onfroy.github.io/posts/index.html</link>
-      <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://audrey-onfroy.github.io/posts/index.html</guid>
-      <description></description>
+      <description>Indeed, this page is empty…</description>
     </item>
     <item>
       <title>Codes</title>
@@ -23,18 +23,18 @@
       <description>Related to bash:&#xA;Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links Related to Git:&#xA;Remove sensitive files in Git history [Tutorial] Split a GitHub repository into a main repos and a submodule Related to R:&#xA;[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list Related to md / html:</description>
     </item>
     <item>
-      <title>Analyses</title>
-      <link>https://audrey-onfroy.github.io/analysis/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/analysis/index.html</guid>
-      <description>Reanalysis of a public dataset about hair follicle cells&#xA;scRNA-Seq atlas of hair follicle cells in the context of Hidradenitis suppurativa&#xA;Data | Code | Analysis Onfroy et al. (2025), DOI: In Press Data | Code | Analysis Onfroy et al. (2025), DOI: 10.1101/2025.05.28.656362 scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (mouse)&#xA;scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (patients)&#xA;Data | Code | Analysis Radomska et al. (2025), DOI: In Press Data | Code | Analysis Radomska et al. (2025), DOI: In Press</description>
-    </item>
-    <item>
       <title>Tools</title>
       <link>https://audrey-onfroy.github.io/tools/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://audrey-onfroy.github.io/tools/index.html</guid>
-      <description>aquarius, a R package to analyse scRNA-Seq data&#xA;audrey-onfroy.github.io/aquarius DOI: coming soon (awaiting for V1 release) HTML organizer, a tool to arrange knitted Rmd files&#xA;github.com/audrey-onfroy/organize_html DOI: 10.5281/zenodo.14505634</description>
+      <description>aquarius, a R package to analyse scRNA-Seq data&#xA;audrey-onfroy.github.io/aquarius DOI: 10.5281/zenodo.15763899 HTML organizer, a tool to arrange knitted Rmd files&#xA;github.com/audrey-onfroy/organize_html DOI: 10.5281/zenodo.14505634</description>
+    </item>
+    <item>
+      <title>Analyses</title>
+      <link>https://audrey-onfroy.github.io/analysis/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://audrey-onfroy.github.io/analysis/index.html</guid>
+      <description>Here are listed the single-cell RNA Sequencing (scRNA-Seq) data analyses I made. The raw data and/or count matrices are available under Data. The code to make the analyses from the count matrices up to the manuscript is available under Code. The code development is tracked with GitHub but the analyses associated with the manuscript are made identifiable using Zenodo. To enable you to explore the analysis, you can access the GitHub Pages under Analysis. The index of the GitHub Pages has been built using OrganizeHTML (more information in Tools). If you have any questions, feel free to open an issue in the associated Github repository.</description>
     </item>
   </channel>
 </rss>

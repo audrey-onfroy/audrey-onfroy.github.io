@@ -1,5 +1,13 @@
 var relearn_searchindex = [
   {
+    "breadcrumb": "Welcome \u003e  Posts",
+    "content": "There is an 1-year embargo on my thesis. From 27th September, 2025, I plan to make accessible:\nmy thesis (PDF) on HAL -\u003e link on the left the thesis template on GitHub (development + issues) + Zenodo (DOI) + Overleaf (for you) -\u003e in “Tools” the many figures (made with BioRender) -\u003e here",
+    "description": "There is an 1-year embargo on my thesis. From 27th September, 2025, I plan to make accessible:\nmy thesis (PDF) on HAL -\u003e link on the left the thesis template on GitHub (development + issues) + Zenodo (DOI) + Overleaf (for you) -\u003e in “Tools” the many figures (made with BioRender) -\u003e here",
+    "tags": [],
+    "title": "About my thesis",
+    "uri": "/posts/thesis/index.html"
+  },
+  {
     "breadcrumb": "Welcome \u003e  Codes",
     "content": "Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links",
     "description": "Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links",
@@ -9,8 +17,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Welcome",
-    "content": "",
-    "description": "",
+    "content": "Indeed, this page is empty…",
+    "description": "Indeed, this page is empty…",
     "tags": [],
     "title": "Posts",
     "uri": "/posts/index.html"
@@ -25,8 +33,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "",
-    "content": "Hello there !\nI am Audrey Onfroy, research engineer in computational biology. My work consists in making sequencing data express their deepest secrets ! I recently achieved my PhD thesis at Mondor Biomedical Research Institute, in Créteil, France. You can read more about my project here.\nThis website aims to be an overview of my activities. I used to write a lot of code snippets on sticky notes, stuck everywhere on my computer, the desk, and a bit of the wall… Now they are accessily from everywhere and by everyone ! 📒 You can also find tools that I develop to ease/fasten computional analysis, and analyses themselves.\nLast update : 2025-05-04",
-    "description": "This is the vignette D",
+    "content": "Hello there !\nI am Audrey Onfroy, research engineer in computational biology. My work consists in making sequencing data express their deepest secrets ! I recently achieved my PhD thesis at Mondor Biomedical Research Institute, in Créteil, France. You can read more about my project here.\nThis website aims to be an overview of my (professional) activities:\nCodes: I used to write a lot of code snippets on sticky notes, stuck everywhere on my computer, the desk, and a bit of the wall… Now they are accessily from everywhere and by everyone ! 📒 Tools: Here, you can find tools I have developed to simplify and speed up my daily work. I hope they can be helpful to others as well. If you have any questions, feel free to open an issue in the associated Github repository. Analyses: The computational analyses that are public, through a preprint or in a peer-reviewed journal, are there. Posts: Everything that do not fall in the previous categories… Find more on LinkedIn, such as my resume, HAL, to read about my scientific contributions, and on GitHub, but everything meaningful should be in Tools or Analyses.\nLast update : 2025-06-28",
+    "description": "Hello there !\nI am Audrey Onfroy, research engineer in computational biology. My work consists in making sequencing data express their deepest secrets ! I recently achieved my PhD thesis at Mondor Biomedical Research Institute, in Créteil, France. You can read more about my project here.\nThis website aims to be an overview of my (professional) activities:\nCodes: I used to write a lot of code snippets on sticky notes, stuck everywhere on my computer, the desk, and a bit of the wall… Now they are accessily from everywhere and by everyone ! 📒 Tools: Here, you can find tools I have developed to simplify and speed up my daily work. I hope they can be helpful to others as well. If you have any questions, feel free to open an issue in the associated Github repository. Analyses: The computational analyses that are public, through a preprint or in a peer-reviewed journal, are there. Posts: Everything that do not fall in the previous categories… Find more on LinkedIn, such as my resume, HAL, to read about my scientific contributions, and on GitHub, but everything meaningful should be in Tools or Analyses.",
     "tags": [],
     "title": "Welcome",
     "uri": "/index.html"
@@ -40,14 +48,6 @@ var relearn_searchindex = [
     "uri": "/codes/codes_git/index.html"
   },
   {
-    "breadcrumb": "Welcome \u003e  Posts",
-    "content": "I’ve been planning to build my GitHub Pages for a while - and I finally did it !",
-    "description": "I’ve been planning to build my GitHub Pages for a while - and I finally did it !",
-    "tags": [],
-    "title": "Welcome to my GitHub Pages !",
-    "uri": "/posts/welcome/index.html"
-  },
-  {
     "breadcrumb": "Welcome \u003e  Codes",
     "content": "[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list",
     "description": "[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list",
@@ -57,11 +57,11 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Welcome",
-    "content": "Reanalysis of a public dataset about hair follicle cells\nscRNA-Seq atlas of hair follicle cells in the context of Hidradenitis suppurativa\nData | Code | Analysis Onfroy et al. (2025), DOI: In Press Data | Code | Analysis Onfroy et al. (2025), DOI: 10.1101/2025.05.28.656362 scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (mouse)\nscRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (patients)\nData | Code | Analysis Radomska et al. (2025), DOI: In Press Data | Code | Analysis Radomska et al. (2025), DOI: In Press",
-    "description": "Reanalysis of a public dataset about hair follicle cells\nscRNA-Seq atlas of hair follicle cells in the context of Hidradenitis suppurativa\nData | Code | Analysis Onfroy et al. (2025), DOI: In Press Data | Code | Analysis Onfroy et al. (2025), DOI: 10.1101/2025.05.28.656362 scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (mouse)\nscRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (patients)\nData | Code | Analysis Radomska et al. (2025), DOI: In Press Data | Code | Analysis Radomska et al. (2025), DOI: In Press",
+    "content": "aquarius, a R package to analyse scRNA-Seq data\naudrey-onfroy.github.io/aquarius DOI: 10.5281/zenodo.15763899 HTML organizer, a tool to arrange knitted Rmd files\ngithub.com/audrey-onfroy/organize_html DOI: 10.5281/zenodo.14505634",
+    "description": "aquarius, a R package to analyse scRNA-Seq data\naudrey-onfroy.github.io/aquarius DOI: 10.5281/zenodo.15763899 HTML organizer, a tool to arrange knitted Rmd files\ngithub.com/audrey-onfroy/organize_html DOI: 10.5281/zenodo.14505634",
     "tags": [],
-    "title": "Analyses",
-    "uri": "/analysis/index.html"
+    "title": "Tools",
+    "uri": "/tools/index.html"
   },
   {
     "breadcrumb": "Welcome \u003e  Codes",
@@ -73,11 +73,11 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Welcome",
-    "content": "aquarius, a R package to analyse scRNA-Seq data\naudrey-onfroy.github.io/aquarius DOI: coming soon (awaiting for V1 release) HTML organizer, a tool to arrange knitted Rmd files\ngithub.com/audrey-onfroy/organize_html DOI: 10.5281/zenodo.14505634",
-    "description": "aquarius, a R package to analyse scRNA-Seq data\naudrey-onfroy.github.io/aquarius DOI: coming soon (awaiting for V1 release) HTML organizer, a tool to arrange knitted Rmd files\ngithub.com/audrey-onfroy/organize_html DOI: 10.5281/zenodo.14505634",
+    "content": "Here are listed the single-cell RNA Sequencing (scRNA-Seq) data analyses I made. The raw data and/or count matrices are available under Data. The code to make the analyses from the count matrices up to the manuscript is available under Code. The code development is tracked with GitHub but the analyses associated with the manuscript are made identifiable using Zenodo. To enable you to explore the analysis, you can access the GitHub Pages under Analysis. The index of the GitHub Pages has been built using OrganizeHTML (more information in Tools). If you have any questions, feel free to open an issue in the associated Github repository.\nReanalysis of a public dataset of hair follicle cells in physiological condition\nscRNA-Seq atlas of hair follicle cells in the context of Hidradenitis suppurativa\nData | Code | Analysis Onfroy et al. (2025), DOI: 10.1145/3736731.3746138 Data | Code | Analysis Onfroy et al. (2025), DOI: 10.1101/2025.05.28.656362 scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (mouse)\nscRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (patients)\nData | Code | Analysis Radomska et al. (2025), DOI: In Press Data | Code | Analysis Radomska et al. (2025), DOI: In Press scRNA-Seq atlas of subcutaneous nerves in the contexte of NF1 (mouse)\n... Data | Code | Analysis Mansour, Onfroy et al. (2025), DOI: BioRXiv ...",
+    "description": "Here are listed the single-cell RNA Sequencing (scRNA-Seq) data analyses I made. The raw data and/or count matrices are available under Data. The code to make the analyses from the count matrices up to the manuscript is available under Code. The code development is tracked with GitHub but the analyses associated with the manuscript are made identifiable using Zenodo. To enable you to explore the analysis, you can access the GitHub Pages under Analysis. The index of the GitHub Pages has been built using OrganizeHTML (more information in Tools). If you have any questions, feel free to open an issue in the associated Github repository.",
     "tags": [],
-    "title": "Tools",
-    "uri": "/tools/index.html"
+    "title": "Analyses",
+    "uri": "/analysis/index.html"
   },
   {
     "breadcrumb": "Welcome \u003e  Tags",
@@ -270,5 +270,13 @@ var relearn_searchindex = [
     ],
     "title": "Include an HTML file issued from a R Markdown file",
     "uri": "/codes/codes_markdown/include_html/index.html"
+  },
+  {
+    "breadcrumb": "Welcome \u003e  Posts",
+    "content": "I’ve been planning to build my GitHub Pages for a while - and I finally did it !\nThe current theme is: hugo-theme-relearn.",
+    "description": "I’ve been planning to build my GitHub Pages for a while - and I finally did it !\nThe current theme is: hugo-theme-relearn.",
+    "tags": [],
+    "title": "Welcome to my GitHub Pages !",
+    "uri": "/posts/welcome/index.html"
   }
 ]

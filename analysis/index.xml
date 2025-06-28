@@ -3,7 +3,7 @@
   <channel>
     <title>Analyses :: Audrey Onfroy</title>
     <link>https://audrey-onfroy.github.io/analysis/index.html</link>
-    <description>Reanalysis of a public dataset about hair follicle cells&#xA;scRNA-Seq atlas of hair follicle cells in the context of Hidradenitis suppurativa&#xA;Data | Code | Analysis Onfroy et al. (2025), DOI: In Press Data | Code | Analysis Onfroy et al. (2025), DOI: 10.1101/2025.05.28.656362 scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (mouse)&#xA;scRNA-Seq atlas of NF1-associated Peripheral Nerve Sheath Tumors (patients)&#xA;Data | Code | Analysis Radomska et al. (2025), DOI: In Press Data | Code | Analysis Radomska et al. (2025), DOI: In Press</description>
+    <description>Here are listed the single-cell RNA Sequencing (scRNA-Seq) data analyses I made. The raw data and/or count matrices are available under Data. The code to make the analyses from the count matrices up to the manuscript is available under Code. The code development is tracked with GitHub but the analyses associated with the manuscript are made identifiable using Zenodo. To enable you to explore the analysis, you can access the GitHub Pages under Analysis. The index of the GitHub Pages has been built using OrganizeHTML (more information in Tools). If you have any questions, feel free to open an issue in the associated Github repository.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://audrey-onfroy.github.io/analysis/index.xml" rel="self" type="application/rss+xml" />
