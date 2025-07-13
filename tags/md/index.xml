@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Md :: Tag :: Audrey Onfroy</title>
-    <link>http://localhost:1313/tags/md/index.html</link>
+    <link>https://audrey-onfroy.github.io/tags/md/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 07 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/md/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://audrey-onfroy.github.io/tags/md/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Make a table</title>
-      <link>http://localhost:1313/codes/codes_markdown/make_table/index.html</link>
+      <link>https://audrey-onfroy.github.io/codes/codes_markdown/make_table/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/codes/codes_markdown/make_table/index.html</guid>
+      <guid>https://audrey-onfroy.github.io/codes/codes_markdown/make_table/index.html</guid>
       <description>Code:&#xA;&lt;table&gt; &lt;tr&gt; &lt;td&gt;&lt;b style=&#34;font-size:20px&#34;&gt;A&lt;/b&gt;&lt;/td&gt; &lt;td&gt;&lt;b style=&#34;font-size:20px&#34;&gt;B&lt;/b&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;C&lt;/td&gt; &lt;td&gt;D&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; Output:&#xA;A B C D</description>
     </item>
     <item>
       <title>Include an HTML file issued from a R Markdown file</title>
-      <link>http://localhost:1313/codes/codes_markdown/include_html/index.html</link>
+      <link>https://audrey-onfroy.github.io/codes/codes_markdown/include_html/index.html</link>
       <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/codes/codes_markdown/include_html/index.html</guid>
-      <description>Open in a new tab The following picture is clickable, to open the HTML file in a browser tab:&#xA;The code behind this picture is:&#xA;&lt;a href=&#34;http://localhost:1313/pages/just_a_page.html&#34;&gt; &lt;img src=&#34;http://localhost:1313/images/open_in_new_tab.jpg&#34; alt=&#34;.&#34; width=&#34;30vw&#34;&gt; &lt;/a&gt; Embed the HTML page The code of the iframe below is:&#xA;&lt;iframe width=&#34;100%&#34; height=&#34;2300&#34; src=&#34;http://localhost:1313/pages/just_a_page.html&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt; &lt;/iframe&gt; The result is:</description>
+      <guid>https://audrey-onfroy.github.io/codes/codes_markdown/include_html/index.html</guid>
+      <description>Open in a new tab The following picture is clickable, to open the HTML file in a browser tab:&#xA;The code behind this picture is:&#xA;&lt;a href=&#34;https://audrey-onfroy.github.io/pages/just_a_page.html&#34;&gt; &lt;img src=&#34;https://audrey-onfroy.github.io/images/open_in_new_tab.jpg&#34; alt=&#34;.&#34; width=&#34;30vw&#34;&gt; &lt;/a&gt; Embed the HTML page The code of the iframe below is:&#xA;&lt;iframe width=&#34;100%&#34; height=&#34;2300&#34; src=&#34;https://audrey-onfroy.github.io/pages/just_a_page.html&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt; &lt;/iframe&gt; The result is:</description>
     </item>
   </channel>
 </rss>

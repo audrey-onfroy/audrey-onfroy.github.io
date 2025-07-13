@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R :: Tag :: Audrey Onfroy</title>
-    <link>http://localhost:1313/tags/r/index.html</link>
+    <link>https://audrey-onfroy.github.io/tags/r/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://audrey-onfroy.github.io/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Access two versions (or more !) of R within RStudio</title>
-      <link>http://localhost:1313/codes/codes_r/two_versions_of_r/index.html</link>
+      <link>https://audrey-onfroy.github.io/codes/codes_r/two_versions_of_r/index.html</link>
       <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/codes/codes_r/two_versions_of_r/index.html</guid>
+      <guid>https://audrey-onfroy.github.io/codes/codes_r/two_versions_of_r/index.html</guid>
       <description>This method is suited for computer running under the Linux Ubuntu OS.&#xA;Goal For various reasons, we want to easily switch between two (or more!) version of the R language with RStudio.&#xA;From my side, I have a specific setup of R packages installed within a Singularity environment. But, I fail to access the version of R within this environment, using RStudio. So, I installed everything locally and ask RStudio to open the specific version of R.</description>
     </item>
     <item>
       <title>Clean R environment but...</title>
-      <link>http://localhost:1313/codes/codes_r/clean_r_env/index.html</link>
+      <link>https://audrey-onfroy.github.io/codes/codes_r/clean_r_env/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/codes/codes_r/clean_r_env/index.html</guid>
+      <guid>https://audrey-onfroy.github.io/codes/codes_r/clean_r_env/index.html</guid>
       <description>Example to remove everything from the environment, except an object called sobj:&#xA;#!/usr/bin/R rm(list = setdiff(ls(), &#34;sobj&#34;))</description>
     </item>
     <item>
       <title>Increase the size of the legend keys</title>
-      <link>http://localhost:1313/codes/codes_r/ggplot_guides/index.html</link>
+      <link>https://audrey-onfroy.github.io/codes/codes_r/ggplot_guides/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/codes/codes_r/ggplot_guides/index.html</guid>
+      <guid>https://audrey-onfroy.github.io/codes/codes_r/ggplot_guides/index.html</guid>
       <description>We want to increase the size of the legend keys and split the legend over 3 columns, of a ggplot object called p.&#xA;Code By expliciting the package name:&#xA;#!/usr/bin/R p + ggplot2::guides(color = ggplot2::guide_legend(override.aes = list(size = 5), ncol = 3)) Without the package name:&#xA;#!/usr/bin/R library(ggplot2) p + guides(color = guide_legend(override.aes = list(size = 5), ncol = 3))</description>
     </item>
     <item>
       <title>Subset the i-th elements of a nested list</title>
-      <link>http://localhost:1313/codes/codes_r/select_ith_element_in_list/index.html</link>
+      <link>https://audrey-onfroy.github.io/codes/codes_r/select_ith_element_in_list/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/codes/codes_r/select_ith_element_in_list/index.html</guid>
+      <guid>https://audrey-onfroy.github.io/codes/codes_r/select_ith_element_in_list/index.html</guid>
       <description>Code Select all i-th elements of a nested list x, in R language:&#xA;#!/usr/bin/R lapply(x, `[[`, i) This is useful after having used the stringr::str_split function…&#xA;Input Structure of the input list x:&#xA;x ├── A │ ├── A_1 │ ├── A_2 │ ├── A_3 │ └── A_4 ├── B │ ├── B_1 │ ├── B_2 │ ├── B_3 │ └── B_4 └── C ├── C_1 ├── C_2 ├── C_3 └── C_4 Output Structure, after execution of the command (i = 2):</description>
     </item>
   </channel>
