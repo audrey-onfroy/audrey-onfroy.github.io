@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Codes :: Audrey Onfroy</title>
-    <link>https://audrey-onfroy.github.io/codes/index.html</link>
+    <link>http://localhost:1313/codes/index.html</link>
     <description>Related to bash:&#xA;Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links Related to Git:&#xA;Remove sensitive files in Git history [Tutorial] Split a GitHub repository into a main repos and a submodule Related to R:&#xA;[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list Related to md / html:</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://audrey-onfroy.github.io/codes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/codes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>bash</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_bash/index.html</link>
+      <link>http://localhost:1313/codes/codes_bash/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_bash/index.html</guid>
+      <guid>http://localhost:1313/codes/codes_bash/index.html</guid>
       <description>Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links</description>
     </item>
     <item>
       <title>Git</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_git/index.html</link>
+      <link>http://localhost:1313/codes/codes_git/index.html</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_git/index.html</guid>
+      <guid>http://localhost:1313/codes/codes_git/index.html</guid>
       <description>Remove sensitive files in Git history [Tutorial] Split a GitHub repository into a main repos and a submodule</description>
     </item>
     <item>
       <title>R</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_r/index.html</link>
+      <link>http://localhost:1313/codes/codes_r/index.html</link>
       <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_r/index.html</guid>
+      <guid>http://localhost:1313/codes/codes_r/index.html</guid>
       <description>[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list</description>
     </item>
     <item>
       <title>html / markdown</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_markdown/index.html</link>
+      <link>http://localhost:1313/codes/codes_markdown/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_markdown/index.html</guid>
+      <guid>http://localhost:1313/codes/codes_markdown/index.html</guid>
       <description>Make a table Include an HTML file issued from a R Markdown file</description>
     </item>
   </channel>

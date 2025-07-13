@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts :: Audrey Onfroy</title>
-    <link>https://audrey-onfroy.github.io/posts/index.html</link>
+    <link>http://localhost:1313/posts/index.html</link>
     <description>Indeed, this page is empty…</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 27 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://audrey-onfroy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About my thesis</title>
-      <link>https://audrey-onfroy.github.io/posts/thesis/index.html</link>
+      <link>http://localhost:1313/posts/thesis/index.html</link>
       <pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/posts/thesis/index.html</guid>
+      <guid>http://localhost:1313/posts/thesis/index.html</guid>
       <description>There is an 1-year embargo on my thesis. From 27th September, 2025, I plan to make accessible:&#xA;my thesis (PDF) on HAL -&gt; link on the left the thesis template on GitHub (development + issues) + Zenodo (DOI) + Overleaf (for you) -&gt; in “Tools” the many figures (made with BioRender) -&gt; here</description>
     </item>
     <item>
       <title>Welcome to my GitHub Pages !</title>
-      <link>https://audrey-onfroy.github.io/posts/welcome/index.html</link>
+      <link>http://localhost:1313/posts/welcome/index.html</link>
       <pubDate>Sat, 04 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/posts/welcome/index.html</guid>
+      <guid>http://localhost:1313/posts/welcome/index.html</guid>
       <description>I’ve been planning to build my GitHub Pages for a while - and I finally did it !&#xA;The current theme is: hugo-theme-relearn.</description>
     </item>
   </channel>

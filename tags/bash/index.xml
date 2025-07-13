@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bash :: Tag :: Audrey Onfroy</title>
-    <link>https://audrey-onfroy.github.io/tags/bash/index.html</link>
+    <link>http://localhost:1313/tags/bash/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://audrey-onfroy.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Access two versions (or more !) of R within RStudio</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_r/two_versions_of_r/index.html</link>
+      <link>http://localhost:1313/codes/codes_r/two_versions_of_r/index.html</link>
       <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_r/two_versions_of_r/index.html</guid>
+      <guid>http://localhost:1313/codes/codes_r/two_versions_of_r/index.html</guid>
       <description>This method is suited for computer running under the Linux Ubuntu OS.&#xA;Goal For various reasons, we want to easily switch between two (or more!) version of the R language with RStudio.&#xA;From my side, I have a specific setup of R packages installed within a Singularity environment. But, I fail to access the version of R within this environment, using RStudio. So, I installed everything locally and ask RStudio to open the specific version of R.</description>
     </item>
     <item>
       <title>Remove sensitive files in git history</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_git/remove_files_git/index.html</link>
+      <link>http://localhost:1313/codes/codes_git/remove_files_git/index.html</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_git/remove_files_git/index.html</guid>
+      <guid>http://localhost:1313/codes/codes_git/remove_files_git/index.html</guid>
       <description>Source: https://stackoverflow.com/questions/6403601/purging-file-from-git-repo-failed-unable-to-create-new-backup&#xA;Filter the branch to remove the sensitive files/folders (eg. FILE1 and FOLDER1) from history: git filter-branch --index-filter &#39;git rm -rf --cached --ignore-unmatch FILE1 FOLDER1&#39; HEAD Note: I don’t know how to adapt if there are several branches.&#xA;Push the changes to the branch of interest (eg. main): git push --force --set-upstream origin main From StackOverflow:&#xA;After filter-branch, Git keeps refs to the old commits around, in case something goes wrong.</description>
     </item>
     <item>
       <title>Allow files access on cluster</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_bash/allow_access/index.html</link>
+      <link>http://localhost:1313/codes/codes_bash/allow_access/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_bash/allow_access/index.html</guid>
+      <guid>http://localhost:1313/codes/codes_bash/allow_access/index.html</guid>
       <description>Here is a code to allow the access to all files within a folder foo, in a project BAR, on the cluster, to all members having access to the BAR project:&#xA;#!/usr/bin/bash setfacl -R -m group:BAR:rwx foo</description>
     </item>
     <item>
       <title>Color a specific pattern in the output of `find`</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_bash/find_with_colors/index.html</link>
+      <link>http://localhost:1313/codes/codes_bash/find_with_colors/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_bash/find_with_colors/index.html</guid>
+      <guid>http://localhost:1313/codes/codes_bash/find_with_colors/index.html</guid>
       <description>Code Example to identify all definitions of custom functions in files with the Rmd extension, and to color the names of these functions:&#xA;#!/usr/bin/bash find . -name &#34;*Rmd&#34; -type f \ -exec grep -E &#39; = function \(&#39; {} + | grep -vE &#39;FUN|%&#39; | grep --color -P &#39;(?&lt;=:).*(?= = fun)&#39; Output The output contains several rows with this pattern:&#xA;filepath/filename.Rmd:function_name = function( ….&#xA;Explanations find . -name &#34;*Rmd&#34; -type f: in all files with the Rmd extension in the folders currently (.) accessible… -exec grep -E &#39; = function \(&#39; {} +: …, identify all the lines containing = function( grep -vE &#39;FUN|%&#39;: then, remove the lines containing FUN or %. I use this to remove the function that are defined in apply function and in pipes, for instance. grep --color -P &#39;(?&lt;=:).*(?= = func)&#39;: then, color the characters between : and = func</description>
     </item>
     <item>
       <title>Define symbolic link</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_bash/define_symlinks/index.html</link>
+      <link>http://localhost:1313/codes/codes_bash/define_symlinks/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_bash/define_symlinks/index.html</guid>
+      <guid>http://localhost:1313/codes/codes_bash/define_symlinks/index.html</guid>
       <description>Pretty easy, but I never remember that providing full path is important…&#xA;#!/usr/bin/bash ln -s /full_path/origin/* /full_path/destination</description>
     </item>
     <item>
       <title>Find a specific pattern in a bunsh of files</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_bash/find_pattern_files/index.html</link>
+      <link>http://localhost:1313/codes/codes_bash/find_pattern_files/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_bash/find_pattern_files/index.html</guid>
+      <guid>http://localhost:1313/codes/codes_bash/find_pattern_files/index.html</guid>
       <description>Example to find the pattern pattern in all files with Rmd extension, in all the folders currently (.) accessible:&#xA;#!/usr/bin/bash find . -name &#34;*Rmd&#34; -type f -exec grep -E &#39;pattern&#39; {} + Related (find) topics:&#xA;Color the output of find Apply a function to found files</description>
     </item>
     <item>
       <title>Replace symbolic links by the target files</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_bash/replace_symlinks/index.html</link>
+      <link>http://localhost:1313/codes/codes_bash/replace_symlinks/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_bash/replace_symlinks/index.html</guid>
+      <guid>http://localhost:1313/codes/codes_bash/replace_symlinks/index.html</guid>
       <description>Source: https://superuser.com/questions/303559/replace-symbolic-links-with-files&#xA;Code:&#xA;#!/usr/bin/bash set -e for link; do test -h &#34;$link&#34; || continue dir=$(dirname &#34;$link&#34;) reltarget=$(readlink &#34;$link&#34;) case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv &#34;$link&#34; cp -afv &#34;$abstarget&#34; &#34;$link&#34; || { # on failure, restore the symlink rm -rfv &#34;$link&#34; ln -sfv &#34;$reltarget&#34; &#34;$link&#34; } done Usage:&#xA;find . -type l -exec /path_to/replace_symlinks.sh {} +</description>
     </item>
     <item>
       <title>Update symbolic links</title>
-      <link>https://audrey-onfroy.github.io/codes/codes_bash/find_update_symlinks/index.html</link>
+      <link>http://localhost:1313/codes/codes_bash/find_update_symlinks/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://audrey-onfroy.github.io/codes/codes_bash/find_update_symlinks/index.html</guid>
+      <guid>http://localhost:1313/codes/codes_bash/find_update_symlinks/index.html</guid>
       <description>#!/usr/bin/bash find -type l -exec bash -c \ &#39;ln -f &#34;$(readlink -m &#34;$0&#34;)&#34; &#34;$0&#34;&#39; {} \; Note: I don’t know why I wrote this command… At some point, I may be useful !&#xA;Related (find) topics:&#xA;Find files containing a specific pattern Color the output of find</description>
     </item>
   </channel>
