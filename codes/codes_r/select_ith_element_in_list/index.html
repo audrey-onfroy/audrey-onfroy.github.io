@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Hugo 0.156.0">
     <meta name="generator" content="Relearn 7.6.1+4407b4364ab6f7477f7671fbd20c0494bade40ee">
     <meta name="description" content="Code Select all i-th elements of a nested list x, in R language:
 #!/usr/bin/R lapply(x, `[[`, i) This is useful after having used the stringr::str_split function…
@@ -23,7 +23,7 @@ x ├── A │ ├── A_1 │ ├── A_2 │ ├── A_3 │ └�
 #!/usr/bin/R lapply(x, `[[`, i) This is useful after having used the stringr::str_split function…
 Input Structure of the input list x:
 x ├── A │ ├── A_1 │ ├── A_2 │ ├── A_3 │ └── A_4 ├── B │ ├── B_1 │ ├── B_2 │ ├── B_3 │ └── B_4 └── C ├── C_1 ├── C_2 ├── C_3 └── C_4 Output Structure, after execution of the command (i = 2):">
-    <meta property="og:locale" content="en">
+    <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Codes">
     <meta property="article:published_time" content="2025-04-07T00:00:00+00:00">
@@ -39,18 +39,18 @@ x ├── A │ ├── A_1 │ ├── A_2 │ ├── A_3 │ └�
     <meta itemprop="wordCount" content="97">
     <meta itemprop="keywords" content="R">
     <title>Subset the i-th elements of a nested list :: Audrey Onfroy</title>
-    <link href="/images/favicon.ico?1752450347" rel="icon" type="image/x-icon" sizes="any">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752450347" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752450347" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752450347" rel="stylesheet">
-    <link href="/css/theme.min.css?1752450347" rel="stylesheet">
-    <link href="/css/format-html.min.css?1752450347" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1752450347" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1752450347" defer></script>
-    <script src="/js/lunr/lunr.min.js?1752450347" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1752450347" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1752450347" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1752450347" defer></script>
-    <script src="/js/search.min.js?1752450347" defer></script>
+    <link href="/images/favicon.ico?1772031750" rel="icon" type="image/x-icon" sizes="any">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1772031750" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1772031750" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1772031750" rel="stylesheet">
+    <link href="/css/theme.min.css?1772031750" rel="stylesheet">
+    <link href="/css/format-html.min.css?1772031750" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1772031750" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1772031750" defer></script>
+    <script src="/js/lunr/lunr.min.js?1772031750" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1772031750" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1772031750" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1772031750" defer></script>
+    <script src="/js/search.min.js?1772031750" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -60,7 +60,7 @@ x ├── A │ ├── A_1 │ ├── A_2 │ ├── A_3 │ └�
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/audrey-onfroy.github.io';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1752450347";
+      window.relearn.index_js_url="/searchindex.en.js?1772031750";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -168,7 +168,7 @@ x ├── A │ ├── A_1 │ ├── A_2 │ ├── A_3 │ └�
 
 <h2 id="code">Code</h2>
 <p>Select all i-th elements of a nested list <code>x</code>, in R language:</p>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/R</span>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/R</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">lapply</span>(x, `[[`, i)</span></span></code></pre></div>
 <p>This is useful after having used the <code>stringr::str_split</code> function&hellip;</p>
@@ -276,6 +276,7 @@ x ├── A │ ├── A_1 │ ├── A_2 │ ├── A_3 │ └�
           <ul class="space collapsible-menu">
             <li class="" data-nav-id="https://github.com/audrey-onfroy"><a class="padding" href="https://github.com/audrey-onfroy" rel="external" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
             <li class="" data-nav-id="https://www.linkedin.com/in/audrey-onfroy"><a class="padding" href="https://www.linkedin.com/in/audrey-onfroy" rel="external" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li class="" data-nav-id="https://orcid.org/0009-0003-1429-4230"><a class="padding" href="https://orcid.org/0009-0003-1429-4230" rel="external" target="_blank"><i class="fa-brands fa-orcid"></i> ORCID</a></li>
             <li class="" data-nav-id="https://cv.hal.science/audrey-onfroy"><a class="padding" href="https://cv.hal.science/audrey-onfroy" rel="external" target="_blank"><i class="fa-solid fa-spinner"></i> HAL</a></li>
           </ul>
         </div>
@@ -306,8 +307,8 @@ x ├── A │ ├── A_1 │ ├── A_2 │ ├── A_3 │ └�
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1752450347" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752450347" defer></script>
-    <script src="/js/theme.min.js?1752450347" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1772031750" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1772031750" defer></script>
+    <script src="/js/theme.min.js?1772031750" defer></script>
   </body>
 </html>

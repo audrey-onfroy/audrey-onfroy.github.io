@@ -3,9 +3,9 @@
   <channel>
     <title>Posts :: Audrey Onfroy</title>
     <link>https://audrey-onfroy.github.io/posts/index.html</link>
-    <description>Indeed, this page is empty…</description>
+    <description>Indeed, this page is empty…!</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Fri, 27 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://audrey-onfroy.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://audrey-onfroy.github.io/posts/thesis/index.html</link>
       <pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://audrey-onfroy.github.io/posts/thesis/index.html</guid>
-      <description>PhD thesis There is an 1-year embargo on my thesis. It will be made available on HAL from 27th September, 2025.&#xA;TeX template My thesis has been written using Overleaf. I simplified the document to build a template, so I hope one can easily build upon it. Find the template in Tools.</description>
+      <description>PhD thesis I recently achieved my PhD thesis at Mondor Biomedical Research Institute, in Créteil, France. You can read more about my project:&#xA;on the theses.fr website ; on the global HAL website, and, on the thesis-related HAL website. TeX template My thesis has been written using Overleaf. I simplified the final document to build a template, so I hope one can easily build upon it. Find the template in Tools.</description>
     </item>
     <item>
       <title>Welcome to my GitHub Pages !</title>

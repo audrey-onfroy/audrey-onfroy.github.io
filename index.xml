@@ -3,9 +3,9 @@
   <channel>
     <title>Welcome :: Audrey Onfroy</title>
     <link>https://audrey-onfroy.github.io/index.html</link>
-    <description>Hello there !&#xA;I am Audrey Onfroy, research engineer in computational biology. My work consists in making sequencing data express their deepest secrets ! I recently achieved my PhD thesis at Mondor Biomedical Research Institute, in Créteil, France. You can read more about my project here.&#xA;This website aims to be an overview of my (professional) activities:&#xA;Codes: I used to write a lot of code snippets on sticky notes, stuck everywhere on my computer, the desk, and a bit of the wall… Now they are accessily from everywhere and by everyone ! 📒 Tools: Here, you can find tools I have developed to simplify and speed up my daily work. I hope they can be helpful to others as well. If you have any questions, feel free to open an issue in the associated Github repository. Analyses: The computational analyses that are public, through a preprint or in a peer-reviewed journal, are there. Posts: Everything that do not fall in the previous categories… Find more on LinkedIn, such as my resume, HAL, to read about my scientific contributions, and on GitHub, but everything meaningful should be in Tools or Analyses.</description>
+    <description>Hello there!&#xA;I am Audrey Onfroy, research engineer in computational biology. My work consists in making sequencing data express their deepest secrets!&#xA;This website aims to be an overview of everything related to my work:&#xA;Codes: I used to write a lot of code snippets on sticky notes, stuck everywhere on my computer, the desk, and a bit of the wall… Now they are accessible from everywhere and by everyone! 📒 Tools: Here, you can find tools I have developed to simplify and speed up my daily work. I hope they can be helpful to others as well. If you have any questions, feel free to open an issue in the associated Github repository. Analyses: The computational analyses that are public, through a preprint or in a peer-reviewed journal, are there. Posts: Everything that do not fall in the previous categories… Find more on LinkedIn, such as my resume, HAL and ORCID, to read about my scientific contributions, and on GitHub for the code, but everything meaningful regarding the code should be in Tools or Analyses.</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://audrey-onfroy.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,7 +13,7 @@
       <link>https://audrey-onfroy.github.io/posts/index.html</link>
       <pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://audrey-onfroy.github.io/posts/index.html</guid>
-      <description>Indeed, this page is empty…</description>
+      <description>Indeed, this page is empty…!</description>
     </item>
     <item>
       <title>Codes</title>
@@ -34,7 +34,7 @@
       <link>https://audrey-onfroy.github.io/analysis/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://audrey-onfroy.github.io/analysis/index.html</guid>
-      <description>Here are listed the single-cell RNA Sequencing (scRNA-Seq) data analyses I made. The raw data and/or count matrices are available under Data. The code to make the analyses from the count matrices up to the manuscript is available under Code. The code development is tracked with GitHub but the analyses associated with the manuscript are made identifiable using Zenodo. To enable you to explore the analysis, you can access the GitHub Pages under Analysis. The index of the GitHub Pages has been built using OrganizeHTML (more information in Tools). If you have any questions, feel free to open an issue in the associated Github repository.</description>
+      <description>Here are listed the single-cell RNA Sequencing (scRNA-Seq) data analyses I made. The raw data and/or count matrices are available under Data. The code to make the analyses from the count matrices up to the manuscript is available under Code. The code development is tracked on GitHub but the analyses associated with the manuscript are made identifiable using Zenodo. To enable you to explore the analysis, you can access the GitHub Pages under Analysis. The index of the GitHub Pages has been built using OrganizeHTML (more information in Tools). If you have any questions, feel free to open an issue in the associated repository.</description>
     </item>
   </channel>
 </rss>

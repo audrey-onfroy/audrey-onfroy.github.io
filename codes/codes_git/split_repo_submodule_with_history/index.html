@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Hugo 0.156.0">
     <meta name="generator" content="Relearn 7.6.1+4407b4364ab6f7477f7671fbd20c0494bade40ee">
     <meta name="description" content="Context We have a local folder MAIN associated with a GitHub repository, also called MAIN. The structure is as follows:
 MAIN ├── 1_dir_A │ ├── content_AA │ │ ├── file_AAA.ext │ │ └── file_AAB.ext │ └── content_AB │ ├── file_ABA.ext │ ├── file_ABB.ext │ └── file_ABC.ext ├── 2_dir_B │ ├── content_BA │ │ ├── file_BAA.ext │ │ └── file_BAB.ext │ └── content_BB │ ├── file_BBA.ext │ └── file_BBB.ext ├── README.md ├── .git └── .gitignore Goal We want to:">
@@ -17,7 +17,7 @@ MAIN ├── 1_dir_A │ ├── content_AA │ │ ├── file_AAA.ex
     <meta property="og:title" content="Split a GitHub repository into a main repos and a submodule :: Audrey Onfroy">
     <meta property="og:description" content="Context We have a local folder MAIN associated with a GitHub repository, also called MAIN. The structure is as follows:
 MAIN ├── 1_dir_A │ ├── content_AA │ │ ├── file_AAA.ext │ │ └── file_AAB.ext │ └── content_AB │ ├── file_ABA.ext │ ├── file_ABB.ext │ └── file_ABC.ext ├── 2_dir_B │ ├── content_BA │ │ ├── file_BAA.ext │ │ └── file_BAB.ext │ └── content_BB │ ├── file_BBA.ext │ └── file_BBB.ext ├── README.md ├── .git └── .gitignore Goal We want to:">
-    <meta property="og:locale" content="en">
+    <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Codes">
     <meta property="article:published_time" content="2025-04-07T00:00:00+00:00">
@@ -31,18 +31,18 @@ MAIN ├── 1_dir_A │ ├── content_AA │ │ ├── file_AAA.ex
     <meta itemprop="wordCount" content="754">
     <meta itemprop="keywords" content="Git">
     <title>Split a GitHub repository into a main repos and a submodule :: Audrey Onfroy</title>
-    <link href="/images/favicon.ico?1752450347" rel="icon" type="image/x-icon" sizes="any">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752450347" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1752450347" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1752450347" rel="stylesheet">
-    <link href="/css/theme.min.css?1752450347" rel="stylesheet">
-    <link href="/css/format-html.min.css?1752450347" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1752450347" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1752450347" defer></script>
-    <script src="/js/lunr/lunr.min.js?1752450347" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1752450347" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1752450347" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1752450347" defer></script>
-    <script src="/js/search.min.js?1752450347" defer></script>
+    <link href="/images/favicon.ico?1772031750" rel="icon" type="image/x-icon" sizes="any">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1772031750" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1772031750" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1772031750" rel="stylesheet">
+    <link href="/css/theme.min.css?1772031750" rel="stylesheet">
+    <link href="/css/format-html.min.css?1772031750" rel="stylesheet" id="R-format-style">
+    <link href="/css/auto-complete/auto-complete.min.css?1772031750" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1772031750" defer></script>
+    <script src="/js/lunr/lunr.min.js?1772031750" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1772031750" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1772031750" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1772031750" defer></script>
+    <script src="/js/search.min.js?1772031750" defer></script>
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -52,7 +52,7 @@ MAIN ├── 1_dir_A │ ├── content_AA │ │ ├── file_AAA.ex
       window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/audrey-onfroy.github.io';
       window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1752450347";
+      window.relearn.index_js_url="/searchindex.en.js?1772031750";
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
@@ -207,28 +207,28 @@ MAIN ├── 1_dir_A │ ├── content_AA │ │ ├── file_AAA.ex
 <ol start="2">
 <li>Clone the <code>MAIN</code> repository to initate the new one:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/user-name/MAIN.git TOTO</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/user-name/MAIN.git TOTO</span></span></code></pre></div>
 <ol start="3">
 <li>Move to <code>TOTO</code>:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd TOTO</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd TOTO</span></span></code></pre></div>
 <h3 id="get-all-branches">Get all branches</h3>
 <ol start="4">
 <li>(optional) Get all the branches and tags from the <code>MAIN</code> repository, because they have not been imported using <code>git clone</code>:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -a  <span style="color:#75715e"># check the current branches</span>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -a  <span style="color:#75715e"># check the current branches</span>
 </span></span><span style="display:flex;"><span>git fetch origin
 </span></span><span style="display:flex;"><span>git branch -a  <span style="color:#75715e"># check the current branches</span></span></span></code></pre></div>
 <ol start="5">
 <li>(optional) If there are SOME branches to copy, run:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout -b SOME origin/SOME
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout -b SOME origin/SOME
 </span></span><span style="display:flex;"><span>git branch -a  <span style="color:#75715e"># check the current branches</span></span></span></code></pre></div>
 <h3 id="detach-from-origin">Detach from origin</h3>
 <ol start="6">
 <li>Detach the local repository <code>TOTO</code> from the <code>MAIN</code> repository.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote -v  <span style="color:#75715e"># check the remote host: MAIN.git</span>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote -v  <span style="color:#75715e"># check the remote host: MAIN.git</span>
 </span></span><span style="display:flex;"><span>git remote rm origin
 </span></span><span style="display:flex;"><span>git remote -v  <span style="color:#75715e"># no more host</span></span></span></code></pre></div>
 <h3 id="subset-the-new-repository">Subset the new repository</h3>
@@ -236,11 +236,11 @@ MAIN ├── 1_dir_A │ ├── content_AA │ │ ├── file_AAA.ex
 <li>Filter the directory to keep only the <code>2_dir_B</code> folder.
 We should <code>--force</code> because there is no origin.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git filter-repo --path 2_dir_B/ --force</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git filter-repo --path 2_dir_B/ --force</span></span></code></pre></div>
 <ol start="8">
 <li>Move the <code>2_dir_B</code> folder content to the root:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git mv 2_dir_B/* .
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git mv 2_dir_B/* .
 </span></span><span style="display:flex;"><span>git mv 2_dir_B/.gitignore .gitignore <span style="color:#75715e"># for the hidden files</span>
 </span></span><span style="display:flex;"><span>rm -Rf 2_dir_B</span></span></code></pre></div>
 <ol start="9">
@@ -251,15 +251,15 @@ We should <code>--force</code> because there is no origin.</li>
 <p>Check that <code>TOTO</code> contains everything present in <code>MAIN/2_dir_B</code>:</p>
 </li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>diff -r /path/to/TOTO /path/to/MAIN/2_dir_B</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>diff -r /path/to/TOTO /path/to/MAIN/2_dir_B</span></span></code></pre></div>
 <ol start="11">
 <li>Ensure to ignore the folders and files that should not be tracked by the <code>git</code> system:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano .gitignore <span style="color:#75715e"># fill in manually</span></span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano .gitignore <span style="color:#75715e"># fill in manually</span></span></span></code></pre></div>
 <ol start="12">
 <li>Define the commit, but do not push since there is no remote yet.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status  <span style="color:#75715e"># everything should be added</span>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status  <span style="color:#75715e"># everything should be added</span>
 </span></span><span style="display:flex;"><span>git add *   <span style="color:#75715e"># if necessary, for instance .gitignore</span>
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Filter only 2_dir_B content&#34;</span></span></span></code></pre></div>
 <h3 id="define-the-new-repository">Define the new repository</h3>
@@ -271,33 +271,33 @@ We should <code>--force</code> because there is no origin.</li>
 <p>Define the new origin for the <code>TOTO</code> folder:</p>
 </li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add origin https://github.com/username/TITI.git
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add origin https://github.com/username/TITI.git
 </span></span><span style="display:flex;"><span>git remote -v  <span style="color:#75715e"># check the remote host</span></span></span></code></pre></div>
 <ol start="15">
 <li>Push the changes. We use <code>--force</code> if no file has been changed but only the git history has been filtered. We use <code>--all</code> to include all the branches.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push --force --all origin
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push --force --all origin
 </span></span><span style="display:flex;"><span>git push --tags origin <span style="color:#75715e"># optionally, if there are tags</span></span></span></code></pre></div>
 <h3 id="define-a-submodule-in-main">Define a submodule in <code>MAIN</code></h3>
 <ol start="16">
 <li>Go to the <code>MAIN</code> directory:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /path/to/MAIN</span></span></code></pre></div>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /path/to/MAIN</span></span></code></pre></div>
 <ol start="17">
 <li>Remove the <code>2_dir_B</code> folder, both from tracking and locally:</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git rm -r 2_dir_B
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git rm -r 2_dir_B
 </span></span><span style="display:flex;"><span>rm -Rf 2_dir_B/</span></span></code></pre></div>
 <ol start="18">
 <li>(optional) To eventually remove this folder from the history, use <code>git filter-branch</code>.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git filter-branch --index-filter <span style="color:#e6db74">&#39;git rm -rf --cached --ignore-unmatch 2_dir_B&#39;</span> HEAD
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git filter-branch --index-filter <span style="color:#e6db74">&#39;git rm -rf --cached --ignore-unmatch 2_dir_B&#39;</span> HEAD
 </span></span><span style="display:flex;"><span>git push origin main --force</span></span></code></pre></div>
 <p><em>Note</em>: I don&rsquo;t know how to modify this to apply it on all branches. Actually, one should use <code>git filter-repo --path 2_dir_B/ --invert-paths</code> to remove a folder from history. But, it removes also the remote so I have no idea how to make it works.</p>
 <ol start="19">
 <li>Define <code>2_dir_B</code> as a submodule of <code>MAIN</code>. It creates a <code>.gitmodules</code> file.</li>
 </ol>
-<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add https://github.com/username/TITI.git 2_dir_B
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add https://github.com/username/TITI.git 2_dir_B
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Define submodule 2_dir_B&#34;</span>
 </span></span><span style="display:flex;"><span>git push origin main <span style="color:#75715e"># push the .gitmodules file</span></span></span></code></pre></div>
 <p>That&rsquo;s all ! :smile:</p>
@@ -417,6 +417,7 @@ We should <code>--force</code> because there is no origin.</li>
           <ul class="space collapsible-menu">
             <li class="" data-nav-id="https://github.com/audrey-onfroy"><a class="padding" href="https://github.com/audrey-onfroy" rel="external" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
             <li class="" data-nav-id="https://www.linkedin.com/in/audrey-onfroy"><a class="padding" href="https://www.linkedin.com/in/audrey-onfroy" rel="external" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li class="" data-nav-id="https://orcid.org/0009-0003-1429-4230"><a class="padding" href="https://orcid.org/0009-0003-1429-4230" rel="external" target="_blank"><i class="fa-brands fa-orcid"></i> ORCID</a></li>
             <li class="" data-nav-id="https://cv.hal.science/audrey-onfroy"><a class="padding" href="https://cv.hal.science/audrey-onfroy" rel="external" target="_blank"><i class="fa-solid fa-spinner"></i> HAL</a></li>
           </ul>
         </div>
@@ -447,8 +448,8 @@ We should <code>--force</code> because there is no origin.</li>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1752450347" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1752450347" defer></script>
-    <script src="/js/theme.min.js?1752450347" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1772031750" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1772031750" defer></script>
+    <script src="/js/theme.min.js?1772031750" defer></script>
   </body>
 </html>

@@ -5,7 +5,7 @@
     <link>https://audrey-onfroy.github.io/tools/index.html</link>
     <description>aquarius, a R package to analyse scRNA-Seq data&#xA;HTML organizer, a tool to arrange HTML files&#xA;audrey-onfroy.github.io/aquarius DOI: 10.5281/zenodo.15763899 github.com/audrey-onfroy/organize_html DOI: 10.5281/zenodo.14505634 The TeX template developed for my PhD thesis&#xA;... github.com/audrey-onfroy/Thesis_template DOI: 10.5281/zenodo.15874912 ...</description>
     <generator>Hugo</generator>
-    <language>en</language>
+    <language>en-us</language>
     <atom:link href="https://audrey-onfroy.github.io/tools/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
