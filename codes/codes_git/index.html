@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+<html id="R-html" lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.156.0">
-    <meta name="generator" content="Relearn 7.6.1+4407b4364ab6f7477f7671fbd20c0494bade40ee">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
     <meta name="description" content="Remove sensitive files in Git history [Tutorial] Split a GitHub repository into a main repos and a submodule">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
@@ -23,18 +23,27 @@
     <meta itemprop="wordCount" content="18">
     <title>Git :: Audrey Onfroy</title>
     <link href="/codes/codes_git/index.xml" rel="alternate" type="application/rss+xml" title="Git :: Audrey Onfroy">
-    <link href="/images/favicon.ico?1775750062" rel="icon" type="image/x-icon" sizes="any">
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1775750062" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1775750062" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1775750062" rel="stylesheet">
-    <link href="/css/theme.min.css?1775750062" rel="stylesheet">
-    <link href="/css/format-html.min.css?1775750062" rel="stylesheet" id="R-format-style">
-    <link href="/css/auto-complete/auto-complete.min.css?1775750062" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1775750062" defer></script>
-    <script src="/js/lunr/lunr.min.js?1775750062" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1775750062" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1775750062" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1775750062" defer></script>
-    <script src="/js/search.min.js?1775750062" defer></script>
+    <link href="/images/favicon.ico?1775834812" rel="icon" type="image/x-icon" sizes="any">
+    <link href="/css/auto-complete/auto-complete.min.css?1775834812" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1775834812" defer></script>
+    <script src="/js/search-lunr.min.js?1775834812" defer></script>
+    <script src="/js/search.min.js?1775834812" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1775834812";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1775834812" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1775834812" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1775834812" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1775834812" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/fonts/fontawesome/css/all.min.css?1775834812" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/all.min.css?1775834812" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1775834812" rel="stylesheet">
+    <link href="/css/theme.min.css?1775834812" rel="stylesheet">
+    <link href="/css/format-html.min.css?1775834812" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -43,22 +52,23 @@
       window.relearn.relBasePath='..\/..';
       window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='https:\/\/audrey-onfroy.github.io';
-      window.relearn.contentLangs=['en'];
-      window.relearn.index_js_url="/searchindex.en.js?1775750062";
-      window.relearn.disableAnchorCopy=false;
-      window.relearn.disableAnchorScrolling=false;
       window.relearn.disableInlineCopyToClipboard=false;
       window.relearn.enableBlockCodeWrap=true;
-      // legal
-      window.relearn.getItem = (s,n) => {return s.getItem(n)};
-      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
-      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
       // variant stuff
       window.relearn.themevariants = [ 'green-mode', 'auto', 'light-mode', 'dark-mode' ];
-      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.customvariantprefix = "my-custom-";
       window.relearn.changeVariant = function(variant) {
         var oldVariant = document.documentElement.dataset.rThemeVariant;
-        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
         document.documentElement.dataset.rThemeVariant = variant;
         if (oldVariant != variant) {
           document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
@@ -66,58 +76,52 @@
         }
       }
       window.relearn.markVariant = function() {
-        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
         document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
       }
       window.relearn.initVariant = function() {
-        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
-        if( variant == window.relearn.customvariantname ){
-        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
           variant = window.relearn.themevariants[0];
-          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
         }
         document.documentElement.dataset.rThemeVariant = variant;
       }
       window.relearn.initVariant();
       window.relearn.markVariant();
-      // translations
-      window.T_Copy_to_clipboard = `Copy to clipboard`;
-      window.T_Copied_to_clipboard = `Copied to clipboard!`;
-      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
-      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
-      window.T_Reset_view = `Reset view`;
-      window.T_View_reset = `View reset!`;
-      window.T_No_results_found = `No results found for "{0}"`;
-      window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/codes/codes_git/index.html">
+  <body class="mobile-support html" data-origin="/codes/codes_git/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
-      <nav id="R-topbar">
-        <div class="topbar-wrapper">
-          <div class="topbar-sidebar-divider"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
           <div class="topbar-area topbar-area-start" data-area="start">
-            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
             </div>
-            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"> 
                 </div>
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Welcome</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/codes/index.html"><span itemprop="name">Codes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Git</span><meta itemprop="position" content="3"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Welcome</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/codes/index.html"><span itemprop="name">Codes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Git</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_bash/find_update_symlinks/index.html" title="Update symbolic links (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/codes/codes_bash/find_update_symlinks/index.html" title="Update symbolic links (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/codes/codes_git/remove_files_git/index.html" title="Remove sensitive files in git history (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/codes/codes_git/remove_files_git/index.html" title="Remove sensitive files in git history (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
-            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
               <div class="topbar-content">
                 <div class="topbar-content-wrapper">
                   <div class="topbar-area topbar-area-more" data-area="more">
@@ -151,82 +155,82 @@
     <aside id="R-sidebar" class="default-animation">
       <div id="R-header-topbar" class="default-animation"></div>
       <div id="R-header-wrapper" class="default-animation">
-        <div id="R-header" class="default-animation">
-          <a id="R-logo" class="R-default" href="/index.html">
-            <div class="logo-title">Audrey Onfroy</div>
-          </a>
-        </div>
+        <a id="R-logo" class="R-default direction-row" href="/index.html">
+          <span class="logo-title default-animation">Audrey Onfroy</span>
+        </a>
         <search><form action="/search/index.html" method="get">
           <div class="searchbox default-animation">
-            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-fw fa-search"></i></button>
             <label class="a11y-only" for="R-search-by">Search</label>
             <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
-            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
           </div>
         </form></search>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <div class="R-menu-divider default-animation">
-          <hr class="padding">
+          <hr class="padding default-animation">
         </div>
-        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
           <ul class="space collapsible-menu">
             <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-user"></i> About</a></li>
           </ul>
         </div>
         <div class="R-menu-divider default-animation">
-          <hr class="padding">
+          <hr class="padding default-animation">
         </div>
-        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
           <ul class="">
           </ul>
         </div>
         <div class="R-menu-divider default-animation">
-          <hr class="padding">
+          <hr class="padding default-animation">
         </div>
       </div>
       <div id="R-content-wrapper" class="highlightable">
-        <div class="R-sidebarmenu R-shortcutmenu-main">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="" data-nav-id="/posts/index.html"><input type="checkbox" id="R-section-b4e55eb7e39db1aee6d02808a2267090" aria-controls="R-subsections-b4e55eb7e39db1aee6d02808a2267090"><label for="R-section-b4e55eb7e39db1aee6d02808a2267090"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Posts</span></label><a class="padding" href="/posts/index.html"><i class="fa-regular fa-comment-dots"></i> Posts</a><ul id="R-subsections-b4e55eb7e39db1aee6d02808a2267090" class="collapsible-menu">
+            <li class="" data-nav-id="/posts/index.html"><input type="checkbox" id="R-section-b4e55eb7e39db1aee6d02808a2267090" aria-controls="R-subsections-b4e55eb7e39db1aee6d02808a2267090"><label for="R-section-b4e55eb7e39db1aee6d02808a2267090"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Posts</span></label><a class="padding default-animation" href="/posts/index.html"><i class="fa-regular fa-comment-dots"></i> Posts</a><ul id="R-subsections-b4e55eb7e39db1aee6d02808a2267090" class="collapsible-menu">
             <li class="" data-nav-id="/posts/thesis/index.html"><a class="padding" href="/posts/thesis/index.html">PhD thesis</a></li>
             <li class="" data-nav-id="/posts/welcome/index.html"><a class="padding" href="/posts/welcome/index.html">Welcome</a></li></ul></li>
-            <li class="parent " data-nav-id="/codes/index.html"><input type="checkbox" id="R-section-8c71a3e142467619dfd1d6f065895b8a" aria-controls="R-subsections-8c71a3e142467619dfd1d6f065895b8a" checked><label for="R-section-8c71a3e142467619dfd1d6f065895b8a"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Codes</span></label><a class="padding" href="/codes/index.html"><i class="fa-solid fa-code"></i> Codes</a><ul id="R-subsections-8c71a3e142467619dfd1d6f065895b8a" class="collapsible-menu">
-            <li class="" data-nav-id="/codes/codes_bash/index.html"><input type="checkbox" id="R-section-fde67a55e18af009c54a9c1a8db4e80b" aria-controls="R-subsections-fde67a55e18af009c54a9c1a8db4e80b"><label for="R-section-fde67a55e18af009c54a9c1a8db4e80b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu bash</span></label><a class="padding" href="/codes/codes_bash/index.html">bash</a><ul id="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" class="collapsible-menu">
+            <li class="parent " data-nav-id="/codes/index.html"><input type="checkbox" id="R-section-8c71a3e142467619dfd1d6f065895b8a" aria-controls="R-subsections-8c71a3e142467619dfd1d6f065895b8a" checked><label for="R-section-8c71a3e142467619dfd1d6f065895b8a"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Codes</span></label><a class="padding default-animation" href="/codes/index.html"><i class="fa-solid fa-code"></i> Codes</a><ul id="R-subsections-8c71a3e142467619dfd1d6f065895b8a" class="collapsible-menu">
+            <li class="" data-nav-id="/codes/codes_bash/index.html"><input type="checkbox" id="R-section-fde67a55e18af009c54a9c1a8db4e80b" aria-controls="R-subsections-fde67a55e18af009c54a9c1a8db4e80b"><label for="R-section-fde67a55e18af009c54a9c1a8db4e80b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu bash</span></label><a class="padding default-animation" href="/codes/codes_bash/index.html">bash</a><ul id="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_bash/allow_access/index.html"><a class="padding" href="/codes/codes_bash/allow_access/index.html">allow files access on cluster</a></li>
             <li class="" data-nav-id="/codes/codes_bash/find_with_colors/index.html"><a class="padding" href="/codes/codes_bash/find_with_colors/index.html">color find output</a></li>
             <li class="" data-nav-id="/codes/codes_bash/define_symlinks/index.html"><a class="padding" href="/codes/codes_bash/define_symlinks/index.html">define symlinks</a></li>
             <li class="" data-nav-id="/codes/codes_bash/find_pattern_files/index.html"><a class="padding" href="/codes/codes_bash/find_pattern_files/index.html">find pattern in files</a></li>
             <li class="" data-nav-id="/codes/codes_bash/replace_symlinks/index.html"><a class="padding" href="/codes/codes_bash/replace_symlinks/index.html">replace symlinks</a></li>
             <li class="" data-nav-id="/codes/codes_bash/find_update_symlinks/index.html"><a class="padding" href="/codes/codes_bash/find_update_symlinks/index.html">update symlinks</a></li></ul></li>
-            <li class="active parent " data-nav-id="/codes/codes_git/index.html"><input type="checkbox" id="R-section-96f573561301a0c9c107153d94871871" aria-controls="R-subsections-96f573561301a0c9c107153d94871871" checked><label for="R-section-96f573561301a0c9c107153d94871871"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Git</span></label><a class="padding" href="/codes/codes_git/index.html">Git</a><ul id="R-subsections-96f573561301a0c9c107153d94871871" class="collapsible-menu">
+            <li class="active parent " data-nav-id="/codes/codes_git/index.html"><input type="checkbox" id="R-section-96f573561301a0c9c107153d94871871" aria-controls="R-subsections-96f573561301a0c9c107153d94871871" checked><label for="R-section-96f573561301a0c9c107153d94871871"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Git</span></label><a class="padding default-animation" href="/codes/codes_git/index.html">Git</a><ul id="R-subsections-96f573561301a0c9c107153d94871871" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_git/remove_files_git/index.html"><a class="padding" href="/codes/codes_git/remove_files_git/index.html">remove files git</a></li>
             <li class="" data-nav-id="/codes/codes_git/split_repo_submodule_with_history/index.html"><a class="padding" href="/codes/codes_git/split_repo_submodule_with_history/index.html">split &#43; submodule &#43; history</a></li></ul></li>
-            <li class="" data-nav-id="/codes/codes_r/index.html"><input type="checkbox" id="R-section-f2ceb008d41370dd13ebd441f6789f8e" aria-controls="R-subsections-f2ceb008d41370dd13ebd441f6789f8e"><label for="R-section-f2ceb008d41370dd13ebd441f6789f8e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu R</span></label><a class="padding" href="/codes/codes_r/index.html">R</a><ul id="R-subsections-f2ceb008d41370dd13ebd441f6789f8e" class="collapsible-menu">
+            <li class="" data-nav-id="/codes/codes_r/index.html"><input type="checkbox" id="R-section-f2ceb008d41370dd13ebd441f6789f8e" aria-controls="R-subsections-f2ceb008d41370dd13ebd441f6789f8e"><label for="R-section-f2ceb008d41370dd13ebd441f6789f8e"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu R</span></label><a class="padding default-animation" href="/codes/codes_r/index.html">R</a><ul id="R-subsections-f2ceb008d41370dd13ebd441f6789f8e" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_r/two_versions_of_r/index.html"><a class="padding" href="/codes/codes_r/two_versions_of_r/index.html">two versions of R</a></li>
             <li class="" data-nav-id="/codes/codes_r/clean_r_env/index.html"><a class="padding" href="/codes/codes_r/clean_r_env/index.html">clean R env</a></li>
             <li class="" data-nav-id="/codes/codes_r/ggplot_guides/index.html"><a class="padding" href="/codes/codes_r/ggplot_guides/index.html">ggplot guides</a></li>
             <li class="" data-nav-id="/codes/codes_r/select_ith_element_in_list/index.html"><a class="padding" href="/codes/codes_r/select_ith_element_in_list/index.html">i-th elements of a R list</a></li></ul></li>
-            <li class="" data-nav-id="/codes/codes_markdown/index.html"><input type="checkbox" id="R-section-2d6fa88cdaf145d16693178d437bff23" aria-controls="R-subsections-2d6fa88cdaf145d16693178d437bff23"><label for="R-section-2d6fa88cdaf145d16693178d437bff23"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu html / markdown</span></label><a class="padding" href="/codes/codes_markdown/index.html">html / markdown</a><ul id="R-subsections-2d6fa88cdaf145d16693178d437bff23" class="collapsible-menu">
+            <li class="" data-nav-id="/codes/codes_markdown/index.html"><input type="checkbox" id="R-section-2d6fa88cdaf145d16693178d437bff23" aria-controls="R-subsections-2d6fa88cdaf145d16693178d437bff23"><label for="R-section-2d6fa88cdaf145d16693178d437bff23"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu html / markdown</span></label><a class="padding default-animation" href="/codes/codes_markdown/index.html">html / markdown</a><ul id="R-subsections-2d6fa88cdaf145d16693178d437bff23" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_markdown/make_table/index.html"><a class="padding" href="/codes/codes_markdown/make_table/index.html">table</a></li>
             <li class="" data-nav-id="/codes/codes_markdown/include_html/index.html"><a class="padding" href="/codes/codes_markdown/include_html/index.html">html in md</a></li></ul></li></ul></li>
             <li class="" data-nav-id="/tools/index.html"><a class="padding" href="/tools/index.html"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</a></li>
             <li class="" data-nav-id="/analysis/index.html"><a class="padding" href="/analysis/index.html"><i class="fa-solid fa-magnifying-glass-chart"></i> Analyses</a></li>
           </ul>
         </div>
-        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
           <ul class="space collapsible-menu">
-            <li class="" data-nav-id="https://github.com/audrey-onfroy"><a class="padding" href="https://github.com/audrey-onfroy" rel="external" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
-            <li class="" data-nav-id="https://www.linkedin.com/in/audrey-onfroy"><a class="padding" href="https://www.linkedin.com/in/audrey-onfroy" rel="external" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-            <li class="" data-nav-id="https://orcid.org/0009-0003-1429-4230"><a class="padding" href="https://orcid.org/0009-0003-1429-4230" rel="external" target="_blank"><i class="fa-brands fa-orcid"></i> ORCID</a></li>
-            <li class="" data-nav-id="https://cv.hal.science/audrey-onfroy"><a class="padding" href="https://cv.hal.science/audrey-onfroy" rel="external" target="_blank"><i class="fa-solid fa-spinner"></i> HAL</a></li>
+            <li class="" data-nav-id="https://github.com/audrey-onfroy"><a class="padding" href="https://github.com/audrey-onfroy" rel="external"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li class="" data-nav-id="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Onfroy%2C%20Audrey%22&amp;l=list&amp;p=1&amp;s=10&amp;sort=bestmatch"><a class="padding" href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Onfroy%2C%20Audrey%22&l=list&p=1&s=10&sort=bestmatch" rel="external"><i class="fa-solid fa-z"></i> Zenodo</a></li>
+            <li class="" data-nav-id="https://hub.docker.com/u/aonfroy"><a class="padding" href="https://hub.docker.com/u/aonfroy" rel="external"><i class="fa-brands fa-docker"></i> Docker Hub</a></li>
+            <li class="" data-nav-id="https://www.linkedin.com/in/audrey-onfroy"><a class="padding" href="https://www.linkedin.com/in/audrey-onfroy" rel="external"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li class="" data-nav-id="https://cv.hal.science/audrey-onfroy"><a class="padding" href="https://cv.hal.science/audrey-onfroy" rel="external"><i class="fa-solid fa-spinner"></i> HAL</a></li>
+            <li class="" data-nav-id="https://orcid.org/0009-0003-1429-4230"><a class="padding" href="https://orcid.org/0009-0003-1429-4230" rel="external"><i class="fa-brands fa-orcid"></i> ORCID</a></li>
           </ul>
         </div>
-        <div id="R-footer-margin"></div>
+        <div id="R-footer-margin" class="default-animation"></div>
         <div class="R-menu-divider default-animation">
-          <hr class="padding">
+          <hr class="padding default-animation">
         </div>
-        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
           <ul class="">
             <li class="R-variantswitcher">
               <div class="padding menu-control">
@@ -247,11 +251,11 @@
             </li>
           </ul>
         </div>
-<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/clipboard/clipboard.min.js?1775750062" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1775750062" defer></script>
-    <script src="/js/theme.min.js?1775750062" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1775834812" defer></script>
+    <script src="/js/theme.min.js?1775834812" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

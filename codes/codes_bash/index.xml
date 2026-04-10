@@ -20,7 +20,7 @@
       <link>https://audrey-onfroy.github.io/codes/codes_bash/find_with_colors/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://audrey-onfroy.github.io/codes/codes_bash/find_with_colors/index.html</guid>
-      <description>Code Example to identify all definitions of custom functions in files with the Rmd extension, and to color the names of these functions:&#xA;#!/usr/bin/bash find . -name &#34;*Rmd&#34; -type f \ -exec grep -E &#39; = function \(&#39; {} + | grep -vE &#39;FUN|%&#39; | grep --color -P &#39;(?&lt;=:).*(?= = fun)&#39; Output The output contains several rows with this pattern:&#xA;filepath/filename.Rmd:function_name = function( ….&#xA;Explanations find . -name &#34;*Rmd&#34; -type f: in all files with the Rmd extension in the folders currently (.) accessible… -exec grep -E &#39; = function \(&#39; {} +: …, identify all the lines containing = function( grep -vE &#39;FUN|%&#39;: then, remove the lines containing FUN or %. I use this to remove the function that are defined in apply function and in pipes, for instance. grep --color -P &#39;(?&lt;=:).*(?= = func)&#39;: then, color the characters between : and = func</description>
+      <description>Code Example to identify all definitions of custom functions in files with the Rmd extension, and to color the names of these functions:&#xA;#!/usr/bin/bash find . -name &#34;*Rmd&#34; -type f \ -exec grep -E &#39; = function \(&#39; {} + | grep -vE &#39;FUN|%&#39; | grep --color -P &#39;(?&lt;=:).*(?= = fun)&#39; Output The output contains several rows with this pattern:</description>
     </item>
     <item>
       <title>Define symbolic link</title>
