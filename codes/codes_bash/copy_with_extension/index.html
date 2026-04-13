@@ -5,24 +5,36 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.156.0">
     <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
-    <meta name="description" content="Make a table Include an HTML file issued from a R Markdown file">
+    <meta name="description" content="Source: https://superuser.com/questions/299938
+Code:
+#!/usr/bin/bash destination=&#34;/path/to/somewhere&#34; ; find . -name &#34;*html&#34; | cpio -pdm ${destination}">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="html / markdown :: A. Onfroy">
-    <meta name="twitter:description" content="Make a table Include an HTML file issued from a R Markdown file">
-    <meta property="og:url" content="https://audrey-onfroy.github.io/codes/codes_markdown/index.html">
+    <meta name="twitter:title" content="Copy files with a specific extension and preserve the directory structure :: A. Onfroy">
+    <meta name="twitter:description" content="Source: https://superuser.com/questions/299938
+Code:
+#!/usr/bin/bash destination=&#34;/path/to/somewhere&#34; ; find . -name &#34;*html&#34; | cpio -pdm ${destination}">
+    <meta property="og:url" content="https://audrey-onfroy.github.io/codes/codes_bash/copy_with_extension/index.html">
     <meta property="og:site_name" content="A. Onfroy">
-    <meta property="og:title" content="html / markdown :: A. Onfroy">
-    <meta property="og:description" content="Make a table Include an HTML file issued from a R Markdown file">
+    <meta property="og:title" content="Copy files with a specific extension and preserve the directory structure :: A. Onfroy">
+    <meta property="og:description" content="Source: https://superuser.com/questions/299938
+Code:
+#!/usr/bin/bash destination=&#34;/path/to/somewhere&#34; ; find . -name &#34;*html&#34; | cpio -pdm ${destination}">
     <meta property="og:locale" content="en_us">
-    <meta property="og:type" content="website">
-    <meta itemprop="name" content="html / markdown :: A. Onfroy">
-    <meta itemprop="description" content="Make a table Include an HTML file issued from a R Markdown file">
-    <meta itemprop="datePublished" content="2025-04-07T00:00:00+00:00">
-    <meta itemprop="dateModified" content="2025-04-07T00:00:00+00:00">
-    <meta itemprop="wordCount" content="13">
-    <title>html / markdown :: A. Onfroy</title>
-    <link href="/codes/codes_markdown/index.xml" rel="alternate" type="application/rss+xml" title="html / markdown :: A. Onfroy">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Codes">
+    <meta property="article:published_time" content="2026-04-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-13T00:00:00+00:00">
+    <meta property="article:tag" content="Bash">
+    <meta itemprop="name" content="Copy files with a specific extension and preserve the directory structure :: A. Onfroy">
+    <meta itemprop="description" content="Source: https://superuser.com/questions/299938
+Code:
+#!/usr/bin/bash destination=&#34;/path/to/somewhere&#34; ; find . -name &#34;*html&#34; | cpio -pdm ${destination}">
+    <meta itemprop="datePublished" content="2026-04-13T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2026-04-13T00:00:00+00:00">
+    <meta itemprop="wordCount" content="14">
+    <meta itemprop="keywords" content="Bash">
+    <title>Copy files with a specific extension and preserve the directory structure :: A. Onfroy</title>
     <link href="/images/favicon.ico?1776091808" rel="icon" type="image/x-icon" sizes="any">
     <link href="/css/auto-complete/auto-complete.min.css?1776091808" rel="stylesheet">
     <script src="/js/auto-complete/auto-complete.min.js?1776091808" defer></script>
@@ -48,9 +60,9 @@
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = `.min`;
-      window.relearn.path='\/codes\/codes_markdown\/index.html';
-      window.relearn.relBasePath='..\/..';
-      window.relearn.relBaseUri='..\/..';
+      window.relearn.path='\/codes\/codes_bash\/copy_with_extension\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/audrey-onfroy.github.io';
       window.relearn.disableInlineCopyToClipboard=false;
       window.relearn.enableBlockCodeWrap=true;
@@ -93,7 +105,7 @@
       window.relearn.markVariant();
     </script>
   </head>
-  <body class="mobile-support html" data-origin="/codes/codes_markdown/index.html">
+  <body class="mobile-support html" data-origin="/codes/codes_bash/copy_with_extension/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar" class="default-animation">
@@ -111,14 +123,14 @@
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Welcome</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/codes/index.html"><span itemprop="name">Codes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">html / markdown</span><meta itemprop="position" content="3"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Welcome</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/codes/index.html"><span itemprop="name">Codes</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/codes/codes_bash/index.html"><span itemprop="name">bash</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">copy pattern with structure</span><meta itemprop="position" content="4"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/codes/codes_r/select_ith_element_in_list/index.html" title="Subset the i-th elements of a nested list (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/codes/codes_bash/index.html" title="bash (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
-<span class="btn cstyle button link noborder notitle interactive"><a href="/codes/codes_markdown/make_table/index.html" title="Make a table (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+<span class="btn cstyle button link noborder notitle interactive"><a href="/codes/codes_bash/allow_access/index.html" title="Allow files access on cluster (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
             </div>
             <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
 <span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
@@ -133,18 +145,25 @@
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable section" tabindex="-1">
+      <main id="R-body-inner" class="highlightable codes" tabindex="-1">
         <div class="flex-block-wrapper">
 <article class="default">
   <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/bash/index.html">Bash</a></li>
+  </ul>
+</div>
   </header>
 
-<h1 id="html--markdown">html / markdown</h1>
+<h1 id="copy-files-with-a-specific-extension-and-preserve-the-directory-structure">Copy files with a specific extension and preserve the directory structure</h1>
 
-<ul>
-<li><a href="/codes/codes_markdown/make_table/index.html">Make a table</a></li>
-<li><a href="/codes/codes_markdown/include_html/index.html">Include an HTML file issued from a R Markdown file</a></li>
-</ul>
+<p>Source: <a href="https://superuser.com/questions/299938" rel="external">https://superuser.com/questions/299938</a></p>
+<p>Code:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/bash
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>destination<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/path/to/somewhere&#34;</span> ; find . -name <span style="color:#e6db74">&#34;*html&#34;</span> | cpio -pdm <span style="color:#e6db74">${</span>destination<span style="color:#e6db74">}</span></span></span></code></pre></div>
 
   <footer class="footline">
   </footer>
@@ -200,8 +219,8 @@
             <li class="" data-nav-id="/posts/thesis/index.html"><a class="padding" href="/posts/thesis/index.html">PhD thesis</a></li>
             <li class="" data-nav-id="/posts/welcome/index.html"><a class="padding" href="/posts/welcome/index.html">Welcome</a></li></ul></li>
             <li class="parent " data-nav-id="/codes/index.html"><input type="checkbox" id="R-section-8c71a3e142467619dfd1d6f065895b8a" aria-controls="R-subsections-8c71a3e142467619dfd1d6f065895b8a" checked><label for="R-section-8c71a3e142467619dfd1d6f065895b8a"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Codes</span></label><a class="padding default-animation" href="/codes/index.html"><i class="fa-solid fa-code"></i> Codes</a><ul id="R-subsections-8c71a3e142467619dfd1d6f065895b8a" class="collapsible-menu">
-            <li class="" data-nav-id="/codes/codes_bash/index.html"><input type="checkbox" id="R-section-fde67a55e18af009c54a9c1a8db4e80b" aria-controls="R-subsections-fde67a55e18af009c54a9c1a8db4e80b"><label for="R-section-fde67a55e18af009c54a9c1a8db4e80b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu bash</span></label><a class="padding default-animation" href="/codes/codes_bash/index.html">bash</a><ul id="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" class="collapsible-menu">
-            <li class="" data-nav-id="/codes/codes_bash/copy_with_extension/index.html"><a class="padding" href="/codes/codes_bash/copy_with_extension/index.html">copy pattern with structure</a></li>
+            <li class="parent " data-nav-id="/codes/codes_bash/index.html"><input type="checkbox" id="R-section-fde67a55e18af009c54a9c1a8db4e80b" aria-controls="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" checked><label for="R-section-fde67a55e18af009c54a9c1a8db4e80b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu bash</span></label><a class="padding default-animation" href="/codes/codes_bash/index.html">bash</a><ul id="R-subsections-fde67a55e18af009c54a9c1a8db4e80b" class="collapsible-menu">
+            <li class="active " data-nav-id="/codes/codes_bash/copy_with_extension/index.html"><a class="padding" href="/codes/codes_bash/copy_with_extension/index.html">copy pattern with structure</a></li>
             <li class="" data-nav-id="/codes/codes_bash/allow_access/index.html"><a class="padding" href="/codes/codes_bash/allow_access/index.html">allow files access on cluster</a></li>
             <li class="" data-nav-id="/codes/codes_bash/find_with_colors/index.html"><a class="padding" href="/codes/codes_bash/find_with_colors/index.html">color find output</a></li>
             <li class="" data-nav-id="/codes/codes_bash/define_symlinks/index.html"><a class="padding" href="/codes/codes_bash/define_symlinks/index.html">define symlinks</a></li>
@@ -216,7 +235,7 @@
             <li class="" data-nav-id="/codes/codes_r/clean_r_env/index.html"><a class="padding" href="/codes/codes_r/clean_r_env/index.html">clean R env</a></li>
             <li class="" data-nav-id="/codes/codes_r/ggplot_guides/index.html"><a class="padding" href="/codes/codes_r/ggplot_guides/index.html">ggplot guides</a></li>
             <li class="" data-nav-id="/codes/codes_r/select_ith_element_in_list/index.html"><a class="padding" href="/codes/codes_r/select_ith_element_in_list/index.html">i-th elements of a R list</a></li></ul></li>
-            <li class="active parent " data-nav-id="/codes/codes_markdown/index.html"><input type="checkbox" id="R-section-2d6fa88cdaf145d16693178d437bff23" aria-controls="R-subsections-2d6fa88cdaf145d16693178d437bff23" checked><label for="R-section-2d6fa88cdaf145d16693178d437bff23"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu html / markdown</span></label><a class="padding default-animation" href="/codes/codes_markdown/index.html">html / markdown</a><ul id="R-subsections-2d6fa88cdaf145d16693178d437bff23" class="collapsible-menu">
+            <li class="" data-nav-id="/codes/codes_markdown/index.html"><input type="checkbox" id="R-section-2d6fa88cdaf145d16693178d437bff23" aria-controls="R-subsections-2d6fa88cdaf145d16693178d437bff23"><label for="R-section-2d6fa88cdaf145d16693178d437bff23"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu html / markdown</span></label><a class="padding default-animation" href="/codes/codes_markdown/index.html">html / markdown</a><ul id="R-subsections-2d6fa88cdaf145d16693178d437bff23" class="collapsible-menu">
             <li class="" data-nav-id="/codes/codes_markdown/make_table/index.html"><a class="padding" href="/codes/codes_markdown/make_table/index.html">table</a></li>
             <li class="" data-nav-id="/codes/codes_markdown/include_html/index.html"><a class="padding" href="/codes/codes_markdown/include_html/index.html">html in md</a></li></ul></li></ul></li>
             <li class="" data-nav-id="/tools/index.html"><a class="padding" href="/tools/index.html"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</a></li>

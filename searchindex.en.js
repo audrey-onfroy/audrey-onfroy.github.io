@@ -1,7 +1,7 @@
 var relearn_searchindex = [
   {
     "breadcrumb": "Welcome \u003e Posts",
-    "content": "PhD thesis I have defended my PhD thesis on 27 September 2024 at the Mondor Biomedical Research Institute in Créteil, France. You can read more about my project:\non the theses.fr website ; on the global HAL website, and, on the thesis-related HAL website. TeX template My thesis has been written using Overleaf. I simplified the final document to build a template, so I hope one can easily build upon it. Find the template in Tools.\nAli has used it!\nFigures My thesis contains several original illustrations created using BioRender that you can download in PDF format below. Click on the image to open the PDF file in a new tab.\nGive credit where credit is due.\nFigure 1 Figure 2 Figure 3 Figure 4 Figure 5 Figure 6 Figures 7-9 Figure 8 Figure 10 Figure 11 Figure 12 Figure 13 Figure 14 Figure 15 Figure 16 Figure 17 Figure 18 Figure 19 Figure 20 Figure 21 Figure 22 Figure 23 Figure 24 Figure 25 Figure 26 Figure 27 Figure 28 Figure 29 Figure 30 Figure 31 Figure 32 Figure 33 Figure 35 Figure 35A Figure 35B Figure 37 Figure 38 Figure 39 Figure 40 Figure 41 Figure 42 Figure 44 Figure 46 Figure 47 Methods Figure 48 Figure 49 Figure 52 Figure 53 Figure 56 Figure 57 Results Figure 58 Figure 59 Figure 60 Figure 61 Figure 63 Figure 64 Figure 65 Figure 66 Figure 69 Figure 73 Figure 76 Discussion Figure 77 Figure 78 Appendix Figure 79 Figure 80",
+    "content": "PhD thesis I have defended my PhD thesis on 27 September 2024 at the Mondor Biomedical Research Institute in Créteil, France. You can read more about my project:\non the theses.fr website ; on the global HAL website, and, on the thesis-related HAL website. TeX template My thesis has been written using Overleaf. I simplified the final document to build a template, so I hope one can easily build upon it. Find the template in Tools.\nAli has used it!\nFigures My thesis contains several original illustrations created using BioRender that you can download in PDF format below. Click on the image to open the PDF file in a new tab.\nGive credit where credit is due.\nIntroduction Figure 1 Figure 2 Figure 3 Figure 4 Figure 5 Figure 6 Figures 7-9 Figure 8 Figure 10 Figure 11 Figure 12 Figure 13 Figure 14 Figure 15 Figure 16 Figure 17 Figure 18 Figure 19 Figure 20 Figure 21 Figure 22 Figure 23 Figure 24 Figure 25 Figure 26 Figure 27 Figure 28 Figure 29 Figure 30 Figure 31 Figure 32 Figure 33 Figure 35 Figure 35A Figure 35B Figure 37 Figure 38 Figure 39 Figure 40 Figure 41 Figure 42 Figure 44 Figure 46 Figure 47 Methods Figure 48 Figure 49 Figure 52 Figure 53 Figure 56 Figure 57 Results Figure 58 Figure 59 Figure 60 Figure 61 Figure 63 Figure 64 Figure 65 Figure 66 Figure 69 Figure 73 Figure 76 Discussion Figure 77 Figure 78 Appendix Figure 79 Figure 80",
     "description": "PhD thesis I have defended my PhD thesis on 27 September 2024 at the Mondor Biomedical Research Institute in Créteil, France. You can read more about my project:\non the theses.fr website ; on the global HAL website, and, on the thesis-related HAL website. TeX template My thesis has been written using Overleaf. I simplified the final document to build a template, so I hope one can easily build upon it. Find the template in Tools.",
     "tags": [],
     "title": "About my thesis",
@@ -9,8 +9,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Welcome \u003e Codes",
-    "content": "Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links",
-    "description": "Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links",
+    "content": "Copy files with a specific extension and preserve the directory structure Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links",
+    "description": "Copy files with a specific extension and preserve the directory structure Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links",
     "tags": [],
     "title": "bash",
     "uri": "/codes/codes_bash/index.html"
@@ -33,7 +33,7 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "",
-    "content": "Hello there!\nI am Audrey Onfroy, research engineer in computational biology. My work consists in making sequencing data express their deepest secrets!\nThis website aims to be an overview of everything related to my work:\nCodes: I used to write a lot of code snippets on sticky notes, stuck everywhere on my computer, the desk, and a bit of the wall… Now they are accessible from everywhere and by everyone! 📒 Tools: Here, you can find tools I have developed to simplify and speed up my daily work. I hope they can be helpful to others as well. If you have any questions, feel free to open an issue in the associated Github repository. Analyses: The computational analyses that are public, through a preprint or in a peer-reviewed journal, are there. Posts: Everything that do not fall in the previous categories… Read more about me on LinkedIn, about the scientific communications on HAL (posters, slides, etc.) and ORCID (publications), about the code on GitHub, and about code, data and environment on Docker Hub and Zenodo. Links are in the menu. However, all meaningful information regarding the code can be found in Tools or Analyses.\nLast update : 2026-04-10",
+    "content": "Hello there!\nI am Audrey Onfroy, research engineer in computational biology. My work consists in making sequencing data express their deepest secrets!\nThis website aims to be an overview of everything related to my work:\nCodes: I used to write a lot of code snippets on sticky notes, stuck everywhere on my computer, the desk, and a bit of the wall… Now they are accessible from everywhere and by everyone! 📒 Tools: Here, you can find tools I have developed to simplify and speed up my daily work. I hope they can be helpful to others as well. If you have any questions, feel free to open an issue in the associated Github repository. Analyses: The computational analyses that are public, through a preprint or in a peer-reviewed journal, are there. Posts: Everything that do not fall in the previous categories… Read more about me on LinkedIn, about the scientific communications on HAL (posters, slides, etc.) and ORCID (publications), about the code on GitHub, and about code, data and environment on Docker Hub and Zenodo. Links are in the menu. However, all meaningful information regarding the code can be found in Tools or Analyses.\nLast update :",
     "description": "Hello there!\nI am Audrey Onfroy, research engineer in computational biology. My work consists in making sequencing data express their deepest secrets!\nThis website aims to be an overview of everything related to my work:\nCodes: I used to write a lot of code snippets on sticky notes, stuck everywhere on my computer, the desk, and a bit of the wall… Now they are accessible from everywhere and by everyone! 📒 Tools: Here, you can find tools I have developed to simplify and speed up my daily work. I hope they can be helpful to others as well. If you have any questions, feel free to open an issue in the associated Github repository. Analyses: The computational analyses that are public, through a preprint or in a peer-reviewed journal, are there. Posts: Everything that do not fall in the previous categories… Read more about me on LinkedIn, about the scientific communications on HAL (posters, slides, etc.) and ORCID (publications), about the code on GitHub, and about code, data and environment on Docker Hub and Zenodo. Links are in the menu. However, all meaningful information regarding the code can be found in Tools or Analyses.",
     "tags": [],
     "title": "Welcome",
@@ -88,12 +88,14 @@ var relearn_searchindex = [
     "uri": "/tags/bash/index.html"
   },
   {
-    "breadcrumb": "Welcome \u003e Tags",
-    "content": "",
-    "description": "",
-    "tags": [],
-    "title": "Tag :: R",
-    "uri": "/tags/r/index.html"
+    "breadcrumb": "Welcome \u003e Codes \u003e bash",
+    "content": "Source: https://superuser.com/questions/299938\nCode:\n#!/usr/bin/bash destination=\"/path/to/somewhere\" ; find . -name \"*html\" | cpio -pdm ${destination}",
+    "description": "Source: https://superuser.com/questions/299938\nCode:\n#!/usr/bin/bash destination=\"/path/to/somewhere\" ; find . -name \"*html\" | cpio -pdm ${destination}",
+    "tags": [
+      "Bash"
+    ],
+    "title": "Copy files with a specific extension and preserve the directory structure",
+    "uri": "/codes/codes_bash/copy_with_extension/index.html"
   },
   {
     "breadcrumb": "Welcome",
@@ -102,6 +104,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Tags",
     "uri": "/tags/index.html"
+  },
+  {
+    "breadcrumb": "Welcome \u003e Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: R",
+    "uri": "/tags/r/index.html"
   },
   {
     "breadcrumb": "Welcome \u003e Codes \u003e R",
@@ -221,8 +231,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Welcome \u003e Codes \u003e bash",
-    "content": "Source: https://superuser.com/questions/303559/replace-symbolic-links-with-files\nCode:\n#!/usr/bin/bash set -e for link; do test -h \"$link\" || continue dir=$(dirname \"$link\") reltarget=$(readlink \"$link\") case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv \"$link\" cp -afv \"$abstarget\" \"$link\" || { # on failure, restore the symlink rm -rfv \"$link\" ln -sfv \"$reltarget\" \"$link\" } done Usage:\nfind . -type l -exec /path_to/replace_symlinks.sh {} +",
-    "description": "Source: https://superuser.com/questions/303559/replace-symbolic-links-with-files\nCode:\n#!/usr/bin/bash set -e for link; do test -h \"$link\" || continue dir=$(dirname \"$link\") reltarget=$(readlink \"$link\") case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv \"$link\" cp -afv \"$abstarget\" \"$link\" || { # on failure, restore the symlink rm -rfv \"$link\" ln -sfv \"$reltarget\" \"$link\" } done Usage:\nfind . -type l -exec /path_to/replace_symlinks.sh {} +",
+    "content": "Source: https://superuser.com/questions/303559\nCode:\n#!/usr/bin/bash set -e for link; do test -h \"$link\" || continue dir=$(dirname \"$link\") reltarget=$(readlink \"$link\") case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv \"$link\" cp -afv \"$abstarget\" \"$link\" || { # on failure, restore the symlink rm -rfv \"$link\" ln -sfv \"$reltarget\" \"$link\" } done Usage:\nfind . -type l -exec /path_to/replace_symlinks.sh {} +",
+    "description": "Source: https://superuser.com/questions/303559\nCode:\n#!/usr/bin/bash set -e for link; do test -h \"$link\" || continue dir=$(dirname \"$link\") reltarget=$(readlink \"$link\") case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv \"$link\" cp -afv \"$abstarget\" \"$link\" || { # on failure, restore the symlink rm -rfv \"$link\" ln -sfv \"$reltarget\" \"$link\" } done Usage:\nfind . -type l -exec /path_to/replace_symlinks.sh {} +",
     "tags": [
       "Bash"
     ],

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Codes :: Audrey Onfroy</title>
+    <title>Codes :: A. Onfroy</title>
     <link>https://audrey-onfroy.github.io/codes/index.html</link>
     <description>Related to bash:&#xA;Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links Related to Git:&#xA;Remove sensitive files in Git history [Tutorial] Split a GitHub repository into a main repos and a submodule Related to R:&#xA;[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list Related to md / html:</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://audrey-onfroy.github.io/codes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>bash</title>
       <link>https://audrey-onfroy.github.io/codes/codes_bash/index.html</link>
-      <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://audrey-onfroy.github.io/codes/codes_bash/index.html</guid>
-      <description>Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links</description>
+      <description>Copy files with a specific extension and preserve the directory structure Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links</description>
     </item>
     <item>
       <title>Git</title>

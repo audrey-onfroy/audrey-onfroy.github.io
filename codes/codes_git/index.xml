@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Git :: Audrey Onfroy</title>
+    <title>Git :: A. Onfroy</title>
     <link>https://audrey-onfroy.github.io/codes/codes_git/index.html</link>
     <description>Remove sensitive files in Git history [Tutorial] Split a GitHub repository into a main repos and a submodule</description>
     <generator>Hugo</generator>

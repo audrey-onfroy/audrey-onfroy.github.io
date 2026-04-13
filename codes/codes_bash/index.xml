@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bash :: Audrey Onfroy</title>
+    <title>bash :: A. Onfroy</title>
     <link>https://audrey-onfroy.github.io/codes/codes_bash/index.html</link>
-    <description>Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links</description>
+    <description>Copy files with a specific extension and preserve the directory structure Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://audrey-onfroy.github.io/codes/codes_bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Copy files with a specific extension and preserve the directory structure</title>
+      <link>https://audrey-onfroy.github.io/codes/codes_bash/copy_with_extension/index.html</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://audrey-onfroy.github.io/codes/codes_bash/copy_with_extension/index.html</guid>
+      <description>Source: https://superuser.com/questions/299938&#xA;Code:&#xA;#!/usr/bin/bash destination=&#34;/path/to/somewhere&#34; ; find . -name &#34;*html&#34; | cpio -pdm ${destination}</description>
+    </item>
     <item>
       <title>Allow files access on cluster</title>
       <link>https://audrey-onfroy.github.io/codes/codes_bash/allow_access/index.html</link>
@@ -41,7 +48,7 @@
       <link>https://audrey-onfroy.github.io/codes/codes_bash/replace_symlinks/index.html</link>
       <pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://audrey-onfroy.github.io/codes/codes_bash/replace_symlinks/index.html</guid>
-      <description>Source: https://superuser.com/questions/303559/replace-symbolic-links-with-files&#xA;Code:&#xA;#!/usr/bin/bash set -e for link; do test -h &#34;$link&#34; || continue dir=$(dirname &#34;$link&#34;) reltarget=$(readlink &#34;$link&#34;) case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv &#34;$link&#34; cp -afv &#34;$abstarget&#34; &#34;$link&#34; || { # on failure, restore the symlink rm -rfv &#34;$link&#34; ln -sfv &#34;$reltarget&#34; &#34;$link&#34; } done Usage:&#xA;find . -type l -exec /path_to/replace_symlinks.sh {} +</description>
+      <description>Source: https://superuser.com/questions/303559&#xA;Code:&#xA;#!/usr/bin/bash set -e for link; do test -h &#34;$link&#34; || continue dir=$(dirname &#34;$link&#34;) reltarget=$(readlink &#34;$link&#34;) case $reltarget in /*) abstarget=$reltarget;; *) abstarget=$dir/$reltarget;; esac rm -fv &#34;$link&#34; cp -afv &#34;$abstarget&#34; &#34;$link&#34; || { # on failure, restore the symlink rm -rfv &#34;$link&#34; ln -sfv &#34;$reltarget&#34; &#34;$link&#34; } done Usage:&#xA;find . -type l -exec /path_to/replace_symlinks.sh {} +</description>
     </item>
     <item>
       <title>Update symbolic links</title>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Analyses :: Audrey Onfroy</title>
+    <title>Analyses :: A. Onfroy</title>
     <link>https://audrey-onfroy.github.io/analysis/index.html</link>
     <description>Here are listed the single-cell RNA Sequencing (scRNA-Seq) data analyses I contributed to. The raw data and/or count matrices are available under Data. The code to make the analyses from the count matrices up to the figures in the manuscript is available under Code. The code development is tracked on GitHub but most analyses associated with the manuscript are made identifiable using Zenodo. To enable you to explore the analysis, you can access the GitHub Pages under Analysis. The index of the GitHub Pages has been built using OrganizeHTML (more information in Tools). If you have any questions, feel free to open an issue in the associated repository.</description>
     <generator>Hugo</generator>

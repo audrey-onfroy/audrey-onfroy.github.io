@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R :: Audrey Onfroy</title>
+    <title>R :: A. Onfroy</title>
     <link>https://audrey-onfroy.github.io/codes/codes_r/index.html</link>
     <description>[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list</description>
     <generator>Hugo</generator>

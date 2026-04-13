@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tools :: Audrey Onfroy</title>
+    <title>Tools :: A. Onfroy</title>
     <link>https://audrey-onfroy.github.io/tools/index.html</link>
     <description>I have developed some useful tools to make my daily tasks easier. Perhaps they could help you, too! 😀&#xA;aquarius, a R package to analyse scRNA-Seq data&#xA;HTML organizer, a tool to arrange HTML files&#xA;audrey-onfroy.github.io/aquarius DOI: 10.5281/zenodo.15763899 github.com/audrey-onfroy/organize_html DOI: 10.5281/zenodo.14505634 The TeX template developed for my PhD thesis&#xA;... github.com/audrey-onfroy/Thesis_template DOI: 10.5281/zenodo.15874912 ...</description>
     <generator>Hugo</generator>
