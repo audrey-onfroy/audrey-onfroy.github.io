@@ -20,7 +20,7 @@
       <link>https://audrey-onfroy.github.io/codes/index.html</link>
       <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://audrey-onfroy.github.io/codes/index.html</guid>
-      <description>Related to bash:&#xA;Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links Related to Git:&#xA;Remove sensitive files in Git history [Tutorial] Split a GitHub repository into a main repos and a submodule Related to R:&#xA;[Tutorial] Access two versions of R within R Studio Clean R environment but… Increase the size of the legend keys Subset the i-th elements of a nested list Related to md / html:</description>
+      <description>Related to bash:&#xA;Copy files with a specific extension and preserve the directory structure Allow files access to collaborators on the computing cluster Color a specific pattern in the output of find Define symbolic link Find a specific pattern in a bunsh of files Replace symbolic links by the target files Update symbolic links Related to Git:&#xA;Remove sensitive files in Git history [Tutorial] Split a GitHub repository into a main repos and a submodule Related to R:</description>
     </item>
     <item>
       <title>Tools</title>
